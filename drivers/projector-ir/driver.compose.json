@@ -1,0 +1,57 @@
+{
+  "name": {
+    "en": "Galaxy Projector",
+    "nl": "Galaxy Projector"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "nebula_dim",
+    "nebula_onoff",
+    "nebula_speed",
+    "star_onoff",
+    "star_breathing",
+    "star_brightness",
+    "timer"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "rf_ir_remote_add",
+      "options": {
+        "title": {
+          "en": "Connect your Astronaut Projector",
+          "nl": "Koppel je Astronaut Projector"
+        },
+        "instruction": {
+          "en": "Make sure the projector is powered and within range of your Homey Pro. When using a Satellite, ensure to set this in the settings after pairing is completed.<br><br><strong>Note:</strong> Only use the remote to control the projector in case of a malfunction, as this may interfere with normal operation via Homey.",
+          "nl": "Zorg ervoor dat de projector is aangesloten en binnen bereik van je Homey Pro staat. Wanneer je een Satellite gebruikt, zorg er dan voor dat je dit in de instellingen aanpast nadat de koppeling is voltooid.<br><br><strong>Let op:</strong> Gebruik de afstandsbediening alleen om de projector te bedienen in geval van een storing, omdat dit de normale werking via Homey kan verstoren."
+        }
+      }
+    }
+  ],
+  "energy": {
+    "approximation": {
+      "usageOff": 0,
+      "usageOn": 2
+    }
+  },
+  "capabilitiesOptions": {
+    "measure_power": {
+      "approximated": true
+    }
+  }
+}

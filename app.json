@@ -1,0 +1,697 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.stephanschuurman.candlelight",
+  "version": "0.0.1",
+  "compatibility": ">=12.7.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Candlelight",
+    "nl": "Kaarslicht"
+  },
+  "description": {
+    "en": "Control candlelights",
+    "nl": "Bedien kaarslichtjes"
+  },
+  "category": [
+    "lights"
+  ],
+  "permissions": [
+    "homey:wireless:ir"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "homepage": "https://apps.stephanschuurman.com/candlelight",
+  "author": {
+    "name": "Stephan Schuurman",
+    "email": ""
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Stephan Schuurman"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "bunq": {
+        "username": "stephanschuurman"
+      },
+      "githubSponsors": {
+        "username": "stephanschuurman"
+      }
+    }
+  },
+  "brandColor": "#04091e",
+  "support": "https://apps.stephanschuurman.com/candlelight",
+  "tags": {
+    "en": [
+      "candlelight",
+      "infrared remote",
+      "IR control"
+    ],
+    "nl": [
+      "kaarslicht",
+      "infrarood afstandsbediening",
+      "IR bediening"
+    ]
+  },
+  "flow": {
+    "actions": [
+      {
+        "id": "projector-ir:send_cmd",
+        "title": {
+          "en": "Send IR Command",
+          "nl": "Verzend IR Commando"
+        },
+        "titleFormatted": {
+          "en": "Send [[cmd]] command [[long_press]]",
+          "nl": "Verzend [[cmd]] commando [[long_press]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=projector-ir"
+          },
+          {
+            "name": "cmd",
+            "type": "autocomplete",
+            "title": {
+              "en": "Command",
+              "nl": "Commando"
+            },
+            "placeholder": {
+              "en": "Select command...",
+              "nl": "Selecteer commando..."
+            }
+          },
+          {
+            "name": "long_press",
+            "type": "dropdown",
+            "title": {
+              "en": "Press Type",
+              "nl": "Druk Type"
+            },
+            "values": [
+              {
+                "id": "false",
+                "label": {
+                  "en": "Short press",
+                  "nl": "Korte druk"
+                }
+              },
+              {
+                "id": "true",
+                "label": {
+                  "en": "Long press (for Nebula/Star/Timer)",
+                  "nl": "Lange druk (voor Nebula/Ster/Timer)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "projector-ir:nebula_toggle",
+        "title": {
+          "en": "Toggle nebula",
+          "nl": "Schakel nebula"
+        },
+        "titleFormatted": {
+          "en": "Turn nebula [[state]]",
+          "nl": "Zet nebula [[state]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=projector-ir"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "title": {
+              "en": "State",
+              "nl": "Status"
+            },
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "projector-ir:stars_toggle",
+        "title": {
+          "en": "Toggle stars",
+          "nl": "Schakel sterren"
+        },
+        "titleFormatted": {
+          "en": "Turn stars [[state]]",
+          "nl": "Zet sterren [[state]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=projector-ir"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "title": {
+              "en": "State",
+              "nl": "Status"
+            },
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Galaxy Projector",
+        "nl": "Galaxy Projector"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "nebula_dim",
+        "nebula_onoff",
+        "nebula_speed",
+        "star_onoff",
+        "star_breathing",
+        "star_brightness",
+        "timer"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/projector-ir/assets/images/small.png",
+        "large": "/drivers/projector-ir/assets/images/large.png",
+        "xlarge": "/drivers/projector-ir/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "rf_ir_remote_add",
+          "options": {
+            "title": {
+              "en": "Connect your Astronaut Projector",
+              "nl": "Koppel je Astronaut Projector"
+            },
+            "instruction": {
+              "en": "Make sure the projector is powered and within range of your Homey Pro. When using a Satellite, ensure to set this in the settings after pairing is completed.<br><br><strong>Note:</strong> Only use the remote to control the projector in case of a malfunction, as this may interfere with normal operation via Homey.",
+              "nl": "Zorg ervoor dat de projector is aangesloten en binnen bereik van je Homey Pro staat. Wanneer je een Satellite gebruikt, zorg er dan voor dat je dit in de instellingen aanpast nadat de koppeling is voltooid.<br><br><strong>Let op:</strong> Gebruik de afstandsbediening alleen om de projector te bedienen in geval van een storing, omdat dit de normale werking via Homey kan verstoren."
+            }
+          }
+        }
+      ],
+      "energy": {
+        "approximation": {
+          "usageOff": 0,
+          "usageOn": 2
+        }
+      },
+      "capabilitiesOptions": {
+        "measure_power": {
+          "approximated": true
+        }
+      },
+      "id": "projector-ir"
+    }
+  ],
+  "capabilities": {
+    "nebula_dim": {
+      "type": "number",
+      "title": {
+        "en": "Nebula Brightness",
+        "nl": "Nebula Helderheid"
+      },
+      "desc": {
+        "en": "Adjust the brightness of the nebula projection",
+        "nl": "Pas de helderheid van de nebula projectie aan"
+      },
+      "chartType": "stepLine",
+      "decimals": 0,
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "getable": true,
+      "setable": true,
+      "uiComponent": "slider",
+      "uiQuickAction": true,
+      "icon": "/assets/icons/nebula.svg"
+    },
+    "nebula_onoff": {
+      "type": "boolean",
+      "title": {
+        "en": "Nebula",
+        "nl": "Nebula"
+      },
+      "desc": {
+        "en": "Turn the nebula effect on or off",
+        "nl": "Zet het nebula effect aan of uit"
+      },
+      "chartType": "stepLine",
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": true,
+      "icon": "/assets/icons/nebula.svg"
+    },
+    "nebula_speed": {
+      "type": "number",
+      "title": {
+        "en": "Nebula Speed",
+        "nl": "Nebula Snelheid"
+      },
+      "desc": {
+        "en": "Control the nebula rotation speed",
+        "nl": "Bedien de nebula rotatiesnelheid"
+      },
+      "chartType": "stepLine",
+      "getable": true,
+      "setable": true,
+      "uiComponent": "slider",
+      "decimals": 0,
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "uiQuickAction": true,
+      "icon": "/assets/icons/nebula.svg"
+    },
+    "star_breathing": {
+      "type": "number",
+      "title": {
+        "en": "Star Breathing",
+        "nl": "Sterren Ademhaling"
+      },
+      "desc": {
+        "en": "Control the star breathing effect (0=always on, 1-3=breathing levels)",
+        "nl": "Bedien het ademhalingseffect van de sterren (0=altijd aan, 1-3=ademhalingsniveaus)"
+      },
+      "chartType": "stepLine",
+      "getable": true,
+      "setable": true,
+      "uiComponent": "slider",
+      "decimals": 0,
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "uiQuickAction": true,
+      "icon": "/assets/icons/stars.svg"
+    },
+    "star_brightness": {
+      "type": "number",
+      "title": {
+        "en": "Star Brightness",
+        "nl": "Sterren Helderheid"
+      },
+      "desc": {
+        "en": "Control the star brightness (only works when breathing is set to 0)",
+        "nl": "Bedien de helderheid van de sterren (werkt alleen als ademhaling op 0 staat)"
+      },
+      "chartType": "stepLine",
+      "getable": true,
+      "setable": true,
+      "uiComponent": "slider",
+      "decimals": 0,
+      "min": 0,
+      "max": 2,
+      "step": 1,
+      "uiQuickAction": true,
+      "icon": "/assets/icons/stars.svg"
+    },
+    "star_onoff": {
+      "type": "boolean",
+      "title": {
+        "en": "Stars",
+        "nl": "Sterren"
+      },
+      "desc": {
+        "en": "Turn the star laser effect on or off",
+        "nl": "Zet het sterren laser effect aan of uit"
+      },
+      "chartType": "stepLine",
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": true,
+      "icon": "/assets/icons/stars.svg"
+    },
+    "timer": {
+      "type": "enum",
+      "title": {
+        "en": "Sleep Timer",
+        "nl": "Slaaptimer"
+      },
+      "desc": {
+        "en": "Set automatic shut-off timer",
+        "nl": "Stel automatische uitschakeltimer in"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "nl": "Uit"
+          }
+        },
+        {
+          "id": "45min",
+          "title": {
+            "en": "45 minutes",
+            "nl": "45 minuten"
+          }
+        },
+        {
+          "id": "90min",
+          "title": {
+            "en": "90 minutes",
+            "nl": "90 minuten"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "icon": "/assets/icons/nebula.svg"
+    }
+  },
+  "signals": {
+    "ir": {
+      "nec": {
+        "carrier": 38000,
+        "sof": [
+          9000,
+          4500
+        ],
+        "eof": [
+          560
+        ],
+        "words": [
+          [
+            560,
+            560
+          ],
+          [
+            560,
+            1690
+          ]
+        ],
+        "interval": 1000,
+        "sensitivity": 0.5,
+        "repetitions": 1,
+        "minimalLength": 32,
+        "maximalLength": 32,
+        "prefixData": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "cmds": {
+          "Power": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "Timer": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "Nebula": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "NebulaBrightness+": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "NebulaBrightness-": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "NebulaSpeed+": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "NebulaSpeed-": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "Star": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "StarBreathing+": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "StarBreathing-": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "StarBrightness+": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "StarBrightness-": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "nec-pronto": {
+        "type": "prontohex",
+        "cmds": {
+          "Repeat": "0000 006D 0000 0002 0156 0056 0156 0156",
+          "Power": "0000 006C 0022 0002 015B 00AD 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0016 0041 0016 0041 0016 0041 0016 0041 0016 0041 0016 0041 0016 0041 0016 0041 0016 0041 0016 0016 0016 0041 0016 0016 0016 0016 0016 0016 0016 0041 0016 0016 0016 0016 0016 0041 0016 0016 0016 0041 0016 0041 0016 0041 0016 0016 0016 0041 0016 05F7 015B 0057 0016 0E6C"
+        }
+      }
+    }
+  }
+}

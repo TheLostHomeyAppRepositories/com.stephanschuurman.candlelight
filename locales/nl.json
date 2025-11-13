@@ -1,0 +1,38 @@
+{
+  "app": {
+    "initialized": "Astro projector app is geïnitialiseerd"
+  },
+  "driver": {
+    "initialized": "Astro projector IR driver gestart"
+  },
+  "device": {
+    "initialized": "Astro projector apparaat geïnitialiseerd",
+    "added": "Astro projector toegevoegd aan Homey",
+    "settings_changed": "Astro projector instellingen aangepast",
+    "renamed": "Astro projector hernoemd naar:",
+    "deleted": "Astro projector verwijderd van Homey"
+  },
+  "errors": {
+    "projector_off_nebula": "De projector moet eerst aangezet worden voordat je de nebula kunt bedienen",
+    "projector_off_stars": "De projector moet eerst aangezet worden voordat je de sterren kunt bedienen",
+    "projector_off_brightness": "De projector moet eerst aangezet worden voordat je de helderheid kunt aanpassen",
+    "projector_off_general": "De projector moet eerst aangezet worden voordat je deze functie kunt gebruiken"
+  },
+  "notifications": {
+    "projector_off_title": "Projector is uitgeschakeld",
+    "projector_off_nebula": "Instelling opgeslagen. Wordt toegepast wanneer je de projector aanzet",
+    "projector_off_stars": "Instelling opgeslagen. Wordt toegepast wanneer je de projector aanzet",
+    "projector_off_brightness": "Instelling opgeslagen. Wordt toegepast wanneer je de projector aanzet",
+    "projector_off_general": "Zet eerst de projector aan om deze functie te gebruiken"
+  },
+  "pairing": {
+    "device_name_placeholder": "Voer apparaatnaam in...",
+    "default_device_name": "Astro",
+    "device_number_placeholder": "Nr.",
+    "add_device_button": "Apparaat toevoegen",
+    "adding_device": "Bezig...",
+    "enter_device_name": "Voer een apparaatnaam in",
+    "invalid_device_number": "Apparaatnummer moet een getal zijn tussen 1 en 999",
+    "duplicate_device_id": "Dit apparaat ID bestaat al. Kies een ander nummer."
+  }
+}

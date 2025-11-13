@@ -1,0 +1,36 @@
+<style type="text/css">
+  #rf-ir-remote-learn-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+    box-sizing: border-box;
+  }
+
+  #rf-ir-remote-learn-instruction {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+</style>
+
+<div id="rf-ir-remote-learn-wrap">
+  <p id="rf-ir-remote-learn-instruction"></p>
+</div>
+
+<script type="text/javascript">
+  (function () {
+    const $instruction = document.getElementById('rf-ir-remote-learn-instruction');
+
+    Homey.getOptions((err, options) => {
+      if (err) return Homey.error(err);
+      if (options && options.title) Homey.setTitle(Homey.__(options.title));
+      if (options && options.instruction) $instruction.innerHTML = Homey.__(options.instruction);
+    });
+
+  })();
+</script>

@@ -1,0 +1,64 @@
+{
+  "id": "com.stephanschuurman.candlelight",
+  "version": "0.0.1",
+  "compatibility": ">=12.7.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+ "name": {
+    "en": "Candlelight",
+    "nl": "Kaarslicht"
+  },
+  "description": {
+    "en": "Control candlelights",
+    "nl": "Bedien kaarslichtjes"
+  },
+  "category": [
+    "lights"
+  ],
+  "permissions": [
+    "homey:wireless:ir"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "homepage": "https://apps.stephanschuurman.com/candlelight",
+  "author": {
+    "name": "Stephan Schuurman",
+    "email": ""
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Stephan Schuurman"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "bunq": {
+        "username": "stephanschuurman"
+      },
+      "githubSponsors": {
+        "username": "stephanschuurman"
+      }
+    }
+  },
+  "brandColor": "#04091e",
+  "support": "https://apps.stephanschuurman.com/candlelight",
+  "tags": {
+    "en": [
+      "candlelight",
+      "infrared remote",
+      "IR control"
+    ],
+    "nl": [
+      "kaarslicht",
+      "infrarood afstandsbediening",
+      "IR bediening"
+    ]
+  }
+}

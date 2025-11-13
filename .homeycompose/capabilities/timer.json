@@ -1,0 +1,38 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Sleep Timer",
+    "nl": "Slaaptimer"
+  },
+  "desc": {
+    "en": "Set automatic shut-off timer",
+    "nl": "Stel automatische uitschakeltimer in"
+  },
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "nl": "Uit"
+      }
+    },
+    {
+      "id": "45min",
+      "title": {
+        "en": "45 minutes",
+        "nl": "45 minuten"
+      }
+    },
+    {
+      "id": "90min",
+      "title": {
+        "en": "90 minutes",
+        "nl": "90 minuten"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "icon": "/assets/icons/nebula.svg"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Star Brightness",
+    "nl": "Sterren Helderheid"
+  },
+  "desc": {
+    "en": "Control the star brightness (only works when breathing is set to 0)",
+    "nl": "Bedien de helderheid van de sterren (werkt alleen als ademhaling op 0 staat)"
+  },
+  "chartType": "stepLine",
+  "getable": true,
+  "setable": true,
+  "uiComponent": "slider",
+  "decimals": 0,
+  "min": 0,
+  "max": 2,
+  "step": 1,
+  "uiQuickAction": true,
+  "icon": "/assets/icons/stars.svg"
+}

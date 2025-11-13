@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Projector body -->
+  <rect x="30" y="80" width="140" height="70" rx="10" fill="#2c3e50" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Projector lens -->
+  <circle cx="60" cy="115" r="20" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+  <circle cx="60" cy="115" r="15" fill="#1a252f"/>
+  <circle cx="60" cy="115" r="8" fill="#3498db" opacity="0.7"/>
+  
+  <!-- Projector controls -->
+  <rect x="120" y="95" width="40" height="8" rx="4" fill="#34495e"/>
+  <rect x="120" y="110" width="25" height="8" rx="4" fill="#34495e"/>
+  <rect x="120" y="125" width="35" height="8" rx="4" fill="#34495e"/>
+  
+  <!-- Remote control -->
+  <rect x="100" y="30" width="30" height="80" rx="5" fill="#2c3e50" stroke="#34495e" stroke-width="1"/>
+  
+  <!-- Remote buttons -->
+  <circle cx="115" cy="45" r="4" fill="#e74c3c"/>
+  <circle cx="115" cy="55" r="3" fill="#f39c12"/>
+  <circle cx="110" cy="65" r="2" fill="#27ae60"/>
+  <circle cx="120" cy="65" r="2" fill="#27ae60"/>
+  <circle cx="115" cy="75" r="2" fill="#27ae60"/>
+  <rect x="110" y="85" width="10" height="15" rx="2" fill="#95a5a6"/>
+  
+  <!-- IR signal waves -->
+  <path d="M 85 45 Q 95 40 105 45" stroke="#e74c3c" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 85 50 Q 95 45 105 50" stroke="#e74c3c" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 85 55 Q 95 50 105 55" stroke="#e74c3c" stroke-width="2" fill="none" opacity="0.2"/>
+  
+  <!-- Title text -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">Projector IR</text>
+</svg>

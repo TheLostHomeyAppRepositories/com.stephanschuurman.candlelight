@@ -1,0 +1,127 @@
+{
+  "actions": [
+    {
+      "id": "projector-ir:send_cmd",
+      "title": {
+        "en": "Send IR Command",
+        "nl": "Verzend IR Commando"
+      },
+      "titleFormatted": { 
+        "en": "Send [[cmd]] command [[long_press]]",
+        "nl": "Verzend [[cmd]] commando [[long_press]]"
+      },
+      "args": [
+        {
+          "name": "cmd",
+          "type": "autocomplete",
+          "title": {
+            "en": "Command",
+            "nl": "Commando"
+          },
+          "placeholder": {
+            "en": "Select command...",
+            "nl": "Selecteer commando..."
+          }
+        },
+        {
+          "name": "long_press",
+          "type": "dropdown",
+          "title": {
+            "en": "Press Type",
+            "nl": "Druk Type"
+          },
+          "values": [
+            {
+              "id": "false",
+              "label": {
+                "en": "Short press",
+                "nl": "Korte druk"
+              }
+            },
+            {
+              "id": "true", 
+              "label": {
+                "en": "Long press (for Nebula/Star/Timer)",
+                "nl": "Lange druk (voor Nebula/Ster/Timer)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projector-ir:nebula_toggle",
+      "title": {
+        "en": "Toggle nebula",
+        "nl": "Schakel nebula"
+      },
+      "titleFormatted": {
+        "en": "Turn nebula [[state]]",
+        "nl": "Zet nebula [[state]]"
+      },
+      "args": [
+        {
+          "name": "state",
+          "type": "dropdown",
+          "title": {
+            "en": "State",
+            "nl": "Status"
+          },
+          "values": [
+            {
+              "id": "on",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "off",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projector-ir:stars_toggle",
+      "title": {
+        "en": "Toggle stars",
+        "nl": "Schakel sterren"
+      },
+      "titleFormatted": {
+        "en": "Turn stars [[state]]",
+        "nl": "Zet sterren [[state]]"
+      },
+      "args": [
+        {
+          "name": "state",
+          "type": "dropdown",
+          "title": {
+            "en": "State",
+            "nl": "Status"
+          },
+          "values": [
+            {
+              "id": "on",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "off",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

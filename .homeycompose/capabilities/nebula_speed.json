@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Nebula Speed",
+    "nl": "Nebula Snelheid"
+  },
+  "desc": {
+    "en": "Control the nebula rotation speed",
+    "nl": "Bedien de nebula rotatiesnelheid"
+  },
+  "chartType": "stepLine",
+  "getable": true,
+  "setable": true,
+  "uiComponent": "slider",
+  "decimals": 0,
+  "min": 0,
+  "max": 4,
+  "step": 1,
+  "uiQuickAction": true,
+  "icon": "/assets/icons/nebula.svg"
+}

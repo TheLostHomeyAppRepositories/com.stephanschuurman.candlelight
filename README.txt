@@ -1,0 +1,1 @@
+Control your Astro Galaxy Projector with ease. Choose colors, set patterns, adjust brightness, and switch lasers or nebula effects on and off. Create automations for the perfect starry sky—whether you want to relax, focus, or drift into dreams.

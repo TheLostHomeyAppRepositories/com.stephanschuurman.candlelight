@@ -1,0 +1,17 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Nebula",
+    "nl": "Nebula"
+  },
+  "desc": {
+    "en": "Turn the nebula effect on or off",
+    "nl": "Zet het nebula effect aan of uit"
+  },
+  "chartType": "stepLine",
+  "getable": true,
+  "setable": true,
+  "uiComponent": "toggle",
+  "uiQuickAction": true,
+  "icon": "/assets/icons/nebula.svg"
+}

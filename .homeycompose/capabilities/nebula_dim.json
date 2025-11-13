@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Nebula Brightness",
+    "nl": "Nebula Helderheid"
+  },
+  "desc": {
+    "en": "Adjust the brightness of the nebula projection",
+    "nl": "Pas de helderheid van de nebula projectie aan"
+  },
+  "chartType": "stepLine",
+  "decimals": 0,
+  "min": 0,
+  "max": 4,
+  "step": 1,
+  "getable": true,
+  "setable": true,
+  "uiComponent": "slider",
+  "uiQuickAction": true,
+  "icon": "/assets/icons/nebula.svg"
+}

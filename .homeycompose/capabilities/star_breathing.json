@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Star Breathing",
+    "nl": "Sterren Ademhaling"
+  },
+  "desc": {
+    "en": "Control the star breathing effect (0=always on, 1-3=breathing levels)",
+    "nl": "Bedien het ademhalingseffect van de sterren (0=altijd aan, 1-3=ademhalingsniveaus)"
+  },
+  "chartType": "stepLine",
+  "getable": true,
+  "setable": true,
+  "uiComponent": "slider",
+  "decimals": 0,
+  "min": 0,
+  "max": 4,
+  "step": 1,
+  "uiQuickAction": true,
+  "icon": "/assets/icons/stars.svg"
+}

@@ -1,0 +1,202 @@
+<style type="text/css">
+  #rf-ir-remote-add-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+    box-sizing: border-box;
+  }
+
+  #rf-ir-remote-add-instruction {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  #device-name-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #device-id-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  #device-number-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #create-device-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  #create-device-btn:hover {
+    background-color: #0056b3;
+  }
+
+  #create-device-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+</style>
+
+<div id="rf-ir-remote-add-wrap">
+  <p id="rf-ir-remote-add-instruction"></p>
+  <input type="text" id="device-name-input" placeholder="" value="">
+  <div id="device-id-container">
+    <input type="number" id="device-number-input" placeholder="" value="" min="1" max="999">
+  </div>
+  <button id="create-device-btn"></button>
+</div>
+
+<script type="text/javascript">
+  (function () {
+    
+    const $instruction = document.getElementById('rf-ir-remote-add-instruction');
+    const $deviceNameInput = document.getElementById('device-name-input');
+    const $deviceNumberInput = document.getElementById('device-number-input');
+    const $createDeviceBtn = document.getElementById('create-device-btn');
+    
+    let existingDeviceIds = [];
+
+    // Function to find next available device number
+    function findNextAvailableNumber() {
+      const prefix = 'astro-projector';
+      let number = 1;
+      
+      while (number <= 999) {
+        const testId = prefix + '-' + number;
+        if (!existingDeviceIds.includes(testId)) {
+          return number;
+        }
+        number++;
+      }
+      
+      return 1; // Fallback
+    }
+
+    Homey.getOptions((err, options) => {
+      if (err) return Homey.error(err);
+      if (options && options.title) Homey.setTitle(Homey.__(options.title));
+      if (options && options.instruction) $instruction.innerHTML = Homey.__(options.instruction);
+      
+      // Set localized placeholder and default values
+      $deviceNameInput.placeholder = Homey.__('pairing.device_name_placeholder');
+      $deviceNameInput.value = Homey.__('pairing.default_device_name');
+      $deviceNumberInput.placeholder = Homey.__('pairing.device_number_placeholder');
+      $createDeviceBtn.textContent = Homey.__('pairing.add_device_button');
+    });
+    
+    // Fetch existing devices to check for duplicate IDs
+    Homey.getDevices((err, devices) => {
+      if (err) {
+        console.error('Error getting existing devices:', err);
+        return;
+      }
+      
+      // Store all existing device IDs
+      existingDeviceIds = devices.map(device => device.data.id);
+      console.log('Existing device IDs:', existingDeviceIds);
+      
+      // Set next available number
+      const nextNumber = findNextAvailableNumber();
+      $deviceNumberInput.value = nextNumber;
+    });
+
+    // Function to create device with user-provided name
+    function createDevice() {
+      const deviceName = $deviceNameInput.value.trim();
+      const deviceNumber = $deviceNumberInput.value.trim();
+      
+      if (!deviceName) {
+        alert(Homey.__('pairing.enter_device_name'));
+        return;
+      }
+
+      // Validate device number
+      const numberInt = parseInt(deviceNumber, 10);
+      if (isNaN(numberInt) || numberInt < 1 || numberInt > 999) {
+        alert(Homey.__('pairing.invalid_device_number'));
+        return;
+      }
+      
+      // Construct final device ID with hardcoded prefix
+      const uniqueId = 'astro-projector-' + numberInt;
+      
+      // Check if ID already exists
+      if (existingDeviceIds.includes(uniqueId)) {
+        alert(Homey.__('pairing.duplicate_device_id'));
+        return;
+      }
+
+      const deviceData = {
+        name: deviceName,
+        data: {
+          id: uniqueId
+        }
+      };
+
+      // Disable button during creation
+      $createDeviceBtn.disabled = true;
+      $createDeviceBtn.textContent = Homey.__('pairing.adding_device');
+
+      // Create the device
+      Homey.createDevice(deviceData, (err) => {
+        if (err) {
+          console.error('Error creating device:', err);
+          $createDeviceBtn.disabled = false;
+          $createDeviceBtn.textContent = Homey.__('pairing.add_device_button');
+          return Homey.error(err);
+        }
+        return Homey.done();
+      });
+    }
+
+    // Add click event listener to button
+    $createDeviceBtn.addEventListener('click', createDevice);
+
+    // Add enter key support for input field
+    $deviceNameInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        createDevice();
+      }
+    });
+
+    // Also listen for external createDevice events (in case the driver sends them)
+    Homey.on('createDevice', (device) => {
+      Homey.createDevice(device, err => {
+        if (err) return Homey.error(err);
+        return Homey.done();
+      });
+    });
+
+  })();
+</script>
