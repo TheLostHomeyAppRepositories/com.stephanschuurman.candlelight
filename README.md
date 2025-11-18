@@ -40,12 +40,15 @@ Coming soon.
 
 ## 🔦 Supported Devices
 
-Currently tested with: \| Brand \| Model/Remote \| Protocol \| Notes \|
-\|------\|--------------\|----------\|-------\| \| Generic \| IR LED
-Candle Remote \| NEC \| Standard ON/OFF support \| \| Various \| LED
-tealight remotes \| NEC \| Should work if standard codes \|
+Currently tested with:
 
-More IR sets can be added --- feel free to open an Issue or PR with
+| Brand | Model       | Protocol | Notes |
+|-------|--------------|----------|-------|
+| HEMA  | 13550076 - Oplaadbare LED Theelichtjes | NEC | Rebranded item, see Taizhou Sparkle Lights, BAT-LEDS01 |
+| Taizhou Sparkle Lights | BAT-LEDS01 | NEC | Sold under HEMA house brand |
+
+
+More IR sets to be added --- feel free to open an Issue or PR with
 Pronto/Hex codes.
 
 ## ⚙️ Configuration
