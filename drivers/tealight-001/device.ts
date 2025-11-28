@@ -1,5 +1,5 @@
 import Homey from 'homey';
-import Infrared from '../../lib/ir';
+import Infrared from '../../lib/ir.js';
 
 module.exports = class MyDevice extends Homey.Device {
 
