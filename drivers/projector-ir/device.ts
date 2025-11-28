@@ -1,5 +1,5 @@
 import Homey from 'homey';
-import ProjectorDeviceApi from '../../lib/ProjectorDeviceApi.js';
+import ProjectorDeviceApi from '../../lib/ProjectorDeviceApi';
 
 module.exports = class GalaxyDevice extends Homey.Device {
 
