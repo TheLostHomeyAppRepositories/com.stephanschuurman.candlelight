@@ -12,12 +12,12 @@ module.exports = class MyDevice extends Homey.Device {
     this.log('MyDevice has been initialized');
 
     // Register capability listeners
-    this.registerCapabilityListener('on', this.onCapabilityOn.bind(this));
-    this.registerCapabilityListener('off', this.onCapabilityOff.bind(this));
-    this.registerCapabilityListener('2h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '2h'));
-    this.registerCapabilityListener('4h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '4h'));
-    this.registerCapabilityListener('6h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '6h'));
-    this.registerCapabilityListener('8h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '8h'));
+    this.registerCapabilityListener('button.on', this.onCapabilityOn.bind(this));
+    this.registerCapabilityListener('button.off', this.onCapabilityOff.bind(this));
+    this.registerCapabilityListener('button.2h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '2h'));
+    this.registerCapabilityListener('button.4h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '4h'));
+    this.registerCapabilityListener('button.6h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '6h'));
+    this.registerCapabilityListener('button.8h', (value: boolean, opts: any) => this.onCapabilityTimer(value, opts, '8h'));
 
     // Init API
     this.ir = new Infrared(this);

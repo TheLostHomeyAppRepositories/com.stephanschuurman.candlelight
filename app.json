@@ -359,12 +359,12 @@
       },
       "class": "light",
       "capabilities": [
-        "on",
-        "off",
-        "2h",
-        "4h",
-        "6h",
-        "8h"
+        "button.on",
+        "button.off",
+        "button.2h",
+        "button.4h",
+        "button.6h",
+        "button.8h"
       ],
       "platforms": [
         "local"
