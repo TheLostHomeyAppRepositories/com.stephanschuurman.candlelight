@@ -74,6 +74,10 @@
     ]
   },
   "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight",
+  "homeyCommunityTopicId": 146172,
+  "bugs": {
+    "url": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight/issues"
+  },
   "flow": {
     "actions": [
       {
@@ -81,6 +85,14 @@
         "title": {
           "en": "Switch tealights on",
           "nl": "Zet de theelichten aan"
+        },
+        "titleFormatted": {
+          "en": "Switch the tealights on",
+          "nl": "Zet de theelichten aan"
+        },
+        "hint": {
+          "en": "This action switches the tealights on.",
+          "nl": "Deze actie zet de theelichten aan."
         },
         "args": [
           {
@@ -95,6 +107,14 @@
         "title": {
           "en": "Switch tealights off",
           "nl": "Zet de theelichten uit"
+        },
+        "titleFormatted": {
+          "en": "Switch the tealights off",
+          "nl": "Zet de theelichten uit"
+        },
+        "hint": {
+          "en": "This action switches the tealights off.",
+          "nl": "Deze actie zet de theelichten uit."
         },
         "args": [
           {
@@ -113,6 +133,10 @@
         "titleFormatted": {
           "en": "Switch off the tealights in [[timer_cmd]]",
           "nl": "Zet de theelichten uit over [[timer_cmd]]"
+        },
+        "hint": {
+          "en": "This action switches the tealights off after a set duration.",
+          "nl": "Deze actie zet de theelichten uit na een ingestelde duur."
         },
         "args": [
           {
