@@ -1,0 +1,89 @@
+{
+  "actions": [
+    {
+      "id": "deluxe-homeart_on",
+      "title": {
+        "en": "Switch candles on",
+        "nl": "Zet de kaarsen aan"
+      },
+      "titleFormatted": {
+        "en": "Switch the candles on",
+        "nl": "Zet de kaarsen aan"
+      },
+      "hint": {
+        "en": "This action switches the candles on.",
+        "nl": "Deze actie zet de kaarsen aan."
+      }
+    },
+    {
+      "id": "deluxe-homeart_off",
+      "title": {
+        "en": "Switch candles off",
+        "nl": "Zet de kaarsen uit"
+      },
+      "titleFormatted": {
+        "en": "Switch the candles off",
+        "nl": "Zet de kaarsen uit"
+      },
+      "hint": {
+        "en": "This action switches the candles off.",
+        "nl": "Deze actie zet de kaarsen uit."
+      }
+    },
+    {
+      "id": "deluxe-homeart_timer",
+      "title": {
+        "en": "Switch off the tealights with timer",
+        "nl": "Zet de theelichten uit met timer"
+      },
+      "titleFormatted": {
+        "en": "Switch off the candles in [[timer_cmd]]",
+        "nl": "Zet de kaarsen uit over [[timer_cmd]]"
+      },
+      "hint": {
+        "en": "This action switches the candles off after a set duration.",
+        "nl": "Deze actie zet de kaarsen uit na een ingestelde duur."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "timer_cmd",
+          "title": {
+            "en": "duration",
+            "nl": "duur"
+          },
+          "values": [
+            {
+              "id": "2h",
+              "title": {
+                "en": "2 hours",
+                "nl": "2 uur"
+              }
+            },
+            {
+              "id": "4h",
+              "title": {
+                "en": "4 hours",
+                "nl": "4 uur"
+              }
+            },
+            {
+              "id": "6h",
+              "title": {
+                "en": "6 hours",
+                "nl": "6 uur"
+              }
+            },
+            {
+              "id": "8h",
+              "title": {
+                "en": "8 hours",
+                "nl": "8 uur"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

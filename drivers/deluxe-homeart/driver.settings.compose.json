@@ -1,0 +1,27 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "IR Settings",
+      "nl": "IR Instellingen"
+    },
+    "children": [
+      {
+        "id": "ir_repetitions",
+        "type": "number",
+        "label": {
+          "en": "Repetitions",
+          "nl": "Herhalingen"
+        },
+        "hint": {
+          "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
+          "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen."
+        },
+        "value": 2,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    ]
+  }
+]

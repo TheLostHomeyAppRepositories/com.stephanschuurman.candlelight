@@ -28,6 +28,8 @@
   "pairing": {
     "device_name_placeholder": "Voer apparaatnaam in...",
     "default_device_name": "Kaarsen",
+    "default_device_name_hema": "HEMA oplaadbare LED theelichtjes",
+    "default_device_name_deluxe": "Deluxe HomeArt Kaarsen",
     "device_number_placeholder": "Nr.",
     "add_device_button": "Apparaat toevoegen",
     "adding_device": "Bezig...",

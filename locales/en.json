@@ -28,6 +28,8 @@
   "pairing": {
     "device_name_placeholder": "Enter device name...",
     "default_device_name": "Candles",
+    "default_device_name_hema": "HEMA rechargeable LED tealights",
+    "default_device_name_deluxe": "Deluxe HomeArt Candles",
     "device_number_placeholder": "No.",
     "add_device_button": "Add Device",
     "adding_device": "Adding...",

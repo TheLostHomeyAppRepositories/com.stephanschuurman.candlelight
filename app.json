@@ -81,6 +81,110 @@
   "flow": {
     "actions": [
       {
+        "id": "deluxe-homeart_on",
+        "title": {
+          "en": "Switch candles on",
+          "nl": "Zet de kaarsen aan"
+        },
+        "titleFormatted": {
+          "en": "Switch the candles on",
+          "nl": "Zet de kaarsen aan"
+        },
+        "hint": {
+          "en": "This action switches the candles on.",
+          "nl": "Deze actie zet de kaarsen aan."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=deluxe-homeart"
+          }
+        ]
+      },
+      {
+        "id": "deluxe-homeart_off",
+        "title": {
+          "en": "Switch candles off",
+          "nl": "Zet de kaarsen uit"
+        },
+        "titleFormatted": {
+          "en": "Switch the candles off",
+          "nl": "Zet de kaarsen uit"
+        },
+        "hint": {
+          "en": "This action switches the candles off.",
+          "nl": "Deze actie zet de kaarsen uit."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=deluxe-homeart"
+          }
+        ]
+      },
+      {
+        "id": "deluxe-homeart_timer",
+        "title": {
+          "en": "Switch off the tealights with timer",
+          "nl": "Zet de theelichten uit met timer"
+        },
+        "titleFormatted": {
+          "en": "Switch off the candles in [[timer_cmd]]",
+          "nl": "Zet de kaarsen uit over [[timer_cmd]]"
+        },
+        "hint": {
+          "en": "This action switches the candles off after a set duration.",
+          "nl": "Deze actie zet de kaarsen uit na een ingestelde duur."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=deluxe-homeart"
+          },
+          {
+            "type": "dropdown",
+            "name": "timer_cmd",
+            "title": {
+              "en": "duration",
+              "nl": "duur"
+            },
+            "values": [
+              {
+                "id": "2h",
+                "title": {
+                  "en": "2 hours",
+                  "nl": "2 uur"
+                }
+              },
+              {
+                "id": "4h",
+                "title": {
+                  "en": "4 hours",
+                  "nl": "4 uur"
+                }
+              },
+              {
+                "id": "6h",
+                "title": {
+                  "en": "6 hours",
+                  "nl": "6 uur"
+                }
+              },
+              {
+                "id": "8h",
+                "title": {
+                  "en": "8 hours",
+                  "nl": "8 uur"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "on",
         "title": {
           "en": "Switch tealights on",
@@ -189,8 +293,119 @@
   "drivers": [
     {
       "name": {
-        "en": "HEMA rechargeable LED tealights",
-        "nl": "HEMA oplaadbare LED theelichtjes"
+        "en": "Deluxe Homeart Real Flame",
+        "nl": "Deluxe Homeart Real Flame"
+      },
+      "class": "light",
+      "capabilities": [
+        "button.on",
+        "button.off",
+        "button.2h",
+        "button.4h",
+        "button.6h",
+        "button.8h"
+      ],
+      "capabilitiesOptions": {
+        "button.on": {
+          "title": {
+            "en": "On",
+            "nl": "Aan"
+          }
+        },
+        "button.off": {
+          "title": {
+            "en": "Off",
+            "nl": "Uit"
+          }
+        },
+        "button.2h": {
+          "title": {
+            "en": "Timer 2 hours",
+            "nl": "Timer 2 uur"
+          }
+        },
+        "button.4h": {
+          "title": {
+            "en": "Timer 4 hours",
+            "nl": "Timer 4 uur"
+          }
+        },
+        "button.6h": {
+          "title": {
+            "en": "Timer 6 hours",
+            "nl": "Timer 6 uur"
+          }
+        },
+        "button.8h": {
+          "title": {
+            "en": "Timer 8 hours",
+            "nl": "Timer 8 uur"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/deluxe-homeart/assets/images/small.png",
+        "large": "/drivers/deluxe-homeart/assets/images/large.png",
+        "xlarge": "/drivers/deluxe-homeart/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "device_add_custom",
+          "options": {
+            "title": {
+              "en": "Add controls of candles",
+              "nl": "Voeg bediening van kaarsen toe"
+            },
+            "instruction": {
+              "en": "Enter a name for your candle. Make sure it is powered and within range of your Homey Pro or Satellite.",
+              "nl": "Voer een naam in voor je kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
+            },
+            "deviceIdPrefix": "candle"
+          }
+        }
+      ],
+      "id": "deluxe-homeart",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "IR Settings",
+            "nl": "IR Instellingen"
+          },
+          "children": [
+            {
+              "id": "ir_repetitions",
+              "type": "number",
+              "label": {
+                "en": "Repetitions",
+                "nl": "Herhalingen"
+              },
+              "hint": {
+                "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
+                "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen."
+              },
+              "value": 2,
+              "min": 1,
+              "max": 10,
+              "step": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "HEMA Rechargeable LED Tealights",
+        "nl": "HEMA Oplaadbare LED Theelichtjes"
       },
       "class": "light",
       "capabilities": [
@@ -265,7 +480,11 @@
               "en": "Enter a name for your Tealight. Make sure it is powered and within range of your Homey Pro or Satellite.",
               "nl": "Voer een naam in voor je Theelicht. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
             },
-            "deviceIdPrefix": "tealight"
+            "deviceIdPrefix": "tealight",
+            "defaultDeviceName": {
+              "en": "HEMA rechargeable LED tealights",
+              "nl": "HEMA oplaadbare LED theelichtjes"
+            }
           }
         }
       ],

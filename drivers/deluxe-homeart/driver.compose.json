@@ -1,7 +1,7 @@
 {
   "name": {
-    "en": "HEMA Rechargeable LED Tealights",
-    "nl": "HEMA Oplaadbare LED Theelichtjes"
+    "en": "Deluxe Homeart Real Flame",
+    "nl": "Deluxe Homeart Real Flame"
   },
   "class": "light",
   "capabilities": [
@@ -55,7 +55,7 @@
   ],
   "connectivity": [
     "infrared"
-  ], 
+  ],
   "infrared": {
     "satelliteMode": true
   },
@@ -69,17 +69,17 @@
       "id": "device_add_custom",
       "options": {
         "title": {
-          "en": "Add Tealights",
-          "nl": "Voeg bediening van Theelichtjes toe"
+          "en": "Add controls of candles",
+          "nl": "Voeg bediening van kaarsen toe"
         },
         "instruction": {
-          "en": "Enter a name for your Tealight. Make sure it is powered and within range of your Homey Pro or Satellite.",
-          "nl": "Voer een naam in voor je Theelicht. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
+          "en": "Enter a name for your candle. Make sure it is powered and within range of your Homey Pro or Satellite.",
+          "nl": "Voer een naam in voor je kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
         },
-        "deviceIdPrefix": "tealight",
+        "deviceIdPrefix": "candle",
         "defaultDeviceName": {
-          "en": "HEMA Tealights",
-          "nl": "HEMA Theelichtjes"
+          "en": "Deluxe Homeart Candles",
+          "nl": "Deluxe Homeart Kaarsen"
         }
       }
     }

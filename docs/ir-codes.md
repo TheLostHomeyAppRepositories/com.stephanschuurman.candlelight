@@ -3,20 +3,20 @@
 Contributions welcome! Please submit IR codes via Pronto hex or NEC command codes.
 
 
-## Taizhou Sparkle Lights Co., Ltd - BAT-LEDS01
+## HEMA / Taizhou Sparkle Lights Co., Ltd - BAT-LEDS01
 The item is also sold under the house brand of HEMA (a well-known Dutch department store).
 
 **Protocol:** NEC  
 **Address:** 0x00
 
-| Button | Code |
-|--------|------|
-| ON     | 0x45 |
-| OFF    | 0x47 |
-| 2H     | 0x44 |
-| 4H     | 0x43 |
-| 6H     | 0x07 |
-| 8H     | 0x09 |
+| Button | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV |
+|--------|--------------|------|----------|------|---------|
+| ON     | 0x00FF45BA   | 0x00 | 0xFF     | 0x45 | 0xBA    |
+| OFF    | 0x00FF47B8   | 0x00 | 0xFF     | 0x47 | 0xB8    |
+| 2H     | 0x00FF44BB   | 0x00 | 0xFF     | 0x44 | 0xBB    |
+| 4H     | 0x00FF43BC   | 0x00 | 0xFF     | 0x43 | 0xBC    |
+| 6H     | 0x00FF07F8   | 0x00 | 0xFF     | 0x07 | 0xF8    |
+| 8H     | 0x00FF09F6   | 0x00 | 0xFF     | 0x09 | 0xF6    |
 
 **Source:**
 - https://www.hema.nl/wonen-slapen/wonen/kaarsen/led-kaarsen/oplaadbare-theelichtjes---4-stuks-13550076.html
@@ -25,7 +25,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ---
 
-## Deluxe Homeart
+## Deluxe Homeart - Real Flame LED Candle
 
 **Protocol:** NEC  
 **Address:** 0x00
@@ -39,6 +39,9 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 | 6H     | 0x5E + 0x15  |
 | 8H     | 0x5E + 0x19  |
 
+**Source:**
+- https://deluxehomeartshop.nl/
+
 ---
 
 ## Gerson - LED Candle
@@ -46,21 +49,24 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 **Protocol:** NEC  
 **Address:** 0x02
 
-| Button      | Code |
-|-------------|------|
-| Power On    | 0x00 |
-| Power Off   | 0x01 |
-| Mood        | 0x02 |
-| 5 Hours     | 0x04 |
-| 8 Hours     | 0x05 |
-| Color Fade  | 0x06 |
-| Decrease    | 0x08 |
-| Increase    | 0x0A |
-| Cool Wick   | 0x0E |
-| Green       | 0x11 |
-| Blue        | 0x12 |
-| Cyan        | 0x14 |
-| Magenta     | 0x15 |
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| Power On               | 0x02FD00FF   | 0x02 | 0xFD     | 0x00 | 0xFF     |
+| Power Off              | 0x02FD01FE   | 0x02 | 0xFD     | 0x01 | 0xFE     |
+| Mood                   | 0x02FD02FD   | 0x02 | 0xFD     | 0x02 | 0xFD     |
+| 5 Hours                | 0x02FD04FB   | 0x02 | 0xFD     | 0x04 | 0xFB     |
+| 8 Hours                | 0x02FD05FA   | 0x02 | 0xFD     | 0x05 | 0xFA     |
+| Color Fade             | 0x02FD06F9   | 0x02 | 0xFD     | 0x06 | 0xF9     |
+| Decrease               | 0x02FD08F7   | 0x02 | 0xFD     | 0x08 | 0xF7     |
+| Increase               | 0x02FD0AF5   | 0x02 | 0xFD     | 0x0A | 0xF5     |
+| Cool Wick              | 0x02FD0EF1   | 0x02 | 0xFD     | 0x0E | 0xF1     |
+| Green                  | 0x02FD11EE   | 0x02 | 0xFD     | 0x11 | 0xEE     |
+| Blue                   | 0x02FD12ED   | 0x02 | 0xFD     | 0x12 | 0xED     |
+| Cyan                   | 0x02FD14EB   | 0x02 | 0xFD     | 0x14 | 0xEB     |
+| Magenta                | 0x02FD15EA   | 0x02 | 0xFD     | 0x15 | 0xEA     |
+
+**Source:**
+- https://deluxehomeartshop.nl/
 
 ---
 
@@ -69,18 +75,18 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 **Protocol:** NEC  
 **Address:** 0x00
 
-| Function        | Command |
-|-----------------|---------|
-| ON              | 0x00    |
-| OFF             | 0x02    |
-| Timer (2h)      | 0x04    |
-| Timer (4h)      | 0x06    |
-| Timer (6h)      | 0x08    |
-| Timer (8h)      | 0x0A    |
-| Mode: Candle    | 0x0C    |
-| Mode: Light     | 0x0E    |
-| Dim (-)         | 0x10    |
-| Dim (+)         | 0x12    |
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x00FF00FF   | 0x00 | 0xFF     | 0x00 | 0xFF     |
+| OFF                    | 0x00FF02FD   | 0x00 | 0xFF     | 0x02 | 0xFD     |
+| Timer (2h)             | 0x00FF04FB   | 0x00 | 0xFF     | 0x04 | 0xFB     |
+| Timer (4h)             | 0x00FF06F9   | 0x00 | 0xFF     | 0x06 | 0xF9     |
+| Timer (6h)             | 0x00FF08F7   | 0x00 | 0xFF     | 0x08 | 0xF7     |
+| Timer (8h)             | 0x00FF0AF5   | 0x00 | 0xFF     | 0x0A | 0xF5     |
+| Mode: Candle           | 0x00FF0CF3   | 0x00 | 0xFF     | 0x0C | 0xF3     |
+| Mode: Light            | 0x00FF0EF1   | 0x00 | 0xFF     | 0x0E | 0xF1     |
+| Dim (-)                | 0x00FF10EF   | 0x00 | 0xFF     | 0x10 | 0xEF     |
+| Dim (+)                | 0x00FF12ED   | 0x00 | 0xFF     | 0x12 | 0xED     |
 
 **Reference:** https://leap.tardate.com/electronics101/led/remotecontrolcandles/
 
@@ -89,16 +95,18 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 ## Generic Dancing Flame Candles
 
 **Protocol:** NEC  
-**Source:** https://community.home-assistant.io/t/dancing-flame-candles-ir-remote-light/630802
+**Address:** 0x00  
 
-| Button | Code (MSB) | Code (LSB) |
-|--------|------------|------------|
-| ON | 0xFFA25D | 0xFF45BA |
-| OFF | 0xFFE21D | 0xFF47B8 |
-| Mode: Candle | 0xFFE01F | 0xFF07F8 |
-| Mode: Light | 0xFF906F | 0xFF09F6 |
-| Brightness - | 0xFF6897 | 0xFF16E9 |
-| Brightness + | 0xFFB04F | 0xFF0DF2 |
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x00FFA25D   | 0x00 | 0xFF     | 0xA2 | 0x5D     |
+| OFF                    | 0x00FFE21D   | 0x00 | 0xFF     | 0xE2 | 0x1D     |
+| Mode: Candle           | 0x00FFE01F   | 0x00 | 0xFF     | 0xE0 | 0x1F     |
+| Mode: Light            | 0x00FF906F   | 0x00 | 0xFF     | 0x90 | 0x6F     |
+| Brightness -           | 0x00FF6897   | 0x00 | 0xFF     | 0x68 | 0x97     |
+| Brightness +           | 0x00FFB04F   | 0x00 | 0xFF     | 0xB0 | 0x4F     |
+
+**Source:** https://community.home-assistant.io/t/dancing-flame-candles-ir-remote-light/630802
 
 ---
 
@@ -106,12 +114,119 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 **Protocol:** NEC  
 **Address:** 0x00  
+
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x00FF46B9   | 0x00 | 0xFF     | 0x46 | 0xB9     |
+| OFF                    | 0x00FF15EA   | 0x00 | 0xFF     | 0x15 | 0xEA     |
+
 **Source:** https://forum.mysensors.org/topic/993/ir-switch-for-luminara-candle-automation-repost-with-video-photos-and-final-sketch/21
 
-| Button | Code |
-|--------|------|
-| ON | 0x46 |
-| OFF | 0x15 |
+---
+
+## Vinkor Flameless Flickering Candles (and clones probably)
+
+**Protocol:** NEC  
+**Address:** 0x10
+
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x10ED00FF   | 0x10 | 0xED     | 0x00 | 0xFF     |
+| OFF                    | 0x10ED40BF   | 0x10 | 0xED     | 0x40 | 0xBF     |
+| DIM                    | 0x10ED08F7   | 0x10 | 0xED     | 0x08 | 0xF7     |
+| BRIGHT                 | 0x10ED48B7   | 0x10 | 0xED     | 0x48 | 0xB7     |
+| CANDLE                 | 0x10ED30CF   | 0x10 | 0xED     | 0x30 | 0xCF     |
+| LIGHT                  | 0x10ED708F   | 0x10 | 0xED     | 0x70 | 0x8F     |
+| 2H                     | 0x10ED20DF   | 0x10 | 0xED     | 0x20 | 0xDF     |
+| 4H                     | 0x10ED609F   | 0x10 | 0xED     | 0x60 | 0x9F     |
+| 6H                     | 0x10ED10EF   | 0x10 | 0xED     | 0x10 | 0xEF     |
+| 8H                     | 0x10ED50AF   | 0x10 | 0xED     | 0x50 | 0xAF     |
+
+**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#vinkor-flameless-flickering-candles-and-clones-probably
+
+---
+
+## Duni Warm White LED Candle / Duni Warmweiß LED Kerzen
+
+**Protocol:** NEC  
+**Address:** 0x00  
+
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x00FF00FF   | 0x00 | 0xFF     | 0x00 | 0xFF     |
+| OFF                    | 0x00FF807F   | 0x00 | 0xFF     | 0x80 | 0x7F     |
+| 4H                     | 0x00FF40BF   | 0x00 | 0xFF     | 0x40 | 0xBF     |
+| 8H                     | 0x00FFC03F   | 0x00 | 0xFF     | 0xC0 | 0x3F     |
+| Mode: Candle           | 0x00FF20DF   | 0x00 | 0xFF     | 0x20 | 0xDF     |
+| Mode: Light            | 0x00FFA05F   | 0x00 | 0xFF     | 0xA0 | 0x5F     |
+| Mode: Dark             | 0x00FF906F   | 0x00 | 0xFF     | 0x90 | 0x6F     |
+| Mode: Bright           | 0x00FFE01F   | 0x00 | 0xFF     | 0xE0 | 0x1F     |
+| Mode: Moon             | 0x00FF10EF   | 0x00 | 0xFF     | 0x10 | 0xEF     |
+| Mode: Night Light      | 0x00FF609F   | 0x00 | 0xFF     | 0x60 | 0x9F     |
+
+**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#duni-warm-white-led-candle--duni-warmweiß-led-kerzen
+
+---
+
+## Duni Multicoloured LED Candle / Duni Mehrfarbige LED Kerzen
+
+**Protocol:** NEC  
+**Address:** 0x80
+
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x807F48B7   | 0x80 | 0x7F     | 0x48 | 0xB7     |
+| OFF                    | 0x807F807F   | 0x80 | 0x7F     | 0x80 | 0x7F     |
+| Mode: Smooth           | 0x807F58A7   | 0x80 | 0x7F     | 0x58 | 0xA7     |
+| Mode: Night Light      | 0x807F7887   | 0x80 | 0x7F     | 0x78 | 0x87     |
+| Mode: Candle           | 0x807F40BF   | 0x80 | 0x7F     | 0x40 | 0xBF     |
+| Mode: Light            | 0x807FC03F   | 0x80 | 0x7F     | 0xC0 | 0x3F     |
+| Mode: Timer            | 0x807F20DF   | 0x80 | 0x7F     | 0x20 | 0xDF     |
+| Mode: Dark             | 0x807FA05F   | 0x80 | 0x7F     | 0xA0 | 0x5F     |
+| Mode: Bright           | 0x807F609F   | 0x80 | 0x7F     | 0x60 | 0x9F     |
+| Color: Red             | 0x807FE01F   | 0x80 | 0x7F     | 0xE0 | 0x1F     |
+| Color: Green           | 0x807F10EF   | 0x80 | 0x7F     | 0x10 | 0xEF     |
+| Color: Blue            | 0x807F906F   | 0x80 | 0x7F     | 0x90 | 0x6F     |
+| Color: Orange          | 0x807F50AF   | 0x80 | 0x7F     | 0x50 | 0xAF     |
+| Color: Light Green     | 0x807FD827   | 0x80 | 0x7F     | 0xD8 | 0x27     |
+| Color: Light Blue      | 0x807FF807   | 0x80 | 0x7F     | 0xF8 | 0x07     |
+| Color: Violet          | 0x807F30CF   | 0x80 | 0x7F     | 0x30 | 0xCF     |
+| Color: Yellow          | 0x807FB04F   | 0x80 | 0x7F     | 0xB0 | 0x4F     |
+| Color: Blue White      | 0x807F708F   | 0x80 | 0x7F     | 0x70 | 0x8F     |
+| Color: Pink            | 0x807F00FF   | 0x80 | 0x7F     | 0x00 | 0xFF     |
+| Color: Yellow White    | 0x807FF00F   | 0x80 | 0x7F     | 0xF0 | 0x0F     |
+| Color: White           | 0x807F9867   | 0x80 | 0x7F     | 0x98 | 0x67     |
+
+**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#duni-multicoloured-led-candle--duni-mehrfarbige-led-kerzen
+
+
+---
+
+## Fishtec Bougie / Generic Multicolored Led Candle / Generische mehrfarbige LED Kerzen
+
+**Protocol:** NEC  
+**Address:** 0x01
+
+| Button                 | Data         | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x01FE48B7   | 0x01 | 0xFE     | 0x48 | 0xB7     |
+| OFF                    | 0x01FE58A7   | 0x01 | 0xFE     | 0x58 | 0xA7     |
+| Color: Blue            | 0x01FE609F   | 0x01 | 0xFE     | 0x60 | 0x9F     |
+| Color: Red             | 0x01FE20DF   | 0x01 | 0xFE     | 0x20 | 0xDF     |
+| Color: Green           | 0x01FEA05F   | 0x01 | 0xFE     | 0xA0 | 0x5F     |
+| Color: White           | 0x01FE30CF   | 0x01 | 0xFE     | 0x30 | 0xCF     |
+| Color: Turkis          | 0x01FE10EF   | 0x01 | 0xFE     | 0x10 | 0xEF     |
+| Color: Orange          | 0x01FE50AF   | 0x01 | 0xFE     | 0x50 | 0xAF     |
+| Color: Pink            | 0x01FE708F   | 0x01 | 0xFE     | 0x70 | 0x8F     |
+| Color: Purple          | 0x01FEF807   | 0x01 | 0xFE     | 0xF8 | 0x07     |
+| Color: Light Purple    | 0x01FE906F   | 0x01 | 0xFE     | 0x90 | 0x6F     |
+| Color: Light Blue      | 0x01FED827   | 0x01 | 0xFE     | 0xD8 | 0x27     |
+| Color: Ocean Blue      | 0x01FEB04F   | 0x01 | 0xFE     | 0xB0 | 0x4F     |
+| Mode: Multi Color      | 0x01FEC03F   | 0x01 | 0xFE     | 0xC0 | 0x3F     |
+| Mode: Switch           | 0x01FE7887   | 0x01 | 0xFE     | 0x78 | 0x87     |
+
+**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#fishtec-bougie--generic-multicolored-led-candle--generische-mehrfarbige-led-kerzen
+
 
 ---
 
@@ -147,108 +262,12 @@ No usable protocol found yet, but raw mode does it.
 | ON | `0,2000,1000, 400,1000, 400, 400,1000,1000, 400, 400,1000,1000, 400,1000, 400,1000, 400, 400,2000,5600,2000,1000, 400,1000, 400, 400,1000,1000, 400, 400,1000,1000, 400,1000, 400,1000, 400, 400,2000,5600,2000,1000, 400,1000, 400, 400,1000,1000, 400, 400,1000,1000, 400,1000, 400,1000, 400, 400,2000,5600` |
 | FLICKER | `0,2000,1000, 400,1000, 400, 400,1000,1000, 400, 400,1000,1000, 400, 400,1100,1000, 400, 400,2000,5600,2000,1000, 400,1000, 400, 400,1000,1000, 400, 400,1000,1000, 400, 400,1100,1000, 400, 400,2000,5600,2000,1000, 400,1000, 400, 400,1000,1000, 400, 400,1000,1000, 400, 400,1100,1000, 400, 400,2000,5600` |
 
+
 ---
 
-## Vinkor Flameless Flickering Candles (and clones probably)
+## Magic Lighting Remote
 
 **Protocol:** NEC  
-**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#vinkor-flameless-flickering-candles-and-clones-probably
+**Address:** 0x00
 
-| Button | Code |
-|--------|------|
-| ON | 0x10ED00FF |
-| OFF | 0x10ED40BF |
-| DIM | 0x10ED08F7 |
-| BRIGHT | 0x10ED48B7 |
-| CANDLE | 0x10ED30CF |
-| LIGHT | 0x10ED708F |
-| 2H | 0x10ED20DF |
-| 4H | 0x10ED609F |
-| 6H | 0x10ED10EF |
-| 8H | 0x10ED50AF |
-
----
-
-## Duni Warm White LED Candle / Duni Warmweiß LED Kerzen
-
-**Protocol:** NEC  
-**Address:** 0x00  
-**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#duni-warm-white-led-candle--duni-warmweiß-led-kerzen
-
-| Button | Code |
-|--------|------|
-| ON | 0xFF00FF |
-| OFF | 0xFF807F |
-| 4H | 0xFF40BF |
-| 8H | 0xFFC03F |
-| Mode: Candle | 0xFF20DF |
-| Mode: Light | 0xFFA05F |
-| Mode: Dark | 0xFF906F |
-| Mode: Bright | 0xFFE01F |
-| Mode: Moon | 0xFF10EF |
-| Mode: Night Light | 0xFF609F |
-
----
-
-## Duni Multicoloured LED Candle / Duni Mehrfarbige LED Kerzen
-
-**Protocol:** NEC  
-**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#duni-multicoloured-led-candle--duni-mehrfarbige-led-kerzen
-
-| Button | Code (MSB) | Code (LSB) |
-|--------|------------|------------|
-| ON | 0x807F48B7 | 0x01FE12ED |
-| OFF | 0x807F807F | 0x01FE01FE |
-| Mode: Smooth | 0x807F58A7 | 0x01FE1AE5 |
-| Mode: Night Light | 0x807F7887 | 0x01FE1EE1 |
-| Mode: Candle | 0x807F40BF | 0x01FE02FD |
-| Mode: Light | 0x807FC03F | 0x01FE03FC |
-| Mode: Timer | 0x807F20DF | 0x01FE04FB |
-| Mode: Dark | 0x807FA05F | 0x01FE05FA |
-| Mode: Bright | 0x807F609F | 0x01FE06F9 |
-| Color: Red | 0x807FE01F | 0x01FE07F8 |
-| Color: Green | 0x807F10EF | 0x01FE08F7 |
-| Color: Blue | 0x807F906F | 0x01FE09F6 |
-| Color: Orange | 0x807F50AF | 0x01FE0AF5 |
-| Color: Light Green | 0x807FD827 | 0x01FE1BE4 |
-| Color: Light Blue | 0x807FF807 | 0x01FE1FE0 |
-| Color: Violet | 0x807F30CF | 0x01FE0CF3 |
-| Color: Yellow | 0x807FB04F | 0x01FE0DF2 |
-| Color: Blue White | 0x807F708F | 0x01FE0EF1 |
-| Color: Pink | 0x807F00FF | 0x01FE00FF |
-| Color: Yellow White | 0x807FF00F | 0x01FE0FF0 |
-| Color: White | 0x807F9867 | 0x01FE19E6 |
-
----
-
-## Fishtec Bougie / Generic Multicolored Led Candle / Generische mehrfarbige LED Kerzen
-
-**Protocol:** NEC  
-**Source:** https://tasmota.github.io/docs/Codes-for-IR-Remotes/#fishtec-bougie--generic-multicolored-led-candle--generische-mehrfarbige-led-kerzen
-
-| Button | Code |
-|--------|------|
-| ON | 0x1FE48B7 |
-| OFF | 0x1FE58A7 |
-| Color: Blue | 0x1FE609F |
-| Color: Red | 0x1FE20DF |
-| Color: Green | 0x1FEA05F |
-| Color: White | 0x1FE30CF |
-| Color: Turkis | 0x1FE10EF |
-| Color: Orange | 0x1FE50AF |
-| Color: Pink | 0x1FE708F |
-| Color: Purple | 0x1FEF807 |
-| Color: Light Purple | 0x1FE906F |
-| Color: Light Blue | 0x1FED827 |
-| Color: Ocean Blue | 0x1FEB04F |
-| Mode: Multi Color | 0x1FEC03F |
-| Mode: Switch | 0x1FE7887 |
-
----
-
-Make: ???
-Model: Magic Lighting' Remote
-
-https://arduinoplusplus.wordpress.com/2021/11/26/ir-remote-codes/
-
----
+**Source:** https://arduinoplusplus.wordpress.com/2021/11/26/ir-remote-codes/

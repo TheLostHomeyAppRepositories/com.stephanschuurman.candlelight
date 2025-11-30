@@ -83,6 +83,8 @@ All logs will be streamed to your terminal.
 ```
 drivers/
   hema-tealight/      # LED tealight driver
+  deluxe-homeart/     
+
 lib/
   ir.ts              # IR communication library
   ProjectorDeviceApi.ts  # Projector-specific API
