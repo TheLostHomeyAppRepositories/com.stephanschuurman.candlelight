@@ -82,7 +82,7 @@ export abstract class BaseCandleDevice extends Homey.Device {
   async onCapabilityOn(value: boolean, opts: any): Promise<void> {
     this.log(`[${this.constructor.name}] onCapabilityOn`);
     const commands = this.getCommands();
-    this.ir.sendCommandRaw(commands.ON);
+    await this.ir.sendCommandRawQueued(commands.ON);
   }
 
   /**
@@ -91,7 +91,7 @@ export abstract class BaseCandleDevice extends Homey.Device {
   async onCapabilityOff(value: boolean, opts: any): Promise<void> {
     this.log(`[${this.constructor.name}] onCapabilityOff`);
     const commands = this.getCommands();
-    this.ir.sendCommandRaw(commands.OFF);
+    await this.ir.sendCommandRawQueued(commands.OFF);
   }
 
   /**
@@ -104,11 +104,15 @@ export abstract class BaseCandleDevice extends Homey.Device {
     const timerKey = `TIMER_${timer.toUpperCase()}` as keyof CommandSet;
     const commandCode = commands[timerKey];
 
-    if (commandCode !== undefined) {
-      this.ir.sendCommandRaw(commandCode);
-    } else {
+    if (commandCode === undefined) {
       this.log(`[${this.constructor.name}] No command defined for timer:`, timer);
+      return;
     }
+
+    if (this.getSetting('send_on_before_timer')) {
+      await this.ir.sendCommandRawQueued(commands.ON);
+    }
+    await this.ir.sendCommandRawQueued(commandCode);
   }
 
 }

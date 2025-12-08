@@ -17,10 +17,23 @@
           "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
           "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen."
         },
-        "value": 2,
+        "value": 1,
         "min": 1,
         "max": 10,
         "step": 1
+      },
+      {
+        "id": "send_on_before_timer",
+        "type": "checkbox",
+        "label": {
+          "en": "Send ON before timer command",
+          "nl": "Stuur AAN voor timer commando"
+        },
+        "hint": {
+          "en": "When activating a timer (x hour), first send an ON command to ensure the device is turned on.",
+          "nl": "Bij activeren van een timer (x uur), eerst een AAN commando sturen om te zorgen dat het apparaat aan staat."
+        },
+        "value": true
       }
     ]
   }

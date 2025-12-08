@@ -25,7 +25,7 @@
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
   },
-  "homepage": "https://apps.stephanschuurman.com/candlelight",
+  "homepage": "https://dev.stephanschuurman.com/candlelight",
   "author": {
     "name": "Stephan Schuurman",
     "email": ""
@@ -48,7 +48,7 @@
     }
   },
   "brandColor": "#ea9822",
-  "support": "https://apps.stephanschuurman.com/candlelight",
+  "support": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight/issues",
   "tags": {
     "en": [
       "candlelight",

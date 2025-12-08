@@ -26,7 +26,7 @@
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
   },
-  "homepage": "https://apps.stephanschuurman.com/candlelight",
+  "homepage": "https://dev.stephanschuurman.com/candlelight",
   "author": {
     "name": "Stephan Schuurman",
     "email": ""
@@ -49,7 +49,7 @@
     }
   },
   "brandColor": "#ea9822",
-  "support": "https://apps.stephanschuurman.com/candlelight",
+  "support": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight/issues",
   "tags": {
     "en": [
       "candlelight",
@@ -369,7 +369,11 @@
               "en": "Enter a name for your candle. Make sure it is powered and within range of your Homey Pro or Satellite.",
               "nl": "Voer een naam in voor je kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
             },
-            "deviceIdPrefix": "candle"
+            "deviceIdPrefix": "candle",
+            "defaultDeviceName": {
+              "en": "Deluxe Homeart Candles",
+              "nl": "Deluxe Homeart Kaarsen"
+            }
           }
         }
       ],
@@ -393,10 +397,23 @@
                 "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
                 "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen."
               },
-              "value": 2,
+              "value": 1,
               "min": 1,
               "max": 10,
               "step": 1
+            },
+            {
+              "id": "send_on_before_timer",
+              "type": "checkbox",
+              "label": {
+                "en": "Send ON before timer command",
+                "nl": "Stuur AAN voor timer commando"
+              },
+              "hint": {
+                "en": "When activating a timer (x hour), first send an ON command to ensure the device is turned on.",
+                "nl": "Bij activeren van een timer (x uur), eerst een AAN commando sturen om te zorgen dat het apparaat aan staat."
+              },
+              "value": true
             }
           ]
         }
@@ -482,8 +499,8 @@
             },
             "deviceIdPrefix": "tealight",
             "defaultDeviceName": {
-              "en": "HEMA rechargeable LED tealights",
-              "nl": "HEMA oplaadbare LED theelichtjes"
+              "en": "HEMA Tealights",
+              "nl": "HEMA Theelichtjes"
             }
           }
         }
@@ -508,10 +525,23 @@
                 "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
                 "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen."
               },
-              "value": 2,
+              "value": 1,
               "min": 1,
               "max": 10,
               "step": 1
+            },
+            {
+              "id": "send_on_before_timer",
+              "type": "checkbox",
+              "label": {
+                "en": "Send ON before timer command",
+                "nl": "Stuur AAN voor timer commando"
+              },
+              "hint": {
+                "en": "When activating a timer (x hour), first send an ON command to ensure the device is turned on.",
+                "nl": "Bij activeren van een timer (x uur), eerst een AAN commando sturen om te zorgen dat het apparaat aan staat."
+              },
+              "value": true
             }
           ]
         }

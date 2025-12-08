@@ -6,6 +6,10 @@
 - https://apps-sdk-v3.developer.homey.app/SignalInfrared.html
 - https://tools.developer.homey.app/tools/ir
 
+## Driver
+- https://github.com/athombv/node-homey-rfdriver
+- https://www.npmjs.com/package/homey-rfdriver/v/2.0.0
+
 ## NEC IR Protocol
 - https://www.sbprojects.net/knowledge/ir/nec.php
 - https://github.com/johnosbb/hx1838decoder

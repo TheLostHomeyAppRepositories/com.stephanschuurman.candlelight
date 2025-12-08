@@ -1,6 +1,6 @@
 {
   "name": {
-    "en": "HEMA Rechargeable LED Tealights",
+    "en": "HEMA LED Candles",
     "nl": "HEMA Oplaadbare LED Theelichtjes"
   },
   "class": "light",
@@ -55,7 +55,7 @@
   ],
   "connectivity": [
     "infrared"
-  ], 
+  ],
   "infrared": {
     "satelliteMode": true
   },

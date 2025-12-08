@@ -2,40 +2,8 @@
   "app": {
     "initialized": "Candlelight app has been initialized"
   },
-  "driver": {
-    "initialized": "Astro projector IR driver started"
-  },
-  "device": {
-    "initialized": "Astro projector device initialized",
-    "added": "Astro projector added to Homey",
-    "settings_changed": "Astro projector settings changed",
-    "renamed": "Astro projector renamed to:",
-    "deleted": "Astro projector deleted from Homey"
-  },
-  "errors": {
-    "projector_off_nebula": "The projector must be turned on before you can control the nebula",
-    "projector_off_stars": "The projector must be turned on before you can control the stars",
-    "projector_off_brightness": "The projector must be turned on before you can adjust brightness",
-    "projector_off_general": "The projector must be turned on before you can use this function"
-  },
-  "notifications": {
-    "projector_off_title": "Projector is turned off",
-    "projector_off_nebula": "Setting saved. Will be applied when you turn on the projector",
-    "projector_off_stars": "Setting saved. Will be applied when you turn on the projector",
-    "projector_off_brightness": "Setting saved. Will be applied when you turn on the projector",
-    "projector_off_general": "Turn on the projector first to use this function"
-  },
   "pairing": {
-    "device_name_placeholder": "Enter device name...",
-    "default_device_name": "Candles",
-    "default_device_name_hema": "HEMA rechargeable LED tealights",
-    "default_device_name_deluxe": "Deluxe HomeArt Candles",
-    "device_number_placeholder": "No.",
-    "add_device_button": "Add Device",
     "adding_device": "Adding...",
-    "enter_device_name": "Please enter a device name",
-    "invalid_device_number": "Device number must be a number between 1 and 999",
-    "duplicate_device_id": "This device ID already exists. Please choose a different number.",
     "error_adding_device": "Error adding device. Please try again."
   }
 }
