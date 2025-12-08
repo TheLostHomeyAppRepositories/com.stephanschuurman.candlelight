@@ -12,7 +12,7 @@ class Infrared extends Homey.SimpleClass {
   private signal: any;
   private prontoSignal: any;
   private lastCommandTime: number = 0;
-  private readonly MIN_COMMAND_INTERVAL_MS: number = 250; // Minimum time in ms between commands
+  private readonly MIN_COMMAND_INTERVAL_MS: number = 100; // Minimum time in ms between commands
   private readonly MAX_QUEUE_SIZE: number = 5; // Maximum number of queued commands
   private commandQueue: Promise<any> = Promise.resolve(); // Queue to serialize commands
   private queueSize: number = 0; // Track current queue size
@@ -238,13 +238,14 @@ class Infrared extends Homey.SimpleClass {
       if (timeSinceLastCommand < this.MIN_COMMAND_INTERVAL_MS) {
         const waitTime = this.MIN_COMMAND_INTERVAL_MS - timeSinceLastCommand;
         this.device.log(`⏱️ Rate limiting: waiting ${waitTime}ms before sending raw command`);
-        this.device.error(`TOO fast IR commands`);
+        // this.device.error(`TOO fast IR commands`);
         await this.sleep(waitTime);
       }
 
       // Get repetitions setting (default: 3)
       const repetitions = this.device.getSetting('ir_repetitions') || 3;
       
+      this.device.log('📡 Sending raw IR frame:', frameData, ', with repetitions:', repetitions);
       // this.device.log('📡 Sending raw IR frame:', frameData, 'repeat:', repeat, 'repetitions:', repetitions);
 
       await this.signal.tx(frameData, { device: this.device, repetitions });

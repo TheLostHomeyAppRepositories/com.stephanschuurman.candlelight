@@ -1,7 +1,7 @@
 {
   "name": {
     "en": "HEMA LED Candles",
-    "nl": "HEMA Oplaadbare LED Theelichtjes"
+    "nl": "HEMA LED Kaarsen"
   },
   "class": "light",
   "capabilities": [
@@ -73,13 +73,13 @@
           "nl": "Voeg bediening van Theelichtjes toe"
         },
         "instruction": {
-          "en": "Enter a name for your Tealight. Make sure it is powered and within range of your Homey Pro or Satellite.",
-          "nl": "Voer een naam in voor je Theelicht. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
+          "en": "Enter a name for your LED candle. Make sure it is powered and within range of your Homey Pro or Satellite.",
+          "nl": "Voer een naam in voor je LED kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
         },
-        "deviceIdPrefix": "tealight",
+        "deviceIdPrefix": "led_candle_",
         "defaultDeviceName": {
-          "en": "HEMA Tealights",
-          "nl": "HEMA Theelichtjes"
+          "en": "HEMA LED Candles",
+          "nl": "HEMA LED Kaarsen"
         }
       }
     }
