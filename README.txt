@@ -1,3 +1,3 @@
-Effortlessly control your LED candles with Homey! Currently, only some LED candles of HEMA are supported. 
+This app lets you control most LED candles from HEMA and Deluxe HomeArt using simple infrared (IR) signals. Turn them on or off, tweak settings, and set the mood exactly how you like it.
 
-This app uses infrared (IR) signals to switch your candles on and off and adjust various settings. With Homey integration, you can fully automate your candles and connect them to flows to create the perfect ambiance in your home.
+Pair your candles with Homey flows to automate everything — from cozy evenings to full-on ambiance scenes. Got a Homey Bridge? You can use it as an IR satellite too. Easy, flexible, and very chill.

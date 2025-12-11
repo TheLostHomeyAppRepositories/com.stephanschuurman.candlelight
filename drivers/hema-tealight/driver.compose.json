@@ -5,6 +5,7 @@
   },
   "class": "light",
   "capabilities": [
+    "onoff",
     "button.on",
     "button.off",
     "button.2h",
@@ -13,13 +14,18 @@
     "button.8h"
   ],
   "capabilitiesOptions": {
+    "onoff": {
+      "uiQuickAction": true
+    },
     "button.on": {
+      "uiQuickAction": false,
       "title": {
         "en": "On",
         "nl": "Aan"
       }
     },
     "button.off": {
+      "uiQuickAction": false,
       "title": {
         "en": "Off",
         "nl": "Uit"
@@ -69,12 +75,12 @@
       "id": "device_add_custom",
       "options": {
         "title": {
-          "en": "Add Tealights",
-          "nl": "Voeg bediening van Theelichtjes toe"
+          "en": "Add Candle",
+          "nl": "Voeg bediening van Kaarsen toe"
         },
         "instruction": {
-          "en": "Enter a name for your LED candle. Make sure it is powered and within range of your Homey Pro or Satellite.",
-          "nl": "Voer een naam in voor je LED kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Satellite staat."
+          "en": "Enter a name for your candle. Make sure it is powered and within range of your Homey Pro or Bridge as satellite.",
+          "nl": "Voer een naam in voor je kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Bridge als satelliet staat."
         },
         "deviceIdPrefix": "led_candle_",
         "defaultDeviceName": {

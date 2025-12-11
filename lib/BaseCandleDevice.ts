@@ -23,6 +23,7 @@ export abstract class BaseCandleDevice extends Homey.Device {
     this.log(`[${this.constructor.name}] has been initialized`);
 
     // Register capability listeners
+    this.registerCapabilityListener('onoff', this.onCapabilityOnOff.bind(this));
     this.registerCapabilityListener('button.on', this.onCapabilityOn.bind(this));
     this.registerCapabilityListener('button.off', this.onCapabilityOff.bind(this));
 
@@ -83,6 +84,7 @@ export abstract class BaseCandleDevice extends Homey.Device {
     this.log(`[${this.constructor.name}] onCapabilityOn`);
     const commands = this.getCommands();
     await this.ir.sendCommandRawQueued(commands.ON);
+    await this.updateOnOffState(true);
   }
 
   /**
@@ -92,6 +94,18 @@ export abstract class BaseCandleDevice extends Homey.Device {
     this.log(`[${this.constructor.name}] onCapabilityOff`);
     const commands = this.getCommands();
     await this.ir.sendCommandRawQueued(commands.OFF);
+    await this.updateOnOffState(false);
+  }
+
+  /**
+   * Handle the onoff capability for quick actions
+   */
+  async onCapabilityOnOff(value: boolean, opts: any): Promise<void> {
+    this.log(`[${this.constructor.name}] onCapabilityOnOff -> ${value ? 'ON' : 'OFF'}`);
+    const commands = this.getCommands();
+    const commandCode = value ? commands.ON : commands.OFF;
+    await this.ir.sendCommandRawQueued(commandCode);
+    await this.updateOnOffState(value);
   }
 
   /**
@@ -113,6 +127,19 @@ export abstract class BaseCandleDevice extends Homey.Device {
       await this.ir.sendCommandRawQueued(commands.ON);
     }
     await this.ir.sendCommandRawQueued(commandCode);
+  }
+
+  /**
+   * Keep the onoff capability in sync when available
+   */
+  private async updateOnOffState(value: boolean): Promise<void> {
+    if (!this.hasCapability('onoff')) return;
+
+    try {
+      await this.setCapabilityValue('onoff', value);
+    } catch (error) {
+      this.error(`[${this.constructor.name}] Failed to update onoff state`, error);
+    }
   }
 
 }

@@ -3,46 +3,46 @@
     {
       "id": "on",
       "title": {
-        "en": "Switch tealights on",
-        "nl": "Zet de theelichten aan"
+        "en": "Switch LED candles on",
+        "nl": "Zet de LED kaarsen aan"
       },
       "titleFormatted": {
-        "en": "Switch the tealights on",
-        "nl": "Zet de theelichten aan"
+        "en": "Switch the LED candles on",
+        "nl": "Zet de LED kaarsen aan"
       },
       "hint": {
-        "en": "This action switches the tealights on.",
-        "nl": "Deze actie zet de theelichten aan."
+        "en": "This action switches the LED candles on.",
+        "nl": "Deze actie zet de LED kaarsen aan."
       }
     },
     {
       "id": "off",
       "title": {
-        "en": "Switch tealights off",
-        "nl": "Zet de theelichten uit"
+        "en": "Switch LED candles off",
+        "nl": "Zet de LED kaarsen uit"
       },
       "titleFormatted": {
-        "en": "Switch the tealights off",
-        "nl": "Zet de theelichten uit"
+        "en": "Switch the LED candles off",
+        "nl": "Zet de LED kaarsen uit"
       },
       "hint": {
-        "en": "This action switches the tealights off.",
-        "nl": "Deze actie zet de theelichten uit."
+        "en": "This action switches the LED candles off.",
+        "nl": "Deze actie zet de LED kaarsen uit."
       }
     },
     {
       "id": "timer",
       "title": {
-        "en": "Switch off the tealights with timer",
-        "nl": "Zet de theelichten uit met timer"
+        "en": "Switch off the LED candles with timer",
+        "nl": "Zet de LED kaarsen uit met timer"
       },
       "titleFormatted": {
-        "en": "Switch off the tealights in [[timer_cmd]]",
-        "nl": "Zet de theelichten uit over [[timer_cmd]]"
+        "en": "Switch off the LED candles in [[timer_cmd]]",
+        "nl": "Zet de LED kaarsen uit over [[timer_cmd]]"
       },
       "hint": {
-        "en": "This action switches the tealights off after a set duration.",
-        "nl": "Deze actie zet de theelichten uit na een ingestelde duur."
+        "en": "This action switches the LED candles off after a set duration.",
+        "nl": "Deze actie zet de LED kaarsen uit na een ingestelde duur."
       },
       "args": [
         {

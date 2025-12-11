@@ -1,6 +1,6 @@
 {
   "id": "com.stephanschuurman.candlelight",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "compatibility": ">=12.7.0",
   "sdk": 3,
   "platforms": [
@@ -11,8 +11,8 @@
     "nl": "Kaarslicht"
   },
   "description": {
-    "en": "Control LED candle lights",
-    "nl": "Bedien LED kaarslichtjes"
+    "en": "Bring your LED candles to life with Homey",
+    "nl": "Breng je LED-kaarsen tot leven met Homey"
   },
   "category": [
     "lights"
@@ -58,7 +58,8 @@
       "control",
       "tealight",
       "LED",
-      "HEMA"
+      "HEMA",
+      "HomeArt"
     ],
     "nl": [
       "kaarslicht",
@@ -69,7 +70,8 @@
       "LED",
       "waxinelichtje",
       "theelichtjes",
-      "HEMA"
+      "HEMA",
+      "HomeArt"
     ]
   },
   "source": "https://github.com/stephanschuurman/com.stephanschuurman.candlelight",

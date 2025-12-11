@@ -8,7 +8,7 @@ Control your IR-based LED candles, tealights, and galaxy projectors with Homey P
 
 - **Multiple Device Types**: Supports LED tealights and galaxy star projectors
 - **Full IR Control**: On/off, timers, brightness, nebula and star effects
-- **Satellite Support**: Use Homey Pro's built-in IR or external satellites
+- **Satellite Support**: Use Homey Pro's built-in IR or external satellites (select via Advanced Settings)
 - **Configurable Repetitions**: Adjust IR command reliability via device settings
 - **Flow Integration**: Complete flow card support for all functions
 - **NEC Protocol**: Works with common NEC-based IR remotes

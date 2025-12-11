@@ -1,3 +1,3 @@
-Bedien je LED-kaarsen moeiteloos met Homey! Op dit moment worden alleen sommige kaarsen van HEMA ondersteund. 
+Met deze app bedien je eenvoudig de meeste LED-kaarsen van HEMA en Deluxe HomeArt via infrarood (IR). Zet ze aan of uit, pas instellingen aan en bepaal precies de sfeer die je wilt.
 
-Deze app gebruikt infrarood (IR)-signalen om je kaarsen aan en uit te schakelen en verschillende instellingen aan te passen. Dankzij de integratie met Homey kun je je kaarsen volledig automatiseren en koppelen aan flows voor de perfecte sfeer in huis.
+Koppel je kaarsen aan Homey-flows en automatiseer alles — van een knusse avond tot complete ambiance-scènes. Heb je een Homey Bridge? Dan kun je die ook gebruiken als IR-satelliet. Simpel, flexibel en lekker chill.
