@@ -36,8 +36,8 @@ See [docs/ir-codes.md](docs/ir-codes.md) for complete IR command documentation.
 
 | Brand | Models (tested) | Protocol | Features | Remarks |
 |-------|---------------|----------|----------|---------|
-| HEMA | 13550076, 13550123, 13550124, 13550125, 13550129, 13550134, 13550140, 13550143 | NEC | On/Off, 2/4/6/8h timers | Seems rebranded Taizhou Sparkle
-| Deluxe Homeart | | NEC | On/Off, 2/4/6/8h timers | 
+| HEMA | 13550076, 13550089, 13550123, 13550124, 13550125, 13550128, 13550129, 13550134, 13550140, 13550143 | NEC | On/Off, 2/4/6/8h timers | Seems rebranded Taizhou Sparkle
+| Deluxe Homeart | `None Tested` | NEC | On/Off, 2/4/6/8h timers | 
 
 
 ## Usage

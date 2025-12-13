@@ -22,6 +22,9 @@ export abstract class BaseCandleDevice extends Homey.Device {
   async onInit() {
     this.log(`[${this.constructor.name}] has been initialized`);
 
+    // Ensure legacy devices get the new onoff capability and correct quick-action options
+    await this.migrateCapabilities();
+
     // Register capability listeners
     this.registerCapabilityListener('onoff', this.onCapabilityOnOff.bind(this));
     this.registerCapabilityListener('button.on', this.onCapabilityOn.bind(this));
@@ -139,6 +142,32 @@ export abstract class BaseCandleDevice extends Homey.Device {
       await this.setCapabilityValue('onoff', value);
     } catch (error) {
       this.error(`[${this.constructor.name}] Failed to update onoff state`, error);
+    }
+  }
+
+  /**
+   * Add new capabilities/options for already-paired devices
+   */
+  private async migrateCapabilities(): Promise<void> {
+    try {
+      if (!this.hasCapability('onoff')) {
+        await this.addCapability('onoff');
+        // Default to a known state to avoid undefined tiles
+        await this.setCapabilityValue('onoff', false);
+      }
+
+      // Ensure tile quick action uses onoff, not the button capabilities
+      if (this.hasCapability('onoff')) {
+        await this.setCapabilityOptions('onoff', { uiQuickAction: true });
+      }
+      if (this.hasCapability('button.on')) {
+        await this.setCapabilityOptions('button.on', { uiQuickAction: false });
+      }
+      if (this.hasCapability('button.off')) {
+        await this.setCapabilityOptions('button.off', { uiQuickAction: false });
+      }
+    } catch (error) {
+      this.error(`[${this.constructor.name}] Capability migration failed`, error);
     }
   }
 
