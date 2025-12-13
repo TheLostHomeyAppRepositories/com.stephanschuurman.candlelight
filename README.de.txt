@@ -1,0 +1,3 @@
+Mit dieser App kannst du die meisten LED-Kerzen von HEMA und Deluxe HomeArt ganz einfach per Infrarot (IR) steuern. Schalte sie ein oder aus, passe Einstellungen an und sorge für genau die Stimmung, die du willst.
+
+Verbinde deine Kerzen mit Homey Flows und automatisiere alles – von gemütlichen Abenden bis hin zu kompletten Ambient-Szenen. Hast du eine Homey Bridge? Dann kannst du sie auch als IR-Satellit nutzen. Einfach, flexibel und total entspannt.

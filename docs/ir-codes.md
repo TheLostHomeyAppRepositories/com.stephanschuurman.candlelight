@@ -6,6 +6,7 @@ Contributions welcome! Please submit IR codes via Pronto hex or NEC command code
 ## HEMA / Taizhou Sparkle Lights Co., Ltd - BAT-LEDS01
 The item is also sold under the house brand of HEMA (a well-known Dutch department store).
 
+**Driver:** ./hema-tealight
 **Protocol:** NEC  
 **Address:** 0x00
 
@@ -27,17 +28,18 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Deluxe Homeart - Real Flame LED Candle
 
+**Driver:** ./deluxe-homeart
 **Protocol:** NEC  
 **Address:** 0x00
 
-| Button | Code         |
+| Button | CMD          |
 |--------|--------------|
 | ON     | 0x5E         |
 | OFF    | 0x0C         |
-| 2H     | 0x5E + 0x46  |
-| 4H     | 0x5E + 0x40  |
-| 6H     | 0x5E + 0x15  |
-| 8H     | 0x5E + 0x19  |
+| 2H     | 0x46         |
+| 4H     | 0x40         |
+| 6H     | 0x15         |
+| 8H     | 0x19         |
 
 **Source:**
 - https://deluxehomeartshop.nl/
@@ -46,6 +48,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Gerson - LED Candle
 
+**Driver:** ./gerson
 **Protocol:** NEC  
 **Address:** 0x02
 
@@ -72,6 +75,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Leap
 
+**Driver:** ./leap
 **Protocol:** NEC  
 **Address:** 0x00
 
@@ -94,6 +98,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Generic Dancing Flame Candles
 
+**Driver:** ./unbranded-1
 **Protocol:** NEC  
 **Address:** 0x00  
 
@@ -106,12 +111,15 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 | Brightness -           | 0x00FF6897   | 0x00 | 0xFF     | 0x68 | 0x97     |
 | Brightness +           | 0x00FFB04F   | 0x00 | 0xFF     | 0xB0 | 0x4F     |
 
-**Source:** https://community.home-assistant.io/t/dancing-flame-candles-ir-remote-light/630802
+**Source:**
+- https://community.home-assistant.io/t/dancing-flame-candles-ir-remote-light/630802
+- https://www.amazon.com/Antizer-Flameless-Candles-Battery-Operated/dp/B09ZPRSYLY?th=1
 
 ---
 
 ## Luminara Smart Candle
 
+**Driver:** ./luminara
 **Protocol:** NEC  
 **Address:** 0x00  
 
@@ -126,6 +134,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Vinkor Flameless Flickering Candles (and clones probably)
 
+**Driver:** ./vinkor
 **Protocol:** NEC  
 **Address:** 0x10
 
@@ -148,6 +157,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Duni Warm White LED Candle / Duni Warmweiß LED Kerzen
 
+**Driver:** ./duni-white
 **Protocol:** NEC  
 **Address:** 0x00  
 
@@ -170,6 +180,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ## Duni Multicoloured LED Candle / Duni Mehrfarbige LED Kerzen
 
+**Driver:** ./duni-colour
 **Protocol:** NEC  
 **Address:** 0x80
 

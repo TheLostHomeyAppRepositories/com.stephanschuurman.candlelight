@@ -5,5 +5,13 @@
   "pairing": {
     "adding_device": "Adding...",
     "error_adding_device": "Error adding device. Please try again."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Enter a name for your candle. Make sure it is powered and within range of your Homey Pro or Bridge as satellite."
+    },
+    "base": {
+      "pair_title": "Add controls of candles"
+    }
   }
 }

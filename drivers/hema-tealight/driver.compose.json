@@ -1,7 +1,18 @@
 {
   "name": {
     "en": "HEMA LED Candles",
-    "nl": "HEMA LED Kaarsen"
+    "nl": "HEMA LED Kaarsen",
+    "fr": "Bougies LED HEMA",
+    "de": "HEMA LED-Kerzen",
+    "da": "HEMA LED-lys",
+    "es": "Velas LED HEMA",
+    "it": "Candele LED HEMA",
+    "no": "HEMA LED-lys",
+    "sv": "HEMA LED-ljus",
+    "pl": "Świece LED HEMA",
+    "ru": "Светодиодные свечи HEMA",
+    "ko": "HEMA LED 양초",
+    "ar": "شموع LED من HEMA"
   },
   "class": "light",
   "capabilities": [
@@ -21,38 +32,104 @@
       "uiQuickAction": false,
       "title": {
         "en": "On",
-        "nl": "Aan"
+        "nl": "Aan",
+        "fr": "Allumer",
+        "de": "An",
+        "da": "Tænd",
+        "es": "Encender",
+        "it": "Accendi",
+        "no": "På",
+        "sv": "På",
+        "pl": "Włącz",
+        "ru": "Вкл.",
+        "ko": "켜기",
+        "ar": "تشغيل"
       }
     },
     "button.off": {
       "uiQuickAction": false,
       "title": {
         "en": "Off",
-        "nl": "Uit"
+        "nl": "Uit",
+        "fr": "Éteindre",
+        "de": "Aus",
+        "da": "Sluk",
+        "es": "Apagar",
+        "it": "Spegni",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłącz",
+        "ru": "Выкл.",
+        "ko": "끄기",
+        "ar": "إيقاف"
       }
     },
     "button.2h": {
       "title": {
         "en": "Timer 2 hours",
-        "nl": "Timer 2 uur"
+        "nl": "Timer 2 uur",
+        "fr": "Minuteur 2 heures",
+        "de": "Timer 2 Stunden",
+        "da": "Timer 2 timer",
+        "es": "Temporizador 2 horas",
+        "it": "Timer 2 ore",
+        "no": "Tidtaker 2 timer",
+        "sv": "Timer 2 timmar",
+        "pl": "Timer 2 godziny",
+        "ru": "Таймер 2 часа",
+        "ko": "타이머 2시간",
+        "ar": "مؤقت ساعتين"
       }
     },
     "button.4h": {
       "title": {
         "en": "Timer 4 hours",
-        "nl": "Timer 4 uur"
+        "nl": "Timer 4 uur",
+        "fr": "Minuteur 4 heures",
+        "de": "Timer 4 Stunden",
+        "da": "Timer 4 timer",
+        "es": "Temporizador 4 horas",
+        "it": "Timer 4 ore",
+        "no": "Tidtaker 4 timer",
+        "sv": "Timer 4 timmar",
+        "pl": "Timer 4 godziny",
+        "ru": "Таймер 4 часа",
+        "ko": "타이머 4시간",
+        "ar": "مؤقت 4 ساعات"
       }
     },
     "button.6h": {
       "title": {
         "en": "Timer 6 hours",
-        "nl": "Timer 6 uur"
+        "nl": "Timer 6 uur",
+        "fr": "Minuteur 6 heures",
+        "de": "Timer 6 Stunden",
+        "da": "Timer 6 timer",
+        "es": "Temporizador 6 horas",
+        "it": "Timer 6 ore",
+        "no": "Tidtaker 6 timer",
+        "sv": "Timer 6 timmar",
+        "pl": "Timer 6 godzin",
+        "ru": "Таймер 6 часов",
+        "ko": "타이머 6시간",
+        "ar": "مؤقت 6 ساعات"
       }
     },
     "button.8h": {
       "title": {
         "en": "Timer 8 hours",
-        "nl": "Timer 8 uur"
+        "nl": "Timer 8 uur",
+        "fr": "Minuteur 8 heures",
+        "de": "Timer 8 Stunden",
+        "da": "Timer 8 timer",
+        "es": "Temporizador 8 horas",
+        "it": "Timer 8 ore",
+        "no": "Tidtaker 8 timer",
+        "sv": "Timer 8 timmar",
+        "pl": "Timer 8 godzin",
+        "ru": "Таймер 8 часов",
+        "ko": "타이머 8시간",
+        "ar": "مؤقت 8 ساعات"
       }
     }
   },
@@ -74,18 +151,23 @@
     {
       "id": "device_add_custom",
       "options": {
-        "title": {
-          "en": "Add Candle",
-          "nl": "Voeg bediening van Kaarsen toe"
-        },
-        "instruction": {
-          "en": "Enter a name for your candle. Make sure it is powered and within range of your Homey Pro or Bridge as satellite.",
-          "nl": "Voer een naam in voor je kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Bridge als satelliet staat."
-        },
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
         "deviceIdPrefix": "led_candle_",
         "defaultDeviceName": {
           "en": "HEMA LED Candles",
-          "nl": "HEMA LED Kaarsen"
+          "nl": "HEMA LED Kaarsen",
+          "fr": "Bougies LED HEMA",
+          "de": "HEMA LED-Kerzen",
+          "da": "HEMA LED-lys",
+          "es": "Velas LED HEMA",
+          "it": "Candele LED HEMA",
+          "no": "HEMA LED-lys",
+          "sv": "HEMA LED-ljus",
+          "pl": "Świece LED HEMA",
+          "ru": "Светодиодные свечи HEMA",
+          "ko": "HEMA LED 양초",
+          "ar": "شموع LED من HEMA"
         }
       }
     }

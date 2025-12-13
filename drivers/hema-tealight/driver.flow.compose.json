@@ -4,45 +4,144 @@
       "id": "on",
       "title": {
         "en": "Switch LED candles on",
-        "nl": "Zet de LED kaarsen aan"
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
       },
       "titleFormatted": {
         "en": "Switch the LED candles on",
-        "nl": "Zet de LED kaarsen aan"
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
       },
       "hint": {
         "en": "This action switches the LED candles on.",
-        "nl": "Deze actie zet de LED kaarsen aan."
+        "nl": "Deze actie zet de LED kaarsen aan.",
+        "fr": "Cette action allume les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+        "da": "Denne handling tænder LED-lysene.",
+        "es": "Esta acción enciende las velas LED.",
+        "it": "Questa azione accende le candele LED.",
+        "no": "Denne handlingen slår på LED-lysene.",
+        "sv": "Den här åtgärden slår på LED-ljusen.",
+        "pl": "Ta akcja włącza świece LED.",
+        "ru": "Это действие включает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 켭니다.",
+        "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
       }
     },
     {
       "id": "off",
       "title": {
         "en": "Switch LED candles off",
-        "nl": "Zet de LED kaarsen uit"
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
       },
       "titleFormatted": {
         "en": "Switch the LED candles off",
-        "nl": "Zet de LED kaarsen uit"
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
       },
       "hint": {
         "en": "This action switches the LED candles off.",
-        "nl": "Deze actie zet de LED kaarsen uit."
+        "nl": "Deze actie zet de LED kaarsen uit.",
+        "fr": "Cette action éteint les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+        "da": "Denne handling slukker LED-lysene.",
+        "es": "Esta acción apaga las velas LED.",
+        "it": "Questa azione spegne le candele LED.",
+        "no": "Denne handlingen slår av LED-lysene.",
+        "sv": "Den här åtgärden slår av LED-ljusen.",
+        "pl": "Ta akcja wyłącza świece LED.",
+        "ru": "Это действие выключает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 끕니다.",
+        "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
       }
     },
     {
       "id": "timer",
       "title": {
         "en": "Switch off the LED candles with timer",
-        "nl": "Zet de LED kaarsen uit met timer"
+        "nl": "Zet de LED kaarsen uit met timer",
+        "fr": "Éteindre les bougies LED avec minuterie",
+        "de": "LED-Kerzen mit Timer ausschalten",
+        "da": "Sluk LED-lysene med timer",
+        "es": "Apaga las velas LED con temporizador",
+        "it": "Spegni le candele LED con timer",
+        "no": "Slå av LED-lysene med timer",
+        "sv": "Slå av LED-ljusen med timer",
+        "pl": "Wyłącz świece LED z minutnikiem",
+        "ru": "Выключить светодиодные свечи по таймеру",
+        "ko": "타이머로 LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED باستخدام مؤقّت"
       },
       "titleFormatted": {
         "en": "Switch off the LED candles in [[timer_cmd]]",
-        "nl": "Zet de LED kaarsen uit over [[timer_cmd]]"
+        "nl": "Zet de LED kaarsen uit over [[timer_cmd]]",
+        "fr": "Éteindre les bougies LED dans [[timer_cmd]]",
+        "de": "LED-Kerzen ausschalten in [[timer_cmd]]",
+        "da": "Sluk LED-lysene om [[timer_cmd]]",
+        "es": "Apaga las velas LED en [[timer_cmd]]",
+        "it": "Spegni le candele LED tra [[timer_cmd]]",
+        "no": "Slå av LED-lysene om [[timer_cmd]]",
+        "sv": "Slå av LED-ljusen om [[timer_cmd]]",
+        "pl": "Wyłącz świece LED za [[timer_cmd]]",
+        "ru": "Выключить светодиодные свечи через [[timer_cmd]]",
+        "ko": "[[timer_cmd]] 후에 LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED خلال [[timer_cmd]]"
       },
       "hint": {
         "en": "This action switches the LED candles off after a set duration.",
-        "nl": "Deze actie zet de LED kaarsen uit na een ingestelde duur."
+        "nl": "Deze actie zet de LED kaarsen uit na een ingestelde duur.",
+        "fr": "Cette action éteint les bougies LED après une durée définie.",
+        "de": "Diese Aktion schaltet die LED-Kerzen nach einer festgelegten Dauer aus.",
+        "da": "Denne handling slukker LED-lysene efter en valgt varighed.",
+        "es": "Esta acción apaga las velas LED después de un tiempo establecido.",
+        "it": "Questa azione spegne le candele LED dopo una durata impostata.",
+        "no": "Denne handlingen slår av LED-lysene etter en valgt varighet.",
+        "sv": "Den här åtgärden slår av LED-ljusen efter en angiven varaktighet.",
+        "pl": "Ta akcja wyłącza świece LED po ustawionym czasie.",
+        "ru": "Это действие выключает светодиодные свечи через заданное время.",
+        "ko": "이 작업은 설정한 시간이 지난 후 LED 캔들을 끕니다.",
+        "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED بعد مدة محددة."
       },
       "args": [
         {
@@ -50,35 +149,90 @@
           "name": "timer_cmd",
           "title": {
             "en": "duration",
-            "nl": "duur"
+            "nl": "duur",
+            "fr": "durée",
+            "de": "Dauer",
+            "da": "varighed",
+            "es": "duración",
+            "it": "durata",
+            "no": "varighet",
+            "sv": "varaktighet",
+            "pl": "czas trwania",
+            "ru": "длительность",
+            "ko": "시간",
+            "ar": "المدة"
           },
           "values": [
             {
               "id": "2h",
               "title": {
                 "en": "2 hours",
-                "nl": "2 uur"
+                "nl": "2 uur",
+                "fr": "2 heures",
+                "de": "2 Stunden",
+                "da": "2 timer",
+                "es": "2 horas",
+                "it": "2 ore",
+                "no": "2 timer",
+                "sv": "2 timmar",
+                "pl": "2 godziny",
+                "ru": "2 часа",
+                "ko": "2시간",
+                "ar": "ساعتان"
               }
             },
             {
               "id": "4h",
               "title": {
                 "en": "4 hours",
-                "nl": "4 uur"
+                "nl": "4 uur",
+                "fr": "4 heures",
+                "de": "4 Stunden",
+                "da": "4 timer",
+                "es": "4 horas",
+                "it": "4 ore",
+                "no": "4 timer",
+                "sv": "4 timmar",
+                "pl": "4 godziny",
+                "ru": "4 часа",
+                "ko": "4시간",
+                "ar": "4 ساعات"
               }
             },
             {
               "id": "6h",
               "title": {
                 "en": "6 hours",
-                "nl": "6 uur"
+                "nl": "6 uur",
+                "fr": "6 heures",
+                "de": "6 Stunden",
+                "da": "6 timer",
+                "es": "6 horas",
+                "it": "6 ore",
+                "no": "6 timer",
+                "sv": "6 timmar",
+                "pl": "6 godzin",
+                "ru": "6 часов",
+                "ko": "6시간",
+                "ar": "6 ساعات"
               }
             },
             {
               "id": "8h",
               "title": {
                 "en": "8 hours",
-                "nl": "8 uur"
+                "nl": "8 uur",
+                "fr": "8 heures",
+                "de": "8 Stunden",
+                "da": "8 timer",
+                "es": "8 horas",
+                "it": "8 ore",
+                "no": "8 timer",
+                "sv": "8 timmar",
+                "pl": "8 godzin",
+                "ru": "8 часов",
+                "ko": "8시간",
+                "ar": "8 ساعات"
               }
             }
           ]

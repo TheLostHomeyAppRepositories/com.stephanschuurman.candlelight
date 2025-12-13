@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "Candlelight-App wurde initialisiert"
+  },
+  "pairing": {
+    "adding_device": "Wird hinzugefügt...",
+    "error_adding_device": "Fehler beim Hinzufügen des Geräts. Bitte erneut versuchen."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Gib deiner Kerze einen Namen. Stelle sicher, dass sie eingeschaltet und in Reichweite deines Homey Pro oder Bridge als Satellit ist."
+    },
+    "base": {
+      "pair_title": "Kerzensteuerung hinzufügen"
+    }
+  }
+}

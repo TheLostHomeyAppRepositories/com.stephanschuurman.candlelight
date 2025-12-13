@@ -8,11 +8,33 @@
   ],
   "name": {
     "en": "Candlelight",
-    "nl": "Kaarslicht"
+    "nl": "Kaarslicht",
+    "fr": "Lueur de bougie",
+    "de": "Kerzenlicht",
+    "da": "Stearinlys",
+    "es": "Luz de velas",
+    "it": "Luce di candela",
+    "no": "Stearinlys",
+    "sv": "Stearinljus",
+    "pl": "Światło świec",
+    "ru": "Свечной свет",
+    "ko": "촛불",
+    "ar": "ضوء الشموع"
   },
   "description": {
     "en": "Bring your LED candles to life with Homey",
-    "nl": "Breng je LED-kaarsen tot leven met Homey"
+    "nl": "Breng je LED-kaarsen tot leven met Homey",
+    "fr": "Donnez vie à vos bougies LED avec Homey",
+    "de": "Erwecke deine LED-Kerzen mit Homey zum Leben",
+    "da": "Få dine LED-lys til at komme til live med Homey",
+    "es": "Dale vida a tus velas LED con Homey",
+    "it": "Dai vita alle tue candele LED con Homey",
+    "no": "Gi LED-lysene dine liv med Homey",
+    "sv": "Ge dina LED-ljus liv med Homey",
+    "pl": "Ożyw swoje świece LED z Homey",
+    "ru": "Оживите свои светодиодные свечи с Homey",
+    "ko": "Homey로 LED 캔들에 생기를 불어넣어 보세요",
+    "ar": "خلِّ شموع LED تنبض بالحياة مع Homey"
   },
   "category": [
     "lights"
@@ -39,9 +61,15 @@
   },
   "contributing": {
     "donate": {
+      "paypal": {
+        
+      },
       "bunq": {
         "username": "stephanschuurman"
       },
+       "patreon": {
+
+       },
       "githubSponsors": {
         "username": "stephanschuurman"
       }
@@ -70,6 +98,124 @@
       "LED",
       "waxinelichtje",
       "theelichtjes",
+      "HEMA",
+      "HomeArt"
+    ],
+    "fr": [
+      "bougie",
+      "infrarouge",
+      "télécommande",
+      "IR",
+      "LED",
+      "tealight",
+      "candle"
+    ],
+    "de": [
+      "Kerzenlicht",
+      "Infrarot",
+      "Fernbedienung",
+      "IR",
+      "Steuerung",
+      "LED",
+      "Teelicht",
+      "Kerze"
+    ],
+    "da": [
+      "stearinlys",
+      "infrarød",
+      "fjernbetjening",
+      "IR",
+      "styring",
+      "fyrfadslys",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "es": [
+      "luz de velas",
+      "infrarrojo",
+      "mando a distancia",
+      "IR",
+      "control",
+      "vela de té",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "it": [
+      "luce di candela",
+      "infrarossi",
+      "telecomando",
+      "IR",
+      "controllo",
+      "lumino",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "no": [
+      "stearinlys",
+      "infrarød",
+      "fjernkontroll",
+      "IR",
+      "styring",
+      "telys",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "sv": [
+      "stearinljus",
+      "infraröd",
+      "fjärrkontroll",
+      "IR",
+      "styrning",
+      "värmeljus",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "pl": [
+      "światło świec",
+      "podczerwień",
+      "pilot",
+      "IR",
+      "sterowanie",
+      "podgrzewacz",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "ru": [
+      "свечной свет",
+      "инфракрасный",
+      "пульт",
+      "IR",
+      "управление",
+      "чайная свеча",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "ko": [
+      "촛불",
+      "적외선",
+      "리모컨",
+      "IR",
+      "제어",
+      "티라이트",
+      "LED",
+      "HEMA",
+      "HomeArt"
+    ],
+    "ar": [
+      "ضوء الشموع",
+      "الأشعة تحت الحمراء",
+      "جهاز تحكم",
+      "IR",
+      "تحكم",
+      "شمعة صغيرة",
+      "LED",
       "HEMA",
       "HomeArt"
     ]

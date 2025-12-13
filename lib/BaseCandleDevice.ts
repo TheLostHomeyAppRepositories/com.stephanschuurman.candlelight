@@ -150,6 +150,37 @@ export abstract class BaseCandleDevice extends Homey.Device {
    */
   private async migrateCapabilities(): Promise<void> {
     try {
+      // Make sure legacy devices get the on/off quick action toggle
+      if (!this.hasCapability('onoff')) {
+        await this.addCapability('onoff');
+      }
+
+      const onOffOptions = await this.getCapabilityOptions('onoff') || {};
+      if (onOffOptions.uiQuickAction !== true) {
+        await this.setCapabilityOptions('onoff', { ...onOffOptions, uiQuickAction: true });
+      }
+
+      // Update labels for the momentary buttons so they no longer show "Knop in app"
+      const buttonTitles: Record<string, { en: string; nl: string; fr: string; de: string }> = {
+        'button.on': { en: 'On', nl: 'Aan', fr: 'Allumer', de: 'An' },
+        'button.off': { en: 'Off', nl: 'Uit', fr: 'Éteindre', de: 'Aus' },
+        'button.2h': { en: 'Timer 2 hours', nl: 'Timer 2 uur', fr: 'Minuteur 2 heures', de: 'Timer 2 Stunden' },
+        'button.4h': { en: 'Timer 4 hours', nl: 'Timer 4 uur', fr: 'Minuteur 4 heures', de: 'Timer 4 Stunden' },
+        'button.6h': { en: 'Timer 6 hours', nl: 'Timer 6 uur', fr: 'Minuteur 6 heures', de: 'Timer 6 Stunden' },
+        'button.8h': { en: 'Timer 8 hours', nl: 'Timer 8 uur', fr: 'Minuteur 8 heures', de: 'Timer 8 Stunden' },
+      };
+
+      for (const [capabilityId, title] of Object.entries(buttonTitles)) {
+        if (!this.hasCapability(capabilityId)) continue;
+
+        const currentOptions = await this.getCapabilityOptions(capabilityId) || {};
+        const currentTitle = JSON.stringify(currentOptions.title);
+        const desiredTitle = JSON.stringify(title);
+
+        if (currentTitle !== desiredTitle) {
+          await this.setCapabilityOptions(capabilityId, { ...currentOptions, title });
+        }
+      }
 
     } catch (error) {
       this.error(`[${this.constructor.name}] Capability migration failed`, error);

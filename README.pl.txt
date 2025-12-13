@@ -1,0 +1,3 @@
+Ta aplikacja pozwala sterować większością świec LED od HEMA i Deluxe HomeArt za pomocą prostych sygnałów podczerwieni (IR). Włączaj i wyłączaj je, zmieniaj ustawienia i ustawiaj klimat dokładnie tak, jak lubisz.
+
+Połącz swoje świece z flow w Homey, żeby wszystko zautomatyzować — od przytulnych wieczorów po pełne sceny nastrojowego oświetlenia. Masz Homey Bridge? Możesz używać go także jako satelity IR. Prosto, elastycznie i na luzie.

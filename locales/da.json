@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "Candlelight-appen er blevet initialiseret"
+  },
+  "pairing": {
+    "adding_device": "Tilføjer...",
+    "error_adding_device": "Der opstod en fejl under tilføjelsen af enheden. Prøv igen."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Indtast et navn til dit lys. Sørg for, at det er tændt og inden for rækkevidde af din Homey Pro eller Bridge som satellit."
+    },
+    "base": {
+      "pair_title": "Tilføj styring af lys"
+    }
+  }
+}

@@ -5,5 +5,13 @@
   "pairing": {
     "adding_device": "Bezig...",
     "error_adding_device": "Fout bij toevoegen apparaat. Probeer opnieuw."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Voer een naam in voor je kaars. Zorg ervoor dat het is aangesloten en binnen bereik van je Homey Pro of Bridge als satelliet staat."
+    },
+    "base": {
+      "pair_title": "Voeg bediening van kaarsen toe"
+    }
   }
 }

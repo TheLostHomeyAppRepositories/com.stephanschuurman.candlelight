@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "Aplikacja Candlelight została zainicjalizowana"
+  },
+  "pairing": {
+    "adding_device": "Dodawanie...",
+    "error_adding_device": "Błąd podczas dodawania urządzenia. Spróbuj ponownie."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Wpisz nazwę dla swojej świecy. Upewnij się, że jest włączona i znajduje się w zasięgu Homey Pro lub Bridge działającego jako satelita."
+    },
+    "base": {
+      "pair_title": "Dodaj sterowanie świecami"
+    }
+  }
+}

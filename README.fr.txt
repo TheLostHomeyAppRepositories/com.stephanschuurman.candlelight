@@ -1,0 +1,3 @@
+Cette app te permet de contrôler la plupart des bougies LED HEMA et Deluxe HomeArt avec de simples signaux infrarouges (IR). Allume-les ou éteins-les, ajuste les réglages, et crée l’ambiance exactement comme tu l’aimes.
+
+Associe tes bougies à des flows Homey pour tout automatiser — des soirées cocooning aux scènes d’ambiance complètes. Tu as un Homey Bridge ? Tu peux aussi l’utiliser comme relais IR. Simple, flexible, et vraiment tranquillou.

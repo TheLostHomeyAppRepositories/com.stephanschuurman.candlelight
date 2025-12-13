@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "L'application Candlelight est initialisée"
+  },
+  "pairing": {
+    "adding_device": "Ajout en cours...",
+    "error_adding_device": "Erreur lors de l'ajout de l'appareil. Réessayez."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Saisissez un nom pour votre bougie. Assurez-vous qu'elle est alimentée et à portée de votre Homey Pro ou Bridge en mode satellite."
+    },
+    "base": {
+      "pair_title": "Ajouter la commande des bougies"
+    }
+  }
+}

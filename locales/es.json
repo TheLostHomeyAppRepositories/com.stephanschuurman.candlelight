@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "La app Candlelight se ha inicializado"
+  },
+  "pairing": {
+    "adding_device": "Añadiendo...",
+    "error_adding_device": "Error al añadir el dispositivo. Por favor, inténtalo de nuevo."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Escribe un nombre para tu vela. Asegúrate de que esté encendida y dentro del alcance de tu Homey Pro o del Bridge como satélite."
+    },
+    "base": {
+      "pair_title": "Añadir controles de velas"
+    }
+  }
+}

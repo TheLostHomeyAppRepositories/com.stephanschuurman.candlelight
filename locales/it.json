@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "L'app Candlelight è stata inizializzata"
+  },
+  "pairing": {
+    "adding_device": "Aggiunta in corso...",
+    "error_adding_device": "Errore durante l'aggiunta del dispositivo. Riprova."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "Inserisci un nome per la tua candela. Assicurati che sia accesa e nel raggio del tuo Homey Pro o del Bridge come satellite."
+    },
+    "base": {
+      "pair_title": "Aggiungi controlli delle candele"
+    }
+  }
+}

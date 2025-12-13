@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "Candlelight 앱이 초기화됐어요"
+  },
+  "pairing": {
+    "adding_device": "추가하는 중...",
+    "error_adding_device": "기기 추가 중 오류가 발생했어요. 다시 시도해 주세요."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "캔들 이름을 입력해 주세요. 전원이 켜져 있고 Homey Pro 또는 위성으로 설정된 Bridge 범위 안에 있는지 확인해 주세요."
+    },
+    "base": {
+      "pair_title": "캔들 제어 추가"
+    }
+  }
+}

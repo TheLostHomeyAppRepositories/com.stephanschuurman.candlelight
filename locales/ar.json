@@ -1,0 +1,17 @@
+{
+  "app": {
+    "initialized": "تم تهيئة تطبيق Candlelight"
+  },
+  "pairing": {
+    "adding_device": "جارٍ الإضافة...",
+    "error_adding_device": "حصل خطأ أثناء إضافة الجهاز. جرّب مرة ثانية."
+  },
+  "drivers": {
+    "common": {
+      "pair_instruction": "اكتب اسم لشمعتك. تأكد إنها شغّالة وضمن نطاق Homey Pro أو Bridge إذا كان كقمر صناعي."
+    },
+    "base": {
+      "pair_title": "إضافة عناصر التحكم بالشموع"
+    }
+  }
+}

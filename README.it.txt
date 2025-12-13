@@ -1,0 +1,3 @@
+Questa app ti permette di controllare la maggior parte delle candele LED di HEMA e Deluxe HomeArt usando semplici segnali a infrarossi (IR). Accendile o spegnile, modifica le impostazioni e crea l’atmosfera esattamente come piace a te.
+
+Abbina le tue candele ai Flow di Homey per automatizzare tutto — dalle serate super cozy alle scene d’atmosfera complete. Hai un Homey Bridge? Puoi usarlo anche come satellite IR. Facile, flessibile e super rilassato.

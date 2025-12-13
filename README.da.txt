@@ -1,0 +1,3 @@
+Denne app lader dig styre de fleste LED-lys fra HEMA og Deluxe HomeArt med enkle infrarøde (IR) signaler. Tænd og sluk dem, justér indstillingerne, og skab præcis den stemning, du har lyst til.
+
+Sæt dine lys sammen med Homey-flows og automatisér det hele — fra hyggelige aftener til komplette stemningsscener. Har du en Homey Bridge? Så kan du også bruge den som IR-satellit. Nemt, fleksibelt og helt afslappet.

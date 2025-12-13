@@ -1,0 +1,3 @@
+Esta app te permite controlar la mayoría de las velas LED de HEMA y Deluxe HomeArt usando señales infrarrojas (IR) sencillas. Enciéndelas o apágalas, ajusta los parámetros y crea el ambiente justo como te gusta.
+
+Vincula tus velas con los Flows de Homey para automatizarlo todo: desde tardes acogedoras hasta escenas de ambiente a lo grande. ¿Tienes un Homey Bridge? También puedes usarlo como satélite IR. Fácil, flexible y muy relajado.

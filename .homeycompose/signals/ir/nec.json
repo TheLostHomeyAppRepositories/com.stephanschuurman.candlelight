@@ -1,27 +1,27 @@
 {
-    "carrier": 38000,
-    "sof": [
-        9000,
-        4500
+  "carrier": 38000,
+  "sof": [
+    9000,
+    4500
+  ],
+  "eof": [
+    560
+  ],
+  "words": [
+    [
+      560,
+      560
     ],
-    "eof": [
-        560
-    ],
-    "words": [
-        [
-            560,
-            560
-        ],
-        [
-            560,
-            1690
-        ]
-    ],
-    "interval": 1000,
-    "sensitivity": 0.5,
-    "repetitions": 2,
-    "minimalLength": 32,
-    "maximalLength": 32,
-    "prefixData": [],
-    "cmds": {}
+    [
+      560,
+      1690
+    ]
+  ],
+  "interval": 1000,
+  "sensitivity": 0.5,
+  "repetitions": 2,
+  "minimalLength": 32,
+  "maximalLength": 32,
+  "prefixData": [],
+  "cmds": {}
 }

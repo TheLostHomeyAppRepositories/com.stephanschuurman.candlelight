@@ -4,45 +4,144 @@
       "id": "deluxe-homeart_on",
       "title": {
         "en": "Switch candles on",
-        "nl": "Zet de kaarsen aan"
+        "nl": "Zet de kaarsen aan",
+        "fr": "Allumer les bougies",
+        "de": "Kerzen einschalten",
+        "da": "Tænd lysene",
+        "es": "Enciende las velas",
+        "it": "Accendi le candele",
+        "no": "Slå på lysene",
+        "sv": "Slå på ljusen",
+        "pl": "Włącz świece",
+        "ru": "Включить свечи",
+        "ko": "양초 켜기",
+        "ar": "شغّل الشموع"
       },
       "titleFormatted": {
         "en": "Switch the candles on",
-        "nl": "Zet de kaarsen aan"
+        "nl": "Zet de kaarsen aan",
+        "fr": "Allumer les bougies",
+        "de": "Kerzen einschalten",
+        "da": "Tænd lysene",
+        "es": "Enciende las velas",
+        "it": "Accendi le candele",
+        "no": "Slå på lysene",
+        "sv": "Slå på ljusen",
+        "pl": "Włącz świece",
+        "ru": "Включить свечи",
+        "ko": "양초 켜기",
+        "ar": "شغّل الشموع"
       },
       "hint": {
         "en": "This action switches the candles on.",
-        "nl": "Deze actie zet de kaarsen aan."
+        "nl": "Deze actie zet de kaarsen aan.",
+        "fr": "Cette action allume les bougies.",
+        "de": "Diese Aktion schaltet die Kerzen ein.",
+        "da": "Denne handling tænder lysene.",
+        "es": "Esta acción enciende las velas.",
+        "it": "Questa azione accende le candele.",
+        "no": "Denne handlingen slår på lysene.",
+        "sv": "Den här åtgärden slår på ljusen.",
+        "pl": "Ta akcja włącza świece.",
+        "ru": "Это действие включает свечи.",
+        "ko": "이 작업은 양초를 켭니다.",
+        "ar": "هذا الإجراء يشغّل الشموع."
       }
     },
     {
       "id": "deluxe-homeart_off",
       "title": {
         "en": "Switch candles off",
-        "nl": "Zet de kaarsen uit"
+        "nl": "Zet de kaarsen uit",
+        "fr": "Éteindre les bougies",
+        "de": "Kerzen ausschalten",
+        "da": "Sluk lysene",
+        "es": "Apaga las velas",
+        "it": "Spegni le candele",
+        "no": "Slå av lysene",
+        "sv": "Slå av ljusen",
+        "pl": "Wyłącz świece",
+        "ru": "Выключить свечи",
+        "ko": "양초 끄기",
+        "ar": "أطفئ الشموع"
       },
       "titleFormatted": {
         "en": "Switch the candles off",
-        "nl": "Zet de kaarsen uit"
+        "nl": "Zet de kaarsen uit",
+        "fr": "Éteindre les bougies",
+        "de": "Kerzen ausschalten",
+        "da": "Sluk lysene",
+        "es": "Apaga las velas",
+        "it": "Spegni le candele",
+        "no": "Slå av lysene",
+        "sv": "Slå av ljusen",
+        "pl": "Wyłącz świece",
+        "ru": "Выключить свечи",
+        "ko": "양초 끄기",
+        "ar": "أطفئ الشموع"
       },
       "hint": {
         "en": "This action switches the candles off.",
-        "nl": "Deze actie zet de kaarsen uit."
+        "nl": "Deze actie zet de kaarsen uit.",
+        "fr": "Cette action éteint les bougies.",
+        "de": "Diese Aktion schaltet die Kerzen aus.",
+        "da": "Denne handling slukker lysene.",
+        "es": "Esta acción apaga las velas.",
+        "it": "Questa azione spegne le candele.",
+        "no": "Denne handlingen slår av lysene.",
+        "sv": "Den här åtgärden slår av ljusen.",
+        "pl": "Ta akcja wyłącza świece.",
+        "ru": "Это действие выключает свечи.",
+        "ko": "이 작업은 양초를 끕니다.",
+        "ar": "هذا الإجراء يطفئ الشموع."
       }
     },
     {
       "id": "deluxe-homeart_timer",
       "title": {
         "en": "Switch off the tealights with timer",
-        "nl": "Zet de theelichten uit met timer"
+        "nl": "Zet de theelichten uit met timer",
+        "fr": "Éteindre les bougies chauffe-plat avec minuterie",
+        "de": "Teelichter mit Timer ausschalten",
+        "da": "Sluk fyrfadslysene med timer",
+        "es": "Apaga las velas de té con temporizador",
+        "it": "Spegni le tealight con timer",
+        "no": "Slå av telysene med timer",
+        "sv": "Stäng av värmeljusen med timer",
+        "pl": "Wyłącz podgrzewacze z timerem",
+        "ru": "Выключить чайные свечи по таймеру",
+        "ko": "타이머로 티라이트 끄기",
+        "ar": "أطفئ شموع التي لايت باستخدام مؤقّت"
       },
       "titleFormatted": {
         "en": "Switch off the candles in [[timer_cmd]]",
-        "nl": "Zet de kaarsen uit over [[timer_cmd]]"
+        "nl": "Zet de kaarsen uit over [[timer_cmd]]",
+        "fr": "Éteindre les bougies dans [[timer_cmd]]",
+        "de": "Kerzen ausschalten in [[timer_cmd]]",
+        "da": "Sluk lysene om [[timer_cmd]]",
+        "es": "Apaga las velas en [[timer_cmd]]",
+        "it": "Spegni le candele tra [[timer_cmd]]",
+        "no": "Slå av lysene om [[timer_cmd]]",
+        "sv": "Stäng av ljusen om [[timer_cmd]]",
+        "pl": "Wyłącz świece za [[timer_cmd]]",
+        "ru": "Выключить свечи через [[timer_cmd]]",
+        "ko": "[[timer_cmd]] 후에 양초 끄기",
+        "ar": "أطفئ الشموع خلال [[timer_cmd]]"
       },
       "hint": {
         "en": "This action switches the candles off after a set duration.",
-        "nl": "Deze actie zet de kaarsen uit na een ingestelde duur."
+        "nl": "Deze actie zet de kaarsen uit na een ingestelde duur.",
+        "fr": "Cette action éteint les bougies après une durée définie.",
+        "de": "Diese Aktion schaltet die Kerzen nach einer festgelegten Dauer aus.",
+        "da": "Denne handling slukker lysene efter en valgt varighed.",
+        "es": "Esta acción apaga las velas después de una duración definida.",
+        "it": "Questa azione spegne le candele dopo una durata impostata.",
+        "no": "Denne handlingen slår av lysene etter en valgt varighet.",
+        "sv": "Den här åtgärden stänger av ljusen efter en vald varaktighet.",
+        "pl": "Ta akcja wyłącza świece po ustawionym czasie.",
+        "ru": "Это действие выключает свечи через заданное время.",
+        "ko": "이 작업은 설정한 시간이 지나면 양초를 끕니다.",
+        "ar": "هذا الإجراء يطفئ الشموع بعد مدة محددة."
       },
       "args": [
         {
@@ -50,35 +149,90 @@
           "name": "timer_cmd",
           "title": {
             "en": "duration",
-            "nl": "duur"
+            "nl": "duur",
+            "fr": "durée",
+            "de": "Dauer",
+            "da": "varighed",
+            "es": "duración",
+            "it": "durata",
+            "no": "varighet",
+            "sv": "varaktighet",
+            "pl": "czas trwania",
+            "ru": "длительность",
+            "ko": "지속 시간",
+            "ar": "المدة"
           },
           "values": [
             {
               "id": "2h",
               "title": {
                 "en": "2 hours",
-                "nl": "2 uur"
+                "nl": "2 uur",
+                "fr": "2 heures",
+                "de": "2 Stunden",
+                "da": "2 timer",
+                "es": "2 horas",
+                "it": "2 ore",
+                "no": "2 timer",
+                "sv": "2 timmar",
+                "pl": "2 godziny",
+                "ru": "2 часа",
+                "ko": "2시간",
+                "ar": "ساعتان"
               }
             },
             {
               "id": "4h",
               "title": {
                 "en": "4 hours",
-                "nl": "4 uur"
+                "nl": "4 uur",
+                "fr": "4 heures",
+                "de": "4 Stunden",
+                "da": "4 timer",
+                "es": "4 horas",
+                "it": "4 ore",
+                "no": "4 timer",
+                "sv": "4 timmar",
+                "pl": "4 godziny",
+                "ru": "4 часа",
+                "ko": "4시간",
+                "ar": "4 ساعات"
               }
             },
             {
               "id": "6h",
               "title": {
                 "en": "6 hours",
-                "nl": "6 uur"
+                "nl": "6 uur",
+                "fr": "6 heures",
+                "de": "6 Stunden",
+                "da": "6 timer",
+                "es": "6 horas",
+                "it": "6 ore",
+                "no": "6 timer",
+                "sv": "6 timmar",
+                "pl": "6 godzin",
+                "ru": "6 часов",
+                "ko": "6시간",
+                "ar": "6 ساعات"
               }
             },
             {
               "id": "8h",
               "title": {
                 "en": "8 hours",
-                "nl": "8 uur"
+                "nl": "8 uur",
+                "fr": "8 heures",
+                "de": "8 Stunden",
+                "da": "8 timer",
+                "es": "8 horas",
+                "it": "8 ore",
+                "no": "8 timer",
+                "sv": "8 timmar",
+                "pl": "8 godzin",
+                "ru": "8 часов",
+                "ko": "8시간",
+                "ar": "8 ساعات"
               }
             }
           ]
