@@ -1,6 +1,6 @@
 {
   "id": "com.stephanschuurman.candlelight",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "compatibility": ">=12.7.0",
   "sdk": 3,
   "platforms": [
@@ -61,15 +61,11 @@
   },
   "contributing": {
     "donate": {
-      "paypal": {
-        
-      },
+      "paypal": {},
       "bunq": {
         "username": "stephanschuurman"
       },
-       "patreon": {
-
-       },
+      "patreon": {},
       "githubSponsors": {
         "username": "stephanschuurman"
       }
