@@ -36,8 +36,8 @@ export const IR_COMMANDS = {
    * Note: Timer commands may need to be preceded by ON command (0x5E)
    */
   DELUXE: {
-    ON: 0x5E,
-    OFF: 0x0C,
+    ON: 0x0C,
+    OFF: 0x5E,
     TIMER_2H: 0x46,
     TIMER_4H: 0x40,
     TIMER_6H: 0x15,
