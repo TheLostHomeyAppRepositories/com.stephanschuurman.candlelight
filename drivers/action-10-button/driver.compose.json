@@ -1,0 +1,249 @@
+{
+  "name": {
+    "en": "Action LED Candles",
+    "nl": "Action LED Kaarsen",
+    "fr": "Bougies LED Action",
+    "de": "Action LED-Kerzen",
+    "da": "Action LED-lys",
+    "es": "Velas LED Action",
+    "it": "Candele LED Action",
+    "no": "Action LED-lys",
+    "sv": "Action LED-ljus",
+    "pl": "Świece LED Action",
+    "ru": "Светодиодные свечи Action",
+    "ko": "Action LED 양초",
+    "ar": "شموع LED من Action"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "button.on",
+    "button.off",
+    "button.2h",
+    "button.4h",
+    "button.6h",
+    "button.8h",
+    "button.mode_candle",
+    "button.mode_light",
+    "button.dim_down",
+    "button.dim_up"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "uiQuickAction": true
+    },
+    "button.on": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "On",
+        "nl": "Aan",
+        "fr": "Allumer",
+        "de": "An",
+        "da": "Tænd",
+        "es": "Encender",
+        "it": "Accendi",
+        "no": "På",
+        "sv": "På",
+        "pl": "Włącz",
+        "ru": "Вкл.",
+        "ko": "켜기",
+        "ar": "تشغيل"
+      }
+    },
+    "button.off": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "fr": "Éteindre",
+        "de": "Aus",
+        "da": "Sluk",
+        "es": "Apagar",
+        "it": "Spegni",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłącz",
+        "ru": "Выкл.",
+        "ko": "끄기",
+        "ar": "إيقاف"
+      }
+    },
+    "button.2h": {
+      "title": {
+        "en": "Timer 2 hours",
+        "nl": "Timer 2 uur",
+        "fr": "Minuteur 2 heures",
+        "de": "Timer 2 Stunden",
+        "da": "Timer 2 timer",
+        "es": "Temporizador 2 horas",
+        "it": "Timer 2 ore",
+        "no": "Tidtaker 2 timer",
+        "sv": "Timer 2 timmar",
+        "pl": "Timer 2 godziny",
+        "ru": "Таймер 2 часа",
+        "ko": "타이머 2시간",
+        "ar": "مؤقت ساعتين"
+      }
+    },
+    "button.4h": {
+      "title": {
+        "en": "Timer 4 hours",
+        "nl": "Timer 4 uur",
+        "fr": "Minuteur 4 heures",
+        "de": "Timer 4 Stunden",
+        "da": "Timer 4 timer",
+        "es": "Temporizador 4 horas",
+        "it": "Timer 4 ore",
+        "no": "Tidtaker 4 timer",
+        "sv": "Timer 4 timmar",
+        "pl": "Timer 4 godziny",
+        "ru": "Таймер 4 часа",
+        "ko": "타이머 4시간",
+        "ar": "مؤقت 4 ساعات"
+      }
+    },
+    "button.6h": {
+      "title": {
+        "en": "Timer 6 hours",
+        "nl": "Timer 6 uur",
+        "fr": "Minuteur 6 heures",
+        "de": "Timer 6 Stunden",
+        "da": "Timer 6 timer",
+        "es": "Temporizador 6 horas",
+        "it": "Timer 6 ore",
+        "no": "Tidtaker 6 timer",
+        "sv": "Timer 6 timmar",
+        "pl": "Timer 6 godzin",
+        "ru": "Таймер 6 часов",
+        "ko": "타이머 6시간",
+        "ar": "مؤقت 6 ساعات"
+      }
+    },
+    "button.8h": {
+      "title": {
+        "en": "Timer 8 hours",
+        "nl": "Timer 8 uur",
+        "fr": "Minuteur 8 heures",
+        "de": "Timer 8 Stunden",
+        "da": "Timer 8 timer",
+        "es": "Temporizador 8 horas",
+        "it": "Timer 8 ore",
+        "no": "Tidtaker 8 timer",
+        "sv": "Timer 8 timmar",
+        "pl": "Timer 8 godzin",
+        "ru": "Таймер 8 часов",
+        "ko": "타이머 8시간",
+        "ar": "مؤقت 8 ساعات"
+      }
+    },
+    "button.mode_candle": {
+      "title": {
+        "en": "Mode: Candle",
+        "nl": "Modus: Kaars",
+        "fr": "Mode : Bougie",
+        "de": "Modus: Kerze",
+        "da": "Tilstand: Stearinlys",
+        "es": "Modo: Vela",
+        "it": "Modalità: Candela",
+        "no": "Modus: Stearinlys",
+        "sv": "Läge: Stearinljus",
+        "pl": "Tryb: Świeca",
+        "ru": "Режим: свеча",
+        "ko": "모드: 촛불",
+        "ar": "الوضع: شمعة"
+      }
+    },
+    "button.mode_light": {
+      "title": {
+        "en": "Mode: Light",
+        "nl": "Modus: Licht",
+        "fr": "Mode : Lumière",
+        "de": "Modus: Licht",
+        "da": "Tilstand: Lys",
+        "es": "Modo: Luz",
+        "it": "Modalità: Luce",
+        "no": "Modus: Lys",
+        "sv": "Läge: Ljus",
+        "pl": "Tryb: Światło",
+        "ru": "Режим: свет",
+        "ko": "모드: 조명",
+        "ar": "الوضع: ضوء"
+      }
+    },
+    "button.dim_down": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Dim -",
+        "nl": "Dim -",
+        "fr": "Dim -",
+        "de": "Dim -",
+        "da": "Dim -",
+        "es": "Dim -",
+        "it": "Dim -",
+        "no": "Dim -",
+        "sv": "Dim -",
+        "pl": "Dim -",
+        "ru": "Dim -",
+        "ko": "Dim -",
+        "ar": "Dim -"
+      }
+    },
+    "button.dim_up": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Dim +",
+        "nl": "Dim +",
+        "fr": "Dim +",
+        "de": "Dim +",
+        "da": "Dim +",
+        "es": "Dim +",
+        "it": "Dim +",
+        "no": "Dim +",
+        "sv": "Dim +",
+        "pl": "Dim +",
+        "ru": "Dim +",
+        "ko": "Dim +",
+        "ar": "Dim +"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
+        "deviceIdPrefix": "led_candle_",
+        "defaultDeviceName": {
+          "en": "Action LED Candles",
+          "nl": "Action LED Kaarsen",
+          "fr": "Bougies LED Action",
+          "de": "Action LED-Kerzen",
+          "da": "Action LED-lys",
+          "es": "Velas LED Action",
+          "it": "Candele LED Action",
+          "no": "Action LED-lys",
+          "sv": "Action LED-ljus",
+          "pl": "Świece LED Action",
+          "ru": "Светодиодные свечи Action",
+          "ko": "Action LED 양초",
+          "ar": "شموع LED من Action"
+        }
+      }
+    }
+  ]
+}

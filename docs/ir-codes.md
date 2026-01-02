@@ -46,6 +46,84 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ---
 
+## Action - 10 Button Remote
+
+**Driver:** ./action-10-button
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
+|------------------------|--------------|------|----------|------|----------|
+| ON                     | 0x00FF00FF   | 0x00 | 0xFF     | 0x00 | 0xFF     |
+| OFF                    | 0x00FF02FD   | 0x00 | 0xFF     | 0x02 | 0xFD     |
+| Timer (2h)             | 0x00FF04FB   | 0x00 | 0xFF     | 0x04 | 0xFB     |
+| Timer (4h)             | 0x00FF06F9   | 0x00 | 0xFF     | 0x06 | 0xF9     |
+| Timer (6h)             | 0x00FF08F7   | 0x00 | 0xFF     | 0x08 | 0xF7     |
+| Timer (8h)             | 0x00FF0AF5   | 0x00 | 0xFF     | 0x0A | 0xF5     |
+| Mode: Candle           | 0x00FF0CF3   | 0x00 | 0xFF     | 0x0C | 0xF3     |
+| Mode: Light            | 0x00FF0EF1   | 0x00 | 0xFF     | 0x0E | 0xF1     |
+| Dim (-)                | 0x00FF10EF   | 0x00 | 0xFF     | 0x10 | 0xEF     |
+| Dim (+)                | 0x00FF12ED   | 0x00 | 0xFF     | 0x12 | 0xED     |
+
+**Source:** 
+- https://leap.tardate.com/electronics101/led/remotecontrolcandles/
+
+---
+
+## Anna's Collection - 10 Button, Black Remote
+
+**Driver:** ./anna-10-button
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x00         |
+| OFF             | 0x02         |
+| Brightness -    | 0x10         |
+| Brightness +    | 0x12         |
+
+**Source:**
+
+
+---
+
+## Anna's Collection - 2 Button, Silver Remote
+
+**Driver:** ./anna-2
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x01         |
+| OFF             | 0x09         |
+
+**Source:**
+- https://homey.app/en-us/app/com.tvdb.candles/Anna's-collection-candles/
+
+---
+
+## Flinq LED
+
+**Driver:** ./flinq
+**Protocol:** NEC  
+**Address:** 0x80
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x12         |
+| OFF             |              |
+| Light Mode      | 0x09         |
+| Candle Mode     |              |
+| Brightness -    |              |
+| Brightness +    |              |
+
+**Source:**
+- https://homey.app/en-us/app/nl.flinqproducts.candle/Flinq-LED-Candles/
+
+---
+
 ## Gerson - LED Candle
 
 **Driver:** ./gerson
@@ -70,29 +148,6 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 **Source:**
 - https://deluxehomeartshop.nl/
-
----
-
-## Leap
-
-**Driver:** ./leap
-**Protocol:** NEC  
-**Address:** 0x00
-
-| Button                 | Data (MSB)   | ADDR | ADDR_INV | CMD  | CMD_INV  |
-|------------------------|--------------|------|----------|------|----------|
-| ON                     | 0x00FF00FF   | 0x00 | 0xFF     | 0x00 | 0xFF     |
-| OFF                    | 0x00FF02FD   | 0x00 | 0xFF     | 0x02 | 0xFD     |
-| Timer (2h)             | 0x00FF04FB   | 0x00 | 0xFF     | 0x04 | 0xFB     |
-| Timer (4h)             | 0x00FF06F9   | 0x00 | 0xFF     | 0x06 | 0xF9     |
-| Timer (6h)             | 0x00FF08F7   | 0x00 | 0xFF     | 0x08 | 0xF7     |
-| Timer (8h)             | 0x00FF0AF5   | 0x00 | 0xFF     | 0x0A | 0xF5     |
-| Mode: Candle           | 0x00FF0CF3   | 0x00 | 0xFF     | 0x0C | 0xF3     |
-| Mode: Light            | 0x00FF0EF1   | 0x00 | 0xFF     | 0x0E | 0xF1     |
-| Dim (-)                | 0x00FF10EF   | 0x00 | 0xFF     | 0x10 | 0xEF     |
-| Dim (+)                | 0x00FF12ED   | 0x00 | 0xFF     | 0x12 | 0xED     |
-
-**Reference:** https://leap.tardate.com/electronics101/led/remotecontrolcandles/
 
 ---
 

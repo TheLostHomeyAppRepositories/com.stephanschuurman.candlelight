@@ -10,6 +10,10 @@ export interface CommandSet {
   TIMER_4H?: number;
   TIMER_6H?: number;
   TIMER_8H?: number;
+  MODE_CANDLE?: number;
+  MODE_LIGHT?: number;
+  DIM_DOWN?: number;
+  DIM_UP?: number;
 }
 
 /**
@@ -42,6 +46,23 @@ export const IR_COMMANDS = {
     TIMER_4H: 0x40,
     TIMER_6H: 0x15,
     TIMER_8H: 0x19,
+  } as const,
+
+  /**
+   * Action - 10 Button Remote
+   * Protocol: NEC, Address: 0x00
+   */
+  ACTION_10_BUTTON: {
+    ON: 0x00,
+    OFF: 0x02,
+    TIMER_2H: 0x04,
+    TIMER_4H: 0x06,
+    TIMER_6H: 0x08,
+    TIMER_8H: 0x0A,
+    MODE_CANDLE: 0x0C,
+    MODE_LIGHT: 0x0E,
+    DIM_DOWN: 0x10,
+    DIM_UP: 0x12,
   } as const,
 } as const;
 

@@ -83,7 +83,8 @@
       "tealight",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "nl": [
       "kaarslicht",
@@ -95,7 +96,8 @@
       "waxinelichtje",
       "theelichtjes",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "fr": [
       "bougie",
@@ -104,7 +106,10 @@
       "IR",
       "LED",
       "tealight",
-      "candle"
+      "candle",
+      "HEMA",
+      "HomeArt",
+      "Action"
     ],
     "de": [
       "Kerzenlicht",
@@ -114,7 +119,10 @@
       "Steuerung",
       "LED",
       "Teelicht",
-      "Kerze"
+      "Kerze",
+      "HEMA",
+      "HomeArt",
+      "Action"
     ],
     "da": [
       "stearinlys",
@@ -125,7 +133,8 @@
       "fyrfadslys",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "es": [
       "luz de velas",
@@ -136,7 +145,8 @@
       "vela de té",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "it": [
       "luce di candela",
@@ -147,7 +157,8 @@
       "lumino",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "no": [
       "stearinlys",
@@ -158,7 +169,8 @@
       "telys",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "sv": [
       "stearinljus",
@@ -169,7 +181,8 @@
       "värmeljus",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "pl": [
       "światło świec",
@@ -180,7 +193,8 @@
       "podgrzewacz",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "ru": [
       "свечной свет",
@@ -191,7 +205,8 @@
       "чайная свеча",
       "LED",
       "HEMA",
-      "HomeArt"
+      "HomeArt",
+      "Action"
     ],
     "ko": [
       "촛불",

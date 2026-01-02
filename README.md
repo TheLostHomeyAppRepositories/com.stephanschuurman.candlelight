@@ -36,6 +36,7 @@ See [docs/ir-codes.md](docs/ir-codes.md) for complete IR command documentation.
 
 | Brand | Models (tested) | Protocol | Features | Remarks |
 |-------|---------------|----------|----------|---------|
+| Action | 3210507, [3221633](https://shop.action.com/nl-nl/p/8721184890585/luxe-set-ledkaarsen-7-delig-taupe), [3221634](https://shop.action.com/nl-nl/p/8721184890561/luxe-set-ledkaarsen-7-delig-rood) | NEC | On/Off, Dim, 2/4/6/8h timers | Mascot Online B.V., model AO-LL-CDLS01-T
 | HEMA | 13550076, 13550089, 13550123, 13550124, 13550125, 13550128, 13550129, 13550134, 13550140, 13550143 | NEC | On/Off, 2/4/6/8h timers | Seems rebranded Taizhou Sparkle
 | Deluxe Homeart | `None Tested` | NEC | On/Off, 2/4/6/8h timers | 
 
@@ -61,6 +62,8 @@ See [docs/ir-codes.md](docs/ir-codes.md) for complete IR command documentation.
 - Turn on
 - Turn off
 - Set timer (2h, 4h, 6h, 8h)
+- Set mode (candle, light)
+- Dim up/down
 
 ## Development
 
@@ -82,6 +85,7 @@ All logs will be streamed to your terminal.
 
 ```
 drivers/
+  action-10-button/  # Action 10-button remote driver
   hema-tealight/      # LED tealight driver
   deluxe-homeart/
 

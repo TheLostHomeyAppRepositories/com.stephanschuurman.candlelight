@@ -1,0 +1,457 @@
+{
+  "actions": [
+    {
+      "id": "action-10-button_on",
+      "title": {
+        "en": "Switch LED candles on",
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Switch the LED candles on",
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
+      },
+      "hint": {
+        "en": "This action switches the LED candles on.",
+        "nl": "Deze actie zet de LED kaarsen aan.",
+        "fr": "Cette action allume les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+        "da": "Denne handling tænder LED-lysene.",
+        "es": "Esta acción enciende las velas LED.",
+        "it": "Questa azione accende le candele LED.",
+        "no": "Denne handlingen slår på LED-lysene.",
+        "sv": "Den här åtgärden slår på LED-ljusen.",
+        "pl": "Ta akcja włącza świece LED.",
+        "ru": "Это действие включает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 켭니다.",
+        "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
+      }
+    },
+    {
+      "id": "action-10-button_off",
+      "title": {
+        "en": "Switch LED candles off",
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Switch the LED candles off",
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
+      },
+      "hint": {
+        "en": "This action switches the LED candles off.",
+        "nl": "Deze actie zet de LED kaarsen uit.",
+        "fr": "Cette action éteint les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+        "da": "Denne handling slukker LED-lysene.",
+        "es": "Esta acción apaga las velas LED.",
+        "it": "Questa azione spegne le candele LED.",
+        "no": "Denne handlingen slår av LED-lysene.",
+        "sv": "Den här åtgärden slår av LED-ljusen.",
+        "pl": "Ta akcja wyłącza świece LED.",
+        "ru": "Это действие выключает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 끕니다.",
+        "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
+      }
+    },
+    {
+      "id": "action-10-button_timer",
+      "title": {
+        "en": "Switch off the LED candles with timer",
+        "nl": "Zet de LED kaarsen uit met timer",
+        "fr": "Éteindre les bougies LED avec minuterie",
+        "de": "LED-Kerzen mit Timer ausschalten",
+        "da": "Sluk LED-lysene med timer",
+        "es": "Apaga las velas LED con temporizador",
+        "it": "Spegni le candele LED con timer",
+        "no": "Slå av LED-lysene med timer",
+        "sv": "Slå av LED-ljusen med timer",
+        "pl": "Wyłącz świece LED z minutnikiem",
+        "ru": "Выключить светодиодные свечи по таймеру",
+        "ko": "타이머로 LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED باستخدام مؤقّت"
+      },
+      "titleFormatted": {
+        "en": "Switch off the LED candles in [[timer_cmd]]",
+        "nl": "Zet de LED kaarsen uit over [[timer_cmd]]",
+        "fr": "Éteindre les bougies LED dans [[timer_cmd]]",
+        "de": "LED-Kerzen ausschalten in [[timer_cmd]]",
+        "da": "Sluk LED-lysene om [[timer_cmd]]",
+        "es": "Apaga las velas LED en [[timer_cmd]]",
+        "it": "Spegni le candele LED tra [[timer_cmd]]",
+        "no": "Slå av LED-lysene om [[timer_cmd]]",
+        "sv": "Slå av LED-ljusen om [[timer_cmd]]",
+        "pl": "Wyłącz świece LED za [[timer_cmd]]",
+        "ru": "Выключить светодиодные свечи через [[timer_cmd]]",
+        "ko": "[[timer_cmd]] 후에 LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED خلال [[timer_cmd]]"
+      },
+      "hint": {
+        "en": "This action switches the LED candles off after a set duration.",
+        "nl": "Deze actie zet de LED kaarsen uit na een ingestelde duur.",
+        "fr": "Cette action éteint les bougies LED après une durée définie.",
+        "de": "Diese Aktion schaltet die LED-Kerzen nach einer festgelegten Dauer aus.",
+        "da": "Denne handling slukker LED-lysene efter en valgt varighed.",
+        "es": "Esta acción apaga las velas LED después de un tiempo establecido.",
+        "it": "Questa azione spegne le candele LED dopo una durata impostata.",
+        "no": "Denne handlingen slår av LED-lysene etter en valgt varighet.",
+        "sv": "Den här åtgärden slår av LED-ljusen efter en angiven varaktighet.",
+        "pl": "Ta akcja wyłącza świece LED po ustawionym czasie.",
+        "ru": "Это действие выключает светодиодные свечи через заданное время.",
+        "ko": "이 작업은 설정한 시간이 지난 후 LED 캔들을 끕니다.",
+        "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED بعد مدة محددة."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "timer_cmd",
+          "title": {
+            "en": "duration",
+            "nl": "duur",
+            "fr": "durée",
+            "de": "Dauer",
+            "da": "varighed",
+            "es": "duración",
+            "it": "durata",
+            "no": "varighet",
+            "sv": "varaktighet",
+            "pl": "czas trwania",
+            "ru": "длительность",
+            "ko": "시간",
+            "ar": "المدة"
+          },
+          "values": [
+            {
+              "id": "2h",
+              "title": {
+                "en": "2 hours",
+                "nl": "2 uur",
+                "fr": "2 heures",
+                "de": "2 Stunden",
+                "da": "2 timer",
+                "es": "2 horas",
+                "it": "2 ore",
+                "no": "2 timer",
+                "sv": "2 timmar",
+                "pl": "2 godziny",
+                "ru": "2 часа",
+                "ko": "2시간",
+                "ar": "ساعتان"
+              }
+            },
+            {
+              "id": "4h",
+              "title": {
+                "en": "4 hours",
+                "nl": "4 uur",
+                "fr": "4 heures",
+                "de": "4 Stunden",
+                "da": "4 timer",
+                "es": "4 horas",
+                "it": "4 ore",
+                "no": "4 timer",
+                "sv": "4 timmar",
+                "pl": "4 godziny",
+                "ru": "4 часа",
+                "ko": "4시간",
+                "ar": "4 ساعات"
+              }
+            },
+            {
+              "id": "6h",
+              "title": {
+                "en": "6 hours",
+                "nl": "6 uur",
+                "fr": "6 heures",
+                "de": "6 Stunden",
+                "da": "6 timer",
+                "es": "6 horas",
+                "it": "6 ore",
+                "no": "6 timer",
+                "sv": "6 timmar",
+                "pl": "6 godzin",
+                "ru": "6 часов",
+                "ko": "6시간",
+                "ar": "6 ساعات"
+              }
+            },
+            {
+              "id": "8h",
+              "title": {
+                "en": "8 hours",
+                "nl": "8 uur",
+                "fr": "8 heures",
+                "de": "8 Stunden",
+                "da": "8 timer",
+                "es": "8 horas",
+                "it": "8 ore",
+                "no": "8 timer",
+                "sv": "8 timmar",
+                "pl": "8 godzin",
+                "ru": "8 часов",
+                "ko": "8시간",
+                "ar": "8 ساعات"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action-10-button_mode",
+      "title": {
+        "en": "Set LED candles mode",
+        "nl": "Stel de LED kaarsenmodus in",
+        "fr": "Définir le mode des bougies LED",
+        "de": "LED-Kerzenmodus einstellen",
+        "da": "Indstil LED-lys tilstand",
+        "es": "Establecer el modo de las velas LED",
+        "it": "Imposta la modalità delle candele LED",
+        "no": "Sett modus for LED-lysene",
+        "sv": "Ställ in LED-ljusens läge",
+        "pl": "Ustaw tryb świec LED",
+        "ru": "Установить режим светодиодных свечей",
+        "ko": "LED 캔들 모드 설정",
+        "ar": "تعيين وضع شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Set LED candles to [[mode_cmd]]",
+        "nl": "Zet de LED kaarsen op [[mode_cmd]]",
+        "fr": "Régler les bougies LED sur [[mode_cmd]]",
+        "de": "LED-Kerzen auf [[mode_cmd]] setzen",
+        "da": "Sæt LED-lysene til [[mode_cmd]]",
+        "es": "Establece las velas LED en [[mode_cmd]]",
+        "it": "Imposta le candele LED su [[mode_cmd]]",
+        "no": "Sett LED-lysene til [[mode_cmd]]",
+        "sv": "Ställ LED-ljusen till [[mode_cmd]]",
+        "pl": "Ustaw świece LED na [[mode_cmd]]",
+        "ru": "Установить светодиодные свечи в [[mode_cmd]]",
+        "ko": "LED 캔들을 [[mode_cmd]]로 설정",
+        "ar": "تعيين شموع LED على [[mode_cmd]]"
+      },
+      "hint": {
+        "en": "This action sets the LED candle mode.",
+        "nl": "Deze actie stelt de LED kaarsenmodus in.",
+        "fr": "Cette action définit le mode des bougies LED.",
+        "de": "Diese Aktion stellt den LED-Kerzenmodus ein.",
+        "da": "Denne handling indstiller LED-lysenes tilstand.",
+        "es": "Esta acción establece el modo de las velas LED.",
+        "it": "Questa azione imposta la modalità delle candele LED.",
+        "no": "Denne handlingen setter modus for LED-lysene.",
+        "sv": "Den här åtgärden ställer in LED-ljusens läge.",
+        "pl": "Ta akcja ustawia tryb świec LED.",
+        "ru": "Это действие задает режим светодиодных свечей.",
+        "ko": "이 작업은 LED 캔들 모드를 설정합니다.",
+        "ar": "يعيّن هذا الإجراء وضع شموع LED."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "mode_cmd",
+          "title": {
+            "en": "mode",
+            "nl": "modus",
+            "fr": "mode",
+            "de": "Modus",
+            "da": "tilstand",
+            "es": "modo",
+            "it": "modalità",
+            "no": "modus",
+            "sv": "läge",
+            "pl": "tryb",
+            "ru": "режим",
+            "ko": "모드",
+            "ar": "الوضع"
+          },
+          "values": [
+            {
+              "id": "mode_candle",
+              "title": {
+                "en": "Mode: Candle",
+                "nl": "Modus: Kaars",
+                "fr": "Mode : Bougie",
+                "de": "Modus: Kerze",
+                "da": "Tilstand: Stearinlys",
+                "es": "Modo: Vela",
+                "it": "Modalità: Candela",
+                "no": "Modus: Stearinlys",
+                "sv": "Läge: Stearinljus",
+                "pl": "Tryb: Świeca",
+                "ru": "Режим: свеча",
+                "ko": "모드: 촛불",
+                "ar": "الوضع: شمعة"
+              }
+            },
+            {
+              "id": "mode_light",
+              "title": {
+                "en": "Mode: Light",
+                "nl": "Modus: Licht",
+                "fr": "Mode : Lumière",
+                "de": "Modus: Licht",
+                "da": "Tilstand: Lys",
+                "es": "Modo: Luz",
+                "it": "Modalità: Luce",
+                "no": "Modus: Lys",
+                "sv": "Läge: Ljus",
+                "pl": "Tryb: Światło",
+                "ru": "Режим: свет",
+                "ko": "모드: 조명",
+                "ar": "الوضع: ضوء"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action-10-button_dim",
+      "title": {
+        "en": "Dim LED candles",
+        "nl": "Dim de LED kaarsen",
+        "fr": "Atténuer les bougies LED",
+        "de": "LED-Kerzen dimmen",
+        "da": "Dæmp LED-lysene",
+        "es": "Atenuar las velas LED",
+        "it": "Attenua le candele LED",
+        "no": "Demp LED-lysene",
+        "sv": "Dimma LED-ljusen",
+        "pl": "Przyciemnij świece LED",
+        "ru": "Приглушить светодиодные свечи",
+        "ko": "LED 캔들 밝기 조절",
+        "ar": "تعتيم شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Dim LED candles [[dim_cmd]]",
+        "nl": "Dim de LED kaarsen [[dim_cmd]]",
+        "fr": "Atténuer les bougies LED [[dim_cmd]]",
+        "de": "LED-Kerzen dimmen [[dim_cmd]]",
+        "da": "Dæmp LED-lysene [[dim_cmd]]",
+        "es": "Atenuar las velas LED [[dim_cmd]]",
+        "it": "Attenua le candele LED [[dim_cmd]]",
+        "no": "Demp LED-lysene [[dim_cmd]]",
+        "sv": "Dimma LED-ljusen [[dim_cmd]]",
+        "pl": "Przyciemnij świece LED [[dim_cmd]]",
+        "ru": "Приглушить светодиодные свечи [[dim_cmd]]",
+        "ko": "LED 캔들 밝기 조절 [[dim_cmd]]",
+        "ar": "تعتيم شموع LED [[dim_cmd]]"
+      },
+      "hint": {
+        "en": "This action dims the LED candles.",
+        "nl": "Deze actie dimt de LED kaarsen.",
+        "fr": "Cette action atténue les bougies LED.",
+        "de": "Diese Aktion dimmt die LED-Kerzen.",
+        "da": "Denne handling dæmper LED-lysene.",
+        "es": "Esta acción atenúa las velas LED.",
+        "it": "Questa azione attenua le candele LED.",
+        "no": "Denne handlingen demper LED-lysene.",
+        "sv": "Den här åtgärden dimmar LED-ljusen.",
+        "pl": "Ta akcja przyciemnia świece LED.",
+        "ru": "Это действие приглушает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 어둡게 합니다.",
+        "ar": "يقوم هذا الإجراء بتعتيم شموع LED."
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "dim_cmd",
+          "title": {
+            "en": "direction",
+            "nl": "richting",
+            "fr": "direction",
+            "de": "Richtung",
+            "da": "retning",
+            "es": "dirección",
+            "it": "direzione",
+            "no": "retning",
+            "sv": "riktning",
+            "pl": "kierunek",
+            "ru": "направление",
+            "ko": "방향",
+            "ar": "الاتجاه"
+          },
+          "values": [
+            {
+              "id": "dim_down",
+              "title": {
+                "en": "Dim -",
+                "nl": "Dim -",
+                "fr": "Dim -",
+                "de": "Dim -",
+                "da": "Dim -",
+                "es": "Dim -",
+                "it": "Dim -",
+                "no": "Dim -",
+                "sv": "Dim -",
+                "pl": "Dim -",
+                "ru": "Dim -",
+                "ko": "Dim -",
+                "ar": "Dim -"
+              }
+            },
+            {
+              "id": "dim_up",
+              "title": {
+                "en": "Dim +",
+                "nl": "Dim +",
+                "fr": "Dim +",
+                "de": "Dim +",
+                "da": "Dim +",
+                "es": "Dim +",
+                "it": "Dim +",
+                "no": "Dim +",
+                "sv": "Dim +",
+                "pl": "Dim +",
+                "ru": "Dim +",
+                "ko": "Dim +",
+                "ar": "Dim +"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
