@@ -245,12 +245,12 @@
           "nl": "Zet alle LED kaarsen"
         },
         "titleFormatted": {
-          "en": "Set all LED candles to [[state]]",
-          "nl": "Zet alle LED kaarsen op [[state]]"
+          "en": "Set all candles to [[state]]",
+          "nl": "Zet alle kaarsen op [[state]]"
         },
         "hint": {
-          "en": "This action switches all Candlelight devices on or off.",
-          "nl": "Deze actie zet alle Candlelight-kaarsen aan of uit."
+          "en": "This action switches all candles on or off.",
+          "nl": "Deze actie zet alle kaarsen aan of uit."
         },
         "args": [
           {
@@ -762,228 +762,6 @@
         ]
       },
       {
-        "id": "anna-10-button_on",
-        "title": {
-          "en": "Switch LED candles on",
-          "nl": "Zet de LED kaarsen aan",
-          "fr": "Allumer les bougies LED",
-          "de": "LED-Kerzen einschalten",
-          "da": "Tænd LED-lysene",
-          "es": "Enciende las velas LED",
-          "it": "Accendi le candele LED",
-          "no": "Slå på LED-lysene",
-          "sv": "Slå på LED-ljusen",
-          "pl": "Włącz świece LED",
-          "ru": "Включить светодиодные свечи",
-          "ko": "LED 캔들을 켭니다",
-          "ar": "تشغيل شموع LED"
-        },
-        "titleFormatted": {
-          "en": "Switch the LED candles on",
-          "nl": "Zet de LED kaarsen aan",
-          "fr": "Allumer les bougies LED",
-          "de": "LED-Kerzen einschalten",
-          "da": "Tænd LED-lysene",
-          "es": "Enciende las velas LED",
-          "it": "Accendi le candele LED",
-          "no": "Slå på LED-lysene",
-          "sv": "Slå på LED-ljusen",
-          "pl": "Włącz świece LED",
-          "ru": "Включить светодиодные свечи",
-          "ko": "LED 캔들을 켭니다",
-          "ar": "تشغيل شموع LED"
-        },
-        "hint": {
-          "en": "This action switches the LED candles on.",
-          "nl": "Deze actie zet de LED kaarsen aan.",
-          "fr": "Cette action allume les bougies LED.",
-          "de": "Diese Aktion schaltet die LED-Kerzen ein.",
-          "da": "Denne handling tænder LED-lysene.",
-          "es": "Esta acción enciende las velas LED.",
-          "it": "Questa azione accende le candele LED.",
-          "no": "Denne handlingen slår på LED-lysene.",
-          "sv": "Den här åtgärden slår på LED-ljusen.",
-          "pl": "Ta akcja włącza świece LED.",
-          "ru": "Это действие включает светодиодные свечи.",
-          "ko": "이 작업은 LED 캔들을 켭니다.",
-          "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=anna-10-button"
-          }
-        ]
-      },
-      {
-        "id": "anna-10-button_off",
-        "title": {
-          "en": "Switch LED candles off",
-          "nl": "Zet de LED kaarsen uit",
-          "fr": "Éteindre les bougies LED",
-          "de": "LED-Kerzen ausschalten",
-          "da": "Sluk LED-lysene",
-          "es": "Apaga las velas LED",
-          "it": "Spegni le candele LED",
-          "no": "Slå av LED-lysene",
-          "sv": "Slå av LED-ljusen",
-          "pl": "Wyłącz świece LED",
-          "ru": "Выключить светодиодные свечи",
-          "ko": "LED 캔들을 끕니다",
-          "ar": "إيقاف تشغيل شموع LED"
-        },
-        "titleFormatted": {
-          "en": "Switch the LED candles off",
-          "nl": "Zet de LED kaarsen uit",
-          "fr": "Éteindre les bougies LED",
-          "de": "LED-Kerzen ausschalten",
-          "da": "Sluk LED-lysene",
-          "es": "Apaga las velas LED",
-          "it": "Spegni le candele LED",
-          "no": "Slå av LED-lysene",
-          "sv": "Slå av LED-ljusen",
-          "pl": "Wyłącz świece LED",
-          "ru": "Выключить светодиодные свечи",
-          "ko": "LED 캔들을 끕니다",
-          "ar": "إيقاف تشغيل شموع LED"
-        },
-        "hint": {
-          "en": "This action switches the LED candles off.",
-          "nl": "Deze actie zet de LED kaarsen uit.",
-          "fr": "Cette action éteint les bougies LED.",
-          "de": "Diese Aktion schaltet die LED-Kerzen aus.",
-          "da": "Denne handling slukker LED-lysene.",
-          "es": "Esta acción apaga las velas LED.",
-          "it": "Questa azione spegne le candele LED.",
-          "no": "Denne handlingen slår av LED-lysene.",
-          "sv": "Den här åtgärden slår av LED-ljusen.",
-          "pl": "Ta akcja wyłącza świece LED.",
-          "ru": "Это действие выключает светодиодные свечи.",
-          "ko": "이 작업은 LED 캔들을 끕니다.",
-          "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=anna-10-button"
-          }
-        ]
-      },
-      {
-        "id": "anna-10-button_dim",
-        "title": {
-          "en": "Dim LED candles",
-          "nl": "Dim de LED kaarsen",
-          "fr": "Atténuer les bougies LED",
-          "de": "LED-Kerzen dimmen",
-          "da": "Dæmp LED-lysene",
-          "es": "Atenuar las velas LED",
-          "it": "Attenua le candele LED",
-          "no": "Demp LED-lysene",
-          "sv": "Dimma LED-ljusen",
-          "pl": "Przyciemnij świece LED",
-          "ru": "Приглушить светодиодные свечи",
-          "ko": "LED 캔들 밝기 조절",
-          "ar": "تعتيم شموع LED"
-        },
-        "titleFormatted": {
-          "en": "Dim LED candles [[dim_cmd]]",
-          "nl": "Dim de LED kaarsen [[dim_cmd]]",
-          "fr": "Atténuer les bougies LED [[dim_cmd]]",
-          "de": "LED-Kerzen dimmen [[dim_cmd]]",
-          "da": "Dæmp LED-lysene [[dim_cmd]]",
-          "es": "Atenuar las velas LED [[dim_cmd]]",
-          "it": "Attenua le candele LED [[dim_cmd]]",
-          "no": "Demp LED-lysene [[dim_cmd]]",
-          "sv": "Dimma LED-ljusen [[dim_cmd]]",
-          "pl": "Przyciemnij świece LED [[dim_cmd]]",
-          "ru": "Приглушить светодиодные свечи [[dim_cmd]]",
-          "ko": "LED 캔들 밝기 조절 [[dim_cmd]]",
-          "ar": "تعتيم شموع LED [[dim_cmd]]"
-        },
-        "hint": {
-          "en": "This action dims the LED candles.",
-          "nl": "Deze actie dimt de LED kaarsen.",
-          "fr": "Cette action atténue les bougies LED.",
-          "de": "Diese Aktion dimmt die LED-Kerzen.",
-          "da": "Denne handling dæmper LED-lysene.",
-          "es": "Esta acción atenúa las velas LED.",
-          "it": "Questa azione attenua le candele LED.",
-          "no": "Denne handlingen demper LED-lysene.",
-          "sv": "Den här åtgärden dimmar LED-ljusen.",
-          "pl": "Ta akcja przyciemnia świece LED.",
-          "ru": "Это действие приглушает светодиодные свечи.",
-          "ko": "이 작업은 LED 캔들을 어둡게 합니다.",
-          "ar": "يقوم هذا الإجراء بتعتيم شموع LED."
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=anna-10-button"
-          },
-          {
-            "type": "dropdown",
-            "name": "dim_cmd",
-            "title": {
-              "en": "direction",
-              "nl": "richting",
-              "fr": "direction",
-              "de": "Richtung",
-              "da": "retning",
-              "es": "dirección",
-              "it": "direzione",
-              "no": "retning",
-              "sv": "riktning",
-              "pl": "kierunek",
-              "ru": "направление",
-              "ko": "방향",
-              "ar": "الاتجاه"
-            },
-            "values": [
-              {
-                "id": "dim_down",
-                "title": {
-                  "en": "Dim -",
-                  "nl": "Dim -",
-                  "fr": "Dim -",
-                  "de": "Dim -",
-                  "da": "Dim -",
-                  "es": "Dim -",
-                  "it": "Dim -",
-                  "no": "Dim -",
-                  "sv": "Dim -",
-                  "pl": "Dim -",
-                  "ru": "Dim -",
-                  "ko": "Dim -",
-                  "ar": "Dim -"
-                }
-              },
-              {
-                "id": "dim_up",
-                "title": {
-                  "en": "Dim +",
-                  "nl": "Dim +",
-                  "fr": "Dim +",
-                  "de": "Dim +",
-                  "da": "Dim +",
-                  "es": "Dim +",
-                  "it": "Dim +",
-                  "no": "Dim +",
-                  "sv": "Dim +",
-                  "pl": "Dim +",
-                  "ru": "Dim +",
-                  "ko": "Dim +",
-                  "ar": "Dim +"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "action-3-button_on",
         "title": {
           "en": "Switch LED candles on",
@@ -1294,6 +1072,228 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=action-8-button"
+          }
+        ]
+      },
+      {
+        "id": "anna-10-button_on",
+        "title": {
+          "en": "Switch LED candles on",
+          "nl": "Zet de LED kaarsen aan",
+          "fr": "Allumer les bougies LED",
+          "de": "LED-Kerzen einschalten",
+          "da": "Tænd LED-lysene",
+          "es": "Enciende las velas LED",
+          "it": "Accendi le candele LED",
+          "no": "Slå på LED-lysene",
+          "sv": "Slå på LED-ljusen",
+          "pl": "Włącz świece LED",
+          "ru": "Включить светодиодные свечи",
+          "ko": "LED 캔들을 켭니다",
+          "ar": "تشغيل شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Switch the LED candles on",
+          "nl": "Zet de LED kaarsen aan",
+          "fr": "Allumer les bougies LED",
+          "de": "LED-Kerzen einschalten",
+          "da": "Tænd LED-lysene",
+          "es": "Enciende las velas LED",
+          "it": "Accendi le candele LED",
+          "no": "Slå på LED-lysene",
+          "sv": "Slå på LED-ljusen",
+          "pl": "Włącz świece LED",
+          "ru": "Включить светодиодные свечи",
+          "ko": "LED 캔들을 켭니다",
+          "ar": "تشغيل شموع LED"
+        },
+        "hint": {
+          "en": "This action switches the LED candles on.",
+          "nl": "Deze actie zet de LED kaarsen aan.",
+          "fr": "Cette action allume les bougies LED.",
+          "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+          "da": "Denne handling tænder LED-lysene.",
+          "es": "Esta acción enciende las velas LED.",
+          "it": "Questa azione accende le candele LED.",
+          "no": "Denne handlingen slår på LED-lysene.",
+          "sv": "Den här åtgärden slår på LED-ljusen.",
+          "pl": "Ta akcja włącza świece LED.",
+          "ru": "Это действие включает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 켭니다.",
+          "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=anna-10-button"
+          }
+        ]
+      },
+      {
+        "id": "anna-10-button_off",
+        "title": {
+          "en": "Switch LED candles off",
+          "nl": "Zet de LED kaarsen uit",
+          "fr": "Éteindre les bougies LED",
+          "de": "LED-Kerzen ausschalten",
+          "da": "Sluk LED-lysene",
+          "es": "Apaga las velas LED",
+          "it": "Spegni le candele LED",
+          "no": "Slå av LED-lysene",
+          "sv": "Slå av LED-ljusen",
+          "pl": "Wyłącz świece LED",
+          "ru": "Выключить светодиодные свечи",
+          "ko": "LED 캔들을 끕니다",
+          "ar": "إيقاف تشغيل شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Switch the LED candles off",
+          "nl": "Zet de LED kaarsen uit",
+          "fr": "Éteindre les bougies LED",
+          "de": "LED-Kerzen ausschalten",
+          "da": "Sluk LED-lysene",
+          "es": "Apaga las velas LED",
+          "it": "Spegni le candele LED",
+          "no": "Slå av LED-lysene",
+          "sv": "Slå av LED-ljusen",
+          "pl": "Wyłącz świece LED",
+          "ru": "Выключить светодиодные свечи",
+          "ko": "LED 캔들을 끕니다",
+          "ar": "إيقاف تشغيل شموع LED"
+        },
+        "hint": {
+          "en": "This action switches the LED candles off.",
+          "nl": "Deze actie zet de LED kaarsen uit.",
+          "fr": "Cette action éteint les bougies LED.",
+          "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+          "da": "Denne handling slukker LED-lysene.",
+          "es": "Esta acción apaga las velas LED.",
+          "it": "Questa azione spegne le candele LED.",
+          "no": "Denne handlingen slår av LED-lysene.",
+          "sv": "Den här åtgärden slår av LED-ljusen.",
+          "pl": "Ta akcja wyłącza świece LED.",
+          "ru": "Это действие выключает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 끕니다.",
+          "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=anna-10-button"
+          }
+        ]
+      },
+      {
+        "id": "anna-10-button_dim",
+        "title": {
+          "en": "Dim LED candles",
+          "nl": "Dim de LED kaarsen",
+          "fr": "Atténuer les bougies LED",
+          "de": "LED-Kerzen dimmen",
+          "da": "Dæmp LED-lysene",
+          "es": "Atenuar las velas LED",
+          "it": "Attenua le candele LED",
+          "no": "Demp LED-lysene",
+          "sv": "Dimma LED-ljusen",
+          "pl": "Przyciemnij świece LED",
+          "ru": "Приглушить светодиодные свечи",
+          "ko": "LED 캔들 밝기 조절",
+          "ar": "تعتيم شموع LED"
+        },
+        "titleFormatted": {
+          "en": "Dim LED candles [[dim_cmd]]",
+          "nl": "Dim de LED kaarsen [[dim_cmd]]",
+          "fr": "Atténuer les bougies LED [[dim_cmd]]",
+          "de": "LED-Kerzen dimmen [[dim_cmd]]",
+          "da": "Dæmp LED-lysene [[dim_cmd]]",
+          "es": "Atenuar las velas LED [[dim_cmd]]",
+          "it": "Attenua le candele LED [[dim_cmd]]",
+          "no": "Demp LED-lysene [[dim_cmd]]",
+          "sv": "Dimma LED-ljusen [[dim_cmd]]",
+          "pl": "Przyciemnij świece LED [[dim_cmd]]",
+          "ru": "Приглушить светодиодные свечи [[dim_cmd]]",
+          "ko": "LED 캔들 밝기 조절 [[dim_cmd]]",
+          "ar": "تعتيم شموع LED [[dim_cmd]]"
+        },
+        "hint": {
+          "en": "This action dims the LED candles.",
+          "nl": "Deze actie dimt de LED kaarsen.",
+          "fr": "Cette action atténue les bougies LED.",
+          "de": "Diese Aktion dimmt die LED-Kerzen.",
+          "da": "Denne handling dæmper LED-lysene.",
+          "es": "Esta acción atenúa las velas LED.",
+          "it": "Questa azione attenua le candele LED.",
+          "no": "Denne handlingen demper LED-lysene.",
+          "sv": "Den här åtgärden dimmar LED-ljusen.",
+          "pl": "Ta akcja przyciemnia świece LED.",
+          "ru": "Это действие приглушает светодиодные свечи.",
+          "ko": "이 작업은 LED 캔들을 어둡게 합니다.",
+          "ar": "يقوم هذا الإجراء بتعتيم شموع LED."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=anna-10-button"
+          },
+          {
+            "type": "dropdown",
+            "name": "dim_cmd",
+            "title": {
+              "en": "direction",
+              "nl": "richting",
+              "fr": "direction",
+              "de": "Richtung",
+              "da": "retning",
+              "es": "dirección",
+              "it": "direzione",
+              "no": "retning",
+              "sv": "riktning",
+              "pl": "kierunek",
+              "ru": "направление",
+              "ko": "방향",
+              "ar": "الاتجاه"
+            },
+            "values": [
+              {
+                "id": "dim_down",
+                "title": {
+                  "en": "Dim -",
+                  "nl": "Dim -",
+                  "fr": "Dim -",
+                  "de": "Dim -",
+                  "da": "Dim -",
+                  "es": "Dim -",
+                  "it": "Dim -",
+                  "no": "Dim -",
+                  "sv": "Dim -",
+                  "pl": "Dim -",
+                  "ru": "Dim -",
+                  "ko": "Dim -",
+                  "ar": "Dim -"
+                }
+              },
+              {
+                "id": "dim_up",
+                "title": {
+                  "en": "Dim +",
+                  "nl": "Dim +",
+                  "fr": "Dim +",
+                  "de": "Dim +",
+                  "da": "Dim +",
+                  "es": "Dim +",
+                  "it": "Dim +",
+                  "no": "Dim +",
+                  "sv": "Dim +",
+                  "pl": "Dim +",
+                  "ru": "Dim +",
+                  "ko": "Dim +",
+                  "ar": "Dim +"
+                }
+              }
+            ]
           }
         ]
       },
@@ -2699,208 +2699,6 @@
     },
     {
       "name": {
-        "en": "Anna's Collection 10 Button",
-        "nl": "Anna's Collection 10 Knoppen",
-        "fr": "Anna's Collection 10 Boutons",
-        "de": "Anna's Collection 10 Tasten",
-        "da": "Anna's Collection 10 Knapper",
-        "es": "Anna's Collection 10 Botones",
-        "it": "Anna's Collection 10 Pulsanti",
-        "no": "Anna's Collection 10 Knapper",
-        "sv": "Anna's Collection 10 Knappar",
-        "pl": "Anna's Collection 10 Przyciski",
-        "ru": "Anna's Collection 10 Кнопки",
-        "ko": "Anna's Collection 10 버튼",
-        "ar": "Anna's Collection 10 أزرار"
-      },
-      "class": "light",
-      "capabilities": [
-        "onoff",
-        "button.on",
-        "button.off",
-        "button.dim_down",
-        "button.dim_up"
-      ],
-      "capabilitiesOptions": {
-        "onoff": {
-          "uiQuickAction": true
-        },
-        "button.on": {
-          "uiQuickAction": false,
-          "title": {
-            "en": "On",
-            "nl": "Aan",
-            "fr": "Allumer",
-            "de": "An",
-            "da": "Tænd",
-            "es": "Encender",
-            "it": "Accendi",
-            "no": "På",
-            "sv": "På",
-            "pl": "Włącz",
-            "ru": "Вкл.",
-            "ko": "켜기",
-            "ar": "تشغيل"
-          }
-        },
-        "button.off": {
-          "uiQuickAction": false,
-          "title": {
-            "en": "Off",
-            "nl": "Uit",
-            "fr": "Éteindre",
-            "de": "Aus",
-            "da": "Sluk",
-            "es": "Apagar",
-            "it": "Spegni",
-            "no": "Av",
-            "sv": "Av",
-            "pl": "Wyłącz",
-            "ru": "Выкл.",
-            "ko": "끄기",
-            "ar": "إيقاف"
-          }
-        },
-        "button.dim_down": {
-          "uiQuickAction": false,
-          "title": {
-            "en": "Dim -",
-            "nl": "Dim -",
-            "fr": "Dim -",
-            "de": "Dim -",
-            "da": "Dim -",
-            "es": "Dim -",
-            "it": "Dim -",
-            "no": "Dim -",
-            "sv": "Dim -",
-            "pl": "Dim -",
-            "ru": "Dim -",
-            "ko": "Dim -",
-            "ar": "Dim -"
-          }
-        },
-        "button.dim_up": {
-          "uiQuickAction": false,
-          "title": {
-            "en": "Dim +",
-            "nl": "Dim +",
-            "fr": "Dim +",
-            "de": "Dim +",
-            "da": "Dim +",
-            "es": "Dim +",
-            "it": "Dim +",
-            "no": "Dim +",
-            "sv": "Dim +",
-            "pl": "Dim +",
-            "ru": "Dim +",
-            "ko": "Dim +",
-            "ar": "Dim +"
-          }
-        }
-      },
-      "platforms": [
-        "local"
-      ],
-      "connectivity": [
-        "infrared"
-      ],
-      "infrared": {
-        "satelliteMode": true
-      },
-      "images": {
-        "small": "/drivers/anna-10-button/assets/images/small.png",
-        "large": "/drivers/anna-10-button/assets/images/large.png",
-        "xlarge": "/drivers/anna-10-button/assets/images/xlarge.png"
-      },
-      "pair": [
-        {
-          "id": "device_add_custom",
-          "options": {
-            "title": "drivers.base.pair_title",
-            "instruction": "drivers.common.pair_instruction",
-            "deviceIdPrefix": "led_candle_",
-            "defaultDeviceName": {
-              "en": "Anna's Collection 10 Button",
-              "nl": "Anna's Collection 10 Knoppen",
-              "fr": "Anna's Collection 10 Boutons",
-              "de": "Anna's Collection 10 Tasten",
-              "da": "Anna's Collection 10 Knapper",
-              "es": "Anna's Collection 10 Botones",
-              "it": "Anna's Collection 10 Pulsanti",
-              "no": "Anna's Collection 10 Knapper",
-              "sv": "Anna's Collection 10 Knappar",
-              "pl": "Anna's Collection 10 Przyciski",
-              "ru": "Anna's Collection 10 Кнопки",
-              "ko": "Anna's Collection 10 버튼",
-              "ar": "Anna's Collection 10 أزرار"
-            }
-          }
-        }
-      ],
-      "id": "anna-10-button",
-      "settings": [
-        {
-          "type": "group",
-          "label": {
-            "en": "IR Settings",
-            "nl": "IR Instellingen",
-            "fr": "Paramètres IR",
-            "de": "IR-Einstellungen",
-            "da": "IR-indstillinger",
-            "es": "Ajustes de IR",
-            "it": "Impostazioni IR",
-            "no": "IR-innstillinger",
-            "sv": "IR-inställningar",
-            "pl": "Ustawienia IR",
-            "ru": "Настройки ИК",
-            "ko": "IR 설정",
-            "ar": "إعدادات IR"
-          },
-          "children": [
-            {
-              "id": "ir_repetitions",
-              "type": "number",
-              "label": {
-                "en": "Repetitions",
-                "nl": "Herhalingen",
-                "fr": "Répétitions",
-                "de": "Wiederholungen",
-                "da": "Gentagelser",
-                "es": "Repeticiones",
-                "it": "Ripetizioni",
-                "no": "Gjentakelser",
-                "sv": "Upprepningar",
-                "pl": "Powtórzenia",
-                "ru": "Повторы",
-                "ko": "반복",
-                "ar": "التكرارات"
-              },
-              "hint": {
-                "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
-                "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen.",
-                "fr": "Nombre de répétitions des commandes IR (1-10). Des valeurs plus élevées améliorent la fiabilité mais peuvent ralentir la réponse.",
-                "de": "Anzahl der Wiederholungen von IR-Befehlen (1-10). Höhere Werte verbessern die Zuverlässigkeit, können aber die Reaktionszeit verlangsamen.",
-                "da": "Antal gange IR-kommandoer skal gentages (1-10). Højere værdier forbedrer pålideligheden, men kan gøre svaret langsommere.",
-                "es": "Número de veces que se repiten los comandos IR (1-10). Valores más altos mejoran la fiabilidad, pero pueden ralentizar la respuesta.",
-                "it": "Numero di volte in cui ripetere i comandi IR (1-10). Valori più alti migliorano l'affidabilità, ma possono rallentare la risposta.",
-                "no": "Antall ganger IR-kommandoer skal gjentas (1-10). Høyere verdier forbedrer påliteligheten, men kan gjøre responsen tregere.",
-                "sv": "Antal gånger IR-kommandon ska upprepas (1–10). Högre värden förbättrar tillförlitligheten men kan göra responsen långsammare.",
-                "pl": "Liczba powtórzeń komend IR (1–10). Wyższe wartości poprawiają niezawodność, ale mogą spowolnić reakcję.",
-                "ru": "Сколько раз повторять ИК-команды (1–10). Более высокие значения повышают надёжность, но могут замедлить отклик.",
-                "ko": "IR 명령을 반복할 횟수(1~10)입니다. 값이 높을수록 신뢰성은 좋아지지만 응답이 느려질 수 있어요.",
-                "ar": "عدد مرات تكرار أوامر IR ‏(1-10). القيم الأعلى تحسّن الاعتمادية لكنها قد تبطّئ الاستجابة."
-              },
-              "value": 1,
-              "min": 1,
-              "max": 10,
-              "step": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": {
         "en": "Action 3 Button",
         "nl": "Action 3 Knoppen",
         "fr": "Action 3 Boutons",
@@ -3219,6 +3017,208 @@
         }
       ],
       "id": "action-8-button",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "IR Settings",
+            "nl": "IR Instellingen",
+            "fr": "Paramètres IR",
+            "de": "IR-Einstellungen",
+            "da": "IR-indstillinger",
+            "es": "Ajustes de IR",
+            "it": "Impostazioni IR",
+            "no": "IR-innstillinger",
+            "sv": "IR-inställningar",
+            "pl": "Ustawienia IR",
+            "ru": "Настройки ИК",
+            "ko": "IR 설정",
+            "ar": "إعدادات IR"
+          },
+          "children": [
+            {
+              "id": "ir_repetitions",
+              "type": "number",
+              "label": {
+                "en": "Repetitions",
+                "nl": "Herhalingen",
+                "fr": "Répétitions",
+                "de": "Wiederholungen",
+                "da": "Gentagelser",
+                "es": "Repeticiones",
+                "it": "Ripetizioni",
+                "no": "Gjentakelser",
+                "sv": "Upprepningar",
+                "pl": "Powtórzenia",
+                "ru": "Повторы",
+                "ko": "반복",
+                "ar": "التكرارات"
+              },
+              "hint": {
+                "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
+                "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen.",
+                "fr": "Nombre de répétitions des commandes IR (1-10). Des valeurs plus élevées améliorent la fiabilité mais peuvent ralentir la réponse.",
+                "de": "Anzahl der Wiederholungen von IR-Befehlen (1-10). Höhere Werte verbessern die Zuverlässigkeit, können aber die Reaktionszeit verlangsamen.",
+                "da": "Antal gange IR-kommandoer skal gentages (1-10). Højere værdier forbedrer pålideligheden, men kan gøre svaret langsommere.",
+                "es": "Número de veces que se repiten los comandos IR (1-10). Valores más altos mejoran la fiabilidad, pero pueden ralentizar la respuesta.",
+                "it": "Numero di volte in cui ripetere i comandi IR (1-10). Valori più alti migliorano l'affidabilità, ma possono rallentare la risposta.",
+                "no": "Antall ganger IR-kommandoer skal gjentas (1-10). Høyere verdier forbedrer påliteligheten, men kan gjøre responsen tregere.",
+                "sv": "Antal gånger IR-kommandon ska upprepas (1–10). Högre värden förbättrar tillförlitligheten men kan göra responsen långsammare.",
+                "pl": "Liczba powtórzeń komend IR (1–10). Wyższe wartości poprawiają niezawodność, ale mogą spowolnić reakcję.",
+                "ru": "Сколько раз повторять ИК-команды (1–10). Более высокие значения повышают надёжность, но могут замедлить отклик.",
+                "ko": "IR 명령을 반복할 횟수(1~10)입니다. 값이 높을수록 신뢰성은 좋아지지만 응답이 느려질 수 있어요.",
+                "ar": "عدد مرات تكرار أوامر IR ‏(1-10). القيم الأعلى تحسّن الاعتمادية لكنها قد تبطّئ الاستجابة."
+              },
+              "value": 1,
+              "min": 1,
+              "max": 10,
+              "step": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Anna's Collection 10 Button",
+        "nl": "Anna's Collection 10 Knoppen",
+        "fr": "Anna's Collection 10 Boutons",
+        "de": "Anna's Collection 10 Tasten",
+        "da": "Anna's Collection 10 Knapper",
+        "es": "Anna's Collection 10 Botones",
+        "it": "Anna's Collection 10 Pulsanti",
+        "no": "Anna's Collection 10 Knapper",
+        "sv": "Anna's Collection 10 Knappar",
+        "pl": "Anna's Collection 10 Przyciski",
+        "ru": "Anna's Collection 10 Кнопки",
+        "ko": "Anna's Collection 10 버튼",
+        "ar": "Anna's Collection 10 أزرار"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "button.on",
+        "button.off",
+        "button.dim_down",
+        "button.dim_up"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "uiQuickAction": true
+        },
+        "button.on": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "fr": "Allumer",
+            "de": "An",
+            "da": "Tænd",
+            "es": "Encender",
+            "it": "Accendi",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włącz",
+            "ru": "Вкл.",
+            "ko": "켜기",
+            "ar": "تشغيل"
+          }
+        },
+        "button.off": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "fr": "Éteindre",
+            "de": "Aus",
+            "da": "Sluk",
+            "es": "Apagar",
+            "it": "Spegni",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłącz",
+            "ru": "Выкл.",
+            "ko": "끄기",
+            "ar": "إيقاف"
+          }
+        },
+        "button.dim_down": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Dim -",
+            "nl": "Dim -",
+            "fr": "Dim -",
+            "de": "Dim -",
+            "da": "Dim -",
+            "es": "Dim -",
+            "it": "Dim -",
+            "no": "Dim -",
+            "sv": "Dim -",
+            "pl": "Dim -",
+            "ru": "Dim -",
+            "ko": "Dim -",
+            "ar": "Dim -"
+          }
+        },
+        "button.dim_up": {
+          "uiQuickAction": false,
+          "title": {
+            "en": "Dim +",
+            "nl": "Dim +",
+            "fr": "Dim +",
+            "de": "Dim +",
+            "da": "Dim +",
+            "es": "Dim +",
+            "it": "Dim +",
+            "no": "Dim +",
+            "sv": "Dim +",
+            "pl": "Dim +",
+            "ru": "Dim +",
+            "ko": "Dim +",
+            "ar": "Dim +"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "infrared"
+      ],
+      "infrared": {
+        "satelliteMode": true
+      },
+      "images": {
+        "small": "/drivers/anna-10-button/assets/images/small.png",
+        "large": "/drivers/anna-10-button/assets/images/large.png",
+        "xlarge": "/drivers/anna-10-button/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "device_add_custom",
+          "options": {
+            "title": "drivers.base.pair_title",
+            "instruction": "drivers.common.pair_instruction",
+            "deviceIdPrefix": "led_candle_",
+            "defaultDeviceName": {
+              "en": "Anna's Collection 10 Button",
+              "nl": "Anna's Collection 10 Knoppen",
+              "fr": "Anna's Collection 10 Boutons",
+              "de": "Anna's Collection 10 Tasten",
+              "da": "Anna's Collection 10 Knapper",
+              "es": "Anna's Collection 10 Botones",
+              "it": "Anna's Collection 10 Pulsanti",
+              "no": "Anna's Collection 10 Knapper",
+              "sv": "Anna's Collection 10 Knappar",
+              "pl": "Anna's Collection 10 Przyciski",
+              "ru": "Anna's Collection 10 Кнопки",
+              "ko": "Anna's Collection 10 버튼",
+              "ar": "Anna's Collection 10 أزرار"
+            }
+          }
+        }
+      ],
+      "id": "anna-10-button",
       "settings": [
         {
           "type": "group",

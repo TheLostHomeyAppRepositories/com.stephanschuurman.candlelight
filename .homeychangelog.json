@@ -1,26 +1,26 @@
 {
   "0.1.0": {
-    "en": "First version",
-    "nl": "Eerste versie"
+    "en": "First version with support for HEMA candles.",
+    "nl": "Eerste versie met ondersteuning voor HEMA kaarsen."
   },
   "0.1.1": {
     "en": "Fix for sending too rapid commands and added support for Deluxe Homeart",
     "nl": "Opgelost dat te snelle commando's werden verzonden en ondersteuning toegevoegd voor Deluxe Homeart"
   },
   "0.1.2": {
-    "en": "Changed tile action to power toggle (onoff capability, requested by Famod).",
+    "en": "Changed tile action to power toggle (onoff capability, as requested by Famod).",
     "nl": "Tegelactie veranderd naar aan/uit schakelaar (onoff capability, op verzoek van Famod)."
   },
   "0.1.3": {
-    "en": "Fixed swapped on/off commands for Home Deluxe candles (requested by Anders Pedersen).",
+    "en": "Fixed swapped on/off commands for Home Deluxe candles (as requested by Anders Pedersen).",
     "nl": "Opgeloste verwisselde aan/uit commando's voor Home Deluxe kaarsen (op verzoek van Anders Pedersen)."
   },
   "0.1.4": {
-    "en": "Added support for Action LED candles as reqested by Rene_de_Ronde.",
-    "nl": "Ondersteuning toegevoegd voor Action LED kaarsen zoals gevraagd door Rene_de_Ronde."
+    "en": "Added support for Action LED candles (as requested by Rene_de_Ronde).",
+    "nl": "Ondersteuning toegevoegd voor Action LED kaarsen (op verzoek van Rene_de_Ronde)."
   },
   "0.1.5": {
-    "en": "Added support for Action LED candles (3 and 8 button) as reqested by Rene_de_Ronde. Added support for Lumiz lanterns.",
-    "nl": "Ondersteuning toegevoegd voor Action LED kaarsen (3 en 8 knoppen) zoals gevraagd door Rene_de_Ronde. Ondersteuning toegevoegd voor Lumiz lantaarns."
+    "en": "Added support for Action LED candles (3 and 8 button) as reqested by Rene_de_Ronde. Added support for Lumiz lanterns, Anna's Collection (2x) and Lumineo. New driver images and icons for all.",
+    "nl": "Ondersteuning toegevoegd voor Action LED kaarsen (3 en 8 knoppen) zoals gevraagd door Rene_de_Ronde. Ondersteuning toegevoegd voor Lumiz lantaarns, Anna's Collection (2x) en Lumineo. Nieuwe driverafbeeldingen en pictogrammen voor alle."
   }
 }
