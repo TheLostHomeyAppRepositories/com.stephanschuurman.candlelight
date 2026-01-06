@@ -1,0 +1,95 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "IR Settings",
+      "nl": "IR Instellingen",
+      "fr": "Paramètres IR",
+      "de": "IR-Einstellungen",
+      "da": "IR-indstillinger",
+      "es": "Ajustes de IR",
+      "it": "Impostazioni IR",
+      "no": "IR-innstillinger",
+      "sv": "IR-inställningar",
+      "pl": "Ustawienia IR",
+      "ru": "Настройки ИК",
+      "ko": "IR 설정",
+      "ar": "إعدادات IR"
+    },
+    "children": [
+      {
+        "id": "ir_repetitions",
+        "type": "number",
+        "label": {
+          "en": "Repetitions",
+          "nl": "Herhalingen",
+          "fr": "Répétitions",
+          "de": "Wiederholungen",
+          "da": "Gentagelser",
+          "es": "Repeticiones",
+          "it": "Ripetizioni",
+          "no": "Gjentakelser",
+          "sv": "Upprepningar",
+          "pl": "Powtórzenia",
+          "ru": "Повторы",
+          "ko": "반복",
+          "ar": "التكرارات"
+        },
+        "hint": {
+          "en": "Number of times to repeat IR commands (1-10). Higher values improve reliability but may slow down response.",
+          "nl": "Aantal keren om IR commando's te herhalen (1-10). Hogere waardes verbeteren betrouwbaarheid maar kunnen respons vertragen.",
+          "fr": "Nombre de répétitions des commandes IR (1-10). Des valeurs plus élevées améliorent la fiabilité mais peuvent ralentir la réponse.",
+          "de": "Anzahl der Wiederholungen von IR-Befehlen (1-10). Höhere Werte verbessern die Zuverlässigkeit, können aber die Reaktionszeit verlangsamen.",
+          "da": "Antal gange IR-kommandoer skal gentages (1-10). Højere værdier forbedrer pålideligheden, men kan gøre svaret langsommere.",
+          "es": "Número de veces que se repiten los comandos IR (1-10). Valores más altos mejoran la fiabilidad, pero pueden ralentizar la respuesta.",
+          "it": "Numero di volte in cui ripetere i comandi IR (1-10). Valori più alti migliorano l'affidabilità, ma possono rallentare la risposta.",
+          "no": "Antall ganger IR-kommandoer skal gjentas (1-10). Høyere verdier forbedrer påliteligheten, men kan gjøre responsen tregere.",
+          "sv": "Antal gånger IR-kommandon ska upprepas (1–10). Högre värden förbättrar tillförlitligheten men kan göra responsen långsammare.",
+          "pl": "Liczba powtórzeń komend IR (1–10). Wyższe wartości poprawiają niezawodność, ale mogą spowolnić reakcję.",
+          "ru": "Сколько раз повторять ИК-команды (1–10). Более высокие значения повышают надёжность, но могут замедлить отклик.",
+          "ko": "IR 명령을 반복할 횟수(1~10)입니다. 값이 높을수록 신뢰성은 좋아지지만 응답이 느려질 수 있어요.",
+          "ar": "عدد مرات تكرار أوامر IR ‏(1-10). القيم الأعلى تحسّن الاعتمادية لكنها قد تبطّئ الاستجابة."
+        },
+        "value": 1,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "id": "send_on_before_timer",
+        "type": "checkbox",
+        "label": {
+          "en": "Send ON before timer command",
+          "nl": "Stuur AAN voor timer commando",
+          "fr": "Envoyer ON avant la commande de minuterie",
+          "de": "Vor dem Timer-Befehl AN senden",
+          "da": "Send TÆND før timerkommando",
+          "es": "Enviar ENCENDER antes del comando de temporizador",
+          "it": "Invia ACCENSIONE prima del comando del timer",
+          "no": "Send PÅ før timerkommando",
+          "sv": "Skicka PÅ innan timerkommando",
+          "pl": "Wyślij WŁĄCZ przed komendą timera",
+          "ru": "Отправлять ВКЛ перед командой таймера",
+          "ko": "타이머 명령 전에 켜기 보내기",
+          "ar": "إرسال تشغيل قبل أمر المؤقّت"
+        },
+        "hint": {
+          "en": "When activating a timer (x hour), first send an ON command to ensure the device is turned on.",
+          "nl": "Bij activeren van een timer (x uur), eerst een AAN commando sturen om te zorgen dat het apparaat aan staat.",
+          "fr": "Lorsqu'une minuterie est activée (x heure), envoyer d'abord un signal ON pour s'assurer que l'appareil est allumé.",
+          "de": "Wenn ein Timer (x Stunden) aktiviert wird, zuerst einen AN-Befehl senden, um sicherzustellen, dass das Gerät eingeschaltet ist.",
+          "da": "Når du aktiverer en timer (x timer), så send først en TÆND-kommando for at sikre, at enheden er tændt.",
+          "es": "Al activar un temporizador (x horas), primero envía un comando de ENCENDER para asegurarte de que el dispositivo esté encendido.",
+          "it": "Quando attivi un timer (x ore), invia prima un comando di ACCENSIONE per assicurarti che il dispositivo sia acceso.",
+          "no": "Når du aktiverer en timer (x timer), send først en PÅ-kommando for å sikre at enheten er slått på.",
+          "sv": "När du aktiverar en timer (x timmar), skicka först ett PÅ-kommando för att säkerställa att enheten är påslagen.",
+          "pl": "Podczas uruchamiania timera (x godzin) najpierw wyślij komendę WŁĄCZ, aby upewnić się, że urządzenie jest włączone.",
+          "ru": "При включении таймера (x часов) сначала отправьте команду ВКЛ, чтобы убедиться, что устройство включено.",
+          "ko": "타이머(x시간)를 활성화할 때, 기기가 켜져 있는지 확실히 하려면 먼저 켜기(ON) 명령을 보내세요.",
+          "ar": "عند تفعيل مؤقّت (x ساعة)، أرسل أولاً أمر تشغيل للتأكد من أن الجهاز قيد التشغيل."
+        },
+        "value": true
+      }
+    ]
+  }
+]

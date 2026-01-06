@@ -1,7 +1,7 @@
 {
   "id": "com.stephanschuurman.candlelight",
   "version": "0.1.4",
-  "compatibility": ">=12.7.0",
+  "compatibility": ">=12.9.0",
   "sdk": 3,
   "platforms": [
     "local"
@@ -47,7 +47,6 @@
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
   },
-  "homepage": "https://dev.stephanschuurman.com/candlelight",
   "author": {
     "name": "Stephan Schuurman",
     "email": ""

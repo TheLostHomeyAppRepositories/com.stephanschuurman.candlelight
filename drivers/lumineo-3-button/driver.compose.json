@@ -1,0 +1,121 @@
+{
+  "name": {
+    "en": "Lumineo 3 Button",
+    "nl": "Lumineo 3 Knoppen",
+    "fr": "Lumineo 3 Boutons",
+    "de": "Lumineo 3 Tasten",
+    "da": "Lumineo 3 Knapper",
+    "es": "Lumineo 3 Botones",
+    "it": "Lumineo 3 Pulsanti",
+    "no": "Lumineo 3 Knapper",
+    "sv": "Lumineo 3 Knappar",
+    "pl": "Lumineo 3 Przyciski",
+    "ru": "Lumineo 3 Кнопки",
+    "ko": "Lumineo 3 버튼",
+    "ar": "Lumineo 3 أزرار"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "button.on",
+    "button.off",
+    "button.6h"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "uiQuickAction": true
+    },
+    "button.on": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "On",
+        "nl": "Aan",
+        "fr": "Allumer",
+        "de": "An",
+        "da": "Tænd",
+        "es": "Encender",
+        "it": "Accendi",
+        "no": "På",
+        "sv": "På",
+        "pl": "Włącz",
+        "ru": "Вкл.",
+        "ko": "켜기",
+        "ar": "تشغيل"
+      }
+    },
+    "button.off": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "fr": "Éteindre",
+        "de": "Aus",
+        "da": "Sluk",
+        "es": "Apagar",
+        "it": "Spegni",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłącz",
+        "ru": "Выкл.",
+        "ko": "끄기",
+        "ar": "إيقاف"
+      }
+    },
+    "button.6h": {
+      "title": {
+        "en": "Timer 6 hours",
+        "nl": "Timer 6 uur",
+        "fr": "Minuteur 6 heures",
+        "de": "Timer 6 Stunden",
+        "da": "Timer 6 timer",
+        "es": "Temporizador 6 horas",
+        "it": "Timer 6 ore",
+        "no": "Tidtaker 6 timer",
+        "sv": "Timer 6 timmar",
+        "pl": "Timer 6 godzin",
+        "ru": "Таймер 6 часов",
+        "ko": "타이머 6시간",
+        "ar": "مؤقت 6 ساعات"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
+        "deviceIdPrefix": "led_candle_",
+        "defaultDeviceName": {
+          "en": "Lumineo 3 Button",
+          "nl": "Lumineo 3 Knoppen",
+          "fr": "Lumineo 3 Boutons",
+          "de": "Lumineo 3 Tasten",
+          "da": "Lumineo 3 Knapper",
+          "es": "Lumineo 3 Botones",
+          "it": "Lumineo 3 Pulsanti",
+          "no": "Lumineo 3 Knapper",
+          "sv": "Lumineo 3 Knappar",
+          "pl": "Lumineo 3 Przyciski",
+          "ru": "Lumineo 3 Кнопки",
+          "ko": "Lumineo 3 버튼",
+          "ar": "Lumineo 3 أزرار"
+        }
+      }
+    }
+  ]
+}

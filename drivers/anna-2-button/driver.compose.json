@@ -1,0 +1,103 @@
+{
+  "name": {
+    "en": "Anna's Collection 2 Button",
+    "nl": "Anna's Collection 2 Knoppen",
+    "fr": "Anna's Collection 2 Boutons",
+    "de": "Anna's Collection 2 Tasten",
+    "da": "Anna's Collection 2 Knapper",
+    "es": "Anna's Collection 2 Botones",
+    "it": "Anna's Collection 2 Pulsanti",
+    "no": "Anna's Collection 2 Knapper",
+    "sv": "Anna's Collection 2 Knappar",
+    "pl": "Anna's Collection 2 Przyciski",
+    "ru": "Anna's Collection 2 Кнопки",
+    "ko": "Anna's Collection 2 버튼",
+    "ar": "Anna's Collection 2 أزرار"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "button.on",
+    "button.off"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "uiQuickAction": true
+    },
+    "button.on": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "On",
+        "nl": "Aan",
+        "fr": "Allumer",
+        "de": "An",
+        "da": "Tænd",
+        "es": "Encender",
+        "it": "Accendi",
+        "no": "På",
+        "sv": "På",
+        "pl": "Włącz",
+        "ru": "Вкл.",
+        "ko": "켜기",
+        "ar": "تشغيل"
+      }
+    },
+    "button.off": {
+      "uiQuickAction": false,
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "fr": "Éteindre",
+        "de": "Aus",
+        "da": "Sluk",
+        "es": "Apagar",
+        "it": "Spegni",
+        "no": "Av",
+        "sv": "Av",
+        "pl": "Wyłącz",
+        "ru": "Выкл.",
+        "ko": "끄기",
+        "ar": "إيقاف"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "infrared"
+  ],
+  "infrared": {
+    "satelliteMode": true
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "device_add_custom",
+      "options": {
+        "title": "drivers.base.pair_title",
+        "instruction": "drivers.common.pair_instruction",
+        "deviceIdPrefix": "led_candle_",
+        "defaultDeviceName": {
+          "en": "Anna's Collection 2 Button",
+          "nl": "Anna's Collection 2 Knoppen",
+          "fr": "Anna's Collection 2 Boutons",
+          "de": "Anna's Collection 2 Tasten",
+          "da": "Anna's Collection 2 Knapper",
+          "es": "Anna's Collection 2 Botones",
+          "it": "Anna's Collection 2 Pulsanti",
+          "no": "Anna's Collection 2 Knapper",
+          "sv": "Anna's Collection 2 Knappar",
+          "pl": "Anna's Collection 2 Przyciski",
+          "ru": "Anna's Collection 2 Кнопки",
+          "ko": "Anna's Collection 2 버튼",
+          "ar": "Anna's Collection 2 أزرار"
+        }
+      }
+    }
+  ]
+}

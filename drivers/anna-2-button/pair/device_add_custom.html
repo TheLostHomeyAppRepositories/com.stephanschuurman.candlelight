@@ -1,0 +1,72 @@
+<style type="text/css">
+  #device-add-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+    box-sizing: border-box;
+  }
+
+  #device-add-instruction {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+</style>
+
+<div id="device-add-wrap">
+  <p id="device-add-instruction"></p>
+</div>
+
+<script type="text/javascript">
+  (function () {
+    const $instruction = document.getElementById('device-add-instruction');
+    
+    let deviceIdPrefix = 'device';
+    let defaultDeviceName = 'Device';
+
+    // Generate a unique ID using timestamp and random number
+    function generateUniqueId() {
+      return deviceIdPrefix + '-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+    }
+
+    Homey.getOptions((err, options) => {
+      if (err) return Homey.error(err);
+      
+      if (options && options.title) Homey.setTitle(Homey.__(options.title));
+      if (options && options.instruction) $instruction.innerHTML = Homey.__(options.instruction);
+      if (options && options.deviceIdPrefix) deviceIdPrefix = options.deviceIdPrefix;
+      if (options && options.defaultDeviceName) defaultDeviceName = Homey.__(options.defaultDeviceName);
+        
+      // Automatically create device
+      createDevice();
+      
+    });
+
+    function createDevice() {
+      const deviceData = {
+        name: defaultDeviceName,
+        data: {
+          id: generateUniqueId()
+        }
+      };
+
+      $instruction.innerHTML = Homey.__('pairing.adding_device');
+
+      Homey.createDevice(deviceData, (err) => {
+        if (err) {
+          console.error('Error creating device:', err);
+          $instruction.innerHTML = Homey.__('pairing.error_adding_device');
+          return Homey.error(err);
+        }
+        return Homey.done();
+      });
+    }
+
+  })();
+</script>

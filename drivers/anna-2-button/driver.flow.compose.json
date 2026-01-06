@@ -1,0 +1,100 @@
+{
+  "actions": [
+    {
+      "id": "anna-2-button_on",
+      "title": {
+        "en": "Switch LED candles on",
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Switch the LED candles on",
+        "nl": "Zet de LED kaarsen aan",
+        "fr": "Allumer les bougies LED",
+        "de": "LED-Kerzen einschalten",
+        "da": "Tænd LED-lysene",
+        "es": "Enciende las velas LED",
+        "it": "Accendi le candele LED",
+        "no": "Slå på LED-lysene",
+        "sv": "Slå på LED-ljusen",
+        "pl": "Włącz świece LED",
+        "ru": "Включить светодиодные свечи",
+        "ko": "LED 캔들을 켭니다",
+        "ar": "تشغيل شموع LED"
+      },
+      "hint": {
+        "en": "This action switches the LED candles on.",
+        "nl": "Deze actie zet de LED kaarsen aan.",
+        "fr": "Cette action allume les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen ein.",
+        "da": "Denne handling tænder LED-lysene.",
+        "es": "Esta acción enciende las velas LED.",
+        "it": "Questa azione accende le candele LED.",
+        "no": "Denne handlingen slår på LED-lysene.",
+        "sv": "Den här åtgärden slår på LED-ljusen.",
+        "pl": "Ta akcja włącza świece LED.",
+        "ru": "Это действие включает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 켭니다.",
+        "ar": "يقوم هذا الإجراء بتشغيل شموع LED."
+      }
+    },
+    {
+      "id": "anna-2-button_off",
+      "title": {
+        "en": "Switch LED candles off",
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
+      },
+      "titleFormatted": {
+        "en": "Switch the LED candles off",
+        "nl": "Zet de LED kaarsen uit",
+        "fr": "Éteindre les bougies LED",
+        "de": "LED-Kerzen ausschalten",
+        "da": "Sluk LED-lysene",
+        "es": "Apaga las velas LED",
+        "it": "Spegni le candele LED",
+        "no": "Slå av LED-lysene",
+        "sv": "Slå av LED-ljusen",
+        "pl": "Wyłącz świece LED",
+        "ru": "Выключить светодиодные свечи",
+        "ko": "LED 캔들을 끕니다",
+        "ar": "إيقاف تشغيل شموع LED"
+      },
+      "hint": {
+        "en": "This action switches the LED candles off.",
+        "nl": "Deze actie zet de LED kaarsen uit.",
+        "fr": "Cette action éteint les bougies LED.",
+        "de": "Diese Aktion schaltet die LED-Kerzen aus.",
+        "da": "Denne handling slukker LED-lysene.",
+        "es": "Esta acción apaga las velas LED.",
+        "it": "Questa azione spegne le candele LED.",
+        "no": "Denne handlingen slår av LED-lysene.",
+        "sv": "Den här åtgärden slår av LED-ljusen.",
+        "pl": "Ta akcja wyłącza świece LED.",
+        "ru": "Это действие выключает светодиодные свечи.",
+        "ko": "이 작업은 LED 캔들을 끕니다.",
+        "ar": "يقوم هذا الإجراء بإيقاف تشغيل شموع LED."
+      }
+    }
+  ]
+}

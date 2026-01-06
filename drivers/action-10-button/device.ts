@@ -19,7 +19,7 @@ module.exports = class ActionTenButtonDevice extends BaseCandleDevice {
   async onInit() {
     await super.onInit();
 
-    await this.migrateActionCapabilities();
+    // await this.migrateActionCapabilities();
 
     this.registerCapabilityListener('button.mode_candle',
       (value: boolean, opts: any) => this.onCapabilityMode(value, opts, 'MODE_CANDLE'));

@@ -16,6 +16,11 @@
     "nl": "Opgeloste verwisselde aan/uit commando's voor Home Deluxe kaarsen (op verzoek van Anders Pedersen)."
   },
   "0.1.4": {
-    "en": "Added support for Action LED candles as reqested by Rene_de_Ronde"
+    "en": "Added support for Action LED candles as reqested by Rene_de_Ronde.",
+    "nl": "Ondersteuning toegevoegd voor Action LED kaarsen zoals gevraagd door Rene_de_Ronde."
+  },
+  "0.1.5": {
+    "en": "Added support for Action LED candles (3 and 8 button) as reqested by Rene_de_Ronde. Added support for Lumiz lanterns.",
+    "nl": "Ondersteuning toegevoegd voor Action LED kaarsen (3 en 8 knoppen) zoals gevraagd door Rene_de_Ronde. Ondersteuning toegevoegd voor Lumiz lantaarns."
   }
 }

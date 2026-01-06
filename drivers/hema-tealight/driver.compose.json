@@ -1,18 +1,18 @@
 {
   "name": {
-    "en": "HEMA LED Candles",
-    "nl": "HEMA LED Kaarsen",
-    "fr": "Bougies LED HEMA",
-    "de": "HEMA LED-Kerzen",
+    "en": "HEMA Candles",
+    "nl": "HEMA Kaarsen",
+    "fr": "Bougies HEMA",
+    "de": "HEMA Kerzen",
     "da": "HEMA LED-lys",
-    "es": "Velas LED HEMA",
-    "it": "Candele LED HEMA",
+    "es": "Velas HEMA",
+    "it": "Candele HEMA",
     "no": "HEMA LED-lys",
     "sv": "HEMA LED-ljus",
-    "pl": "Świece LED HEMA",
-    "ru": "Светодиодные свечи HEMA",
-    "ko": "HEMA LED 양초",
-    "ar": "شموع LED من HEMA"
+    "pl": "Świece HEMA",
+    "ru": "Свечи HEMA",
+    "ko": "HEMA 양초",
+    "ar": "شموع من HEMA"
   },
   "class": "light",
   "capabilities": [

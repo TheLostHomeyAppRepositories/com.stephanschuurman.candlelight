@@ -87,12 +87,43 @@ export const IR_COMMANDS = {
   } as const,
 
   /**
+   * Lumineo - 3 Button Remote
+   * Sold at Albert Heijn
+   * Protocol: NEC, Address: 0x00
+   */
+  LUMINEO_3_BUTTON: {
+    ON: 0x39,
+    OFF: 0x09,
+    TIMER_6H: 0x18,
+  } as const,
+
+  /**
    * Action - 8 Button Remote
    * Protocol: NEC, Address: 0x00
    */
   ACTION_8_BUTTON: {
     ON: 0x45,
     OFF: 0x47,
+  } as const,
+
+  /**
+   * Anna's Collection - 2 Button, Silver Remote
+   * Protocol: NEC, Address: 0x00
+   */
+  ANNA_2_BUTTON: {
+    ON: 0x01,
+    OFF: 0x09,
+  } as const,
+
+  /**
+   * Anna's Collection - 10 Button, Black Remote
+   * Protocol: NEC, Address: 0x00
+   */
+  ANNA_10_BUTTON: {
+    ON: 0x00,
+    OFF: 0x02,
+    DIM_DOWN: 0x10,
+    DIM_UP: 0x12,
   } as const,
 } as const;
 

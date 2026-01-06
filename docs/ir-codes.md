@@ -117,6 +117,30 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 ---
 
+## Lumineo - 3 Button Remote
+
+**Driver:** ./lumineo-3-button
+**Protocol:** NEC  
+**Address:** 0x00
+
+| Button | CMD  |
+|--------|------|
+| ON     | 0x39 |
+| OFF    | 0x09 |
+| 6H     | 0x18 |
+
+**Source:**
+- https://lumineo-lights.com/en
+
+
+### Product Information:
+
+- EAN: 8720725131712, 8720725141605, 8720725141636, 8720725216617, 8720725547421, 8720725387232, 8720725189201, 8720725339491, 8720725181090
+- Sold at Albert Heijn and online
+- Note black candles (EAN: 8720725131712) have a short response range (poor reception).
+
+---
+
 ## Anna's Collection - 10 Button, Black Remote
 
 **Driver:** ./anna-10-button
@@ -131,12 +155,15 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 | Brightness +    | 0x12         |
 
 **Source:**
+- https://homey.app/en-us/app/com.tvdb.candles/Anna's-collection-candles/
+- https://homey.app/nl-nl/app/nl.coenbakker.ir.dev/Anna’s-collection/test/
 
 ---
 
+
 ## Anna's Collection - 2 Button, Silver Remote
 
-**Driver:** ./anna-2
+**Driver:** ./anna-2-button
 **Protocol:** NEC  
 **Address:** 0x00
 
@@ -147,26 +174,7 @@ The item is also sold under the house brand of HEMA (a well-known Dutch departme
 
 **Source:**
 - https://homey.app/en-us/app/com.tvdb.candles/Anna's-collection-candles/
-
----
-
-## Flinq LED
-
-**Driver:** ./flinq
-**Protocol:** NEC  
-**Address:** 0x80
-
-| Button          | CMD          |
-|-----------------|--------------|
-| ON              | 0x12         |
-| OFF             |              |
-| Light Mode      | 0x09         |
-| Candle Mode     |              |
-| Brightness -    |              |
-| Brightness +    |              |
-
-**Source:**
-- https://homey.app/en-us/app/nl.flinqproducts.candle/Flinq-LED-Candles/
+- https://homey.app/nl-nl/app/nl.coenbakker.ir.dev/Anna’s-collection/test/
 
 ---
 
@@ -202,6 +210,26 @@ Dimmer
 **Source:**
 - https://community.home-assistant.io/t/lumiz-lantern-remote-control-with-esphome/937775
 - https://lumiz.nl
+
+---
+
+## Flinq LED
+
+**Driver:** ./flinq
+**Protocol:** NEC  
+**Address:** 0x80
+
+| Button          | CMD          |
+|-----------------|--------------|
+| ON              | 0x12         |
+| OFF             |              |
+| Light Mode      | 0x09         |
+| Candle Mode     |              |
+| Brightness -    |              |
+| Brightness +    |              |
+
+**Source:**
+- https://homey.app/en-us/app/nl.flinqproducts.candle/Flinq-LED-Candles/
 
 ---
 

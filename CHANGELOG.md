@@ -6,6 +6,12 @@ All notable changes to this project are documented here.
 Upcoming items (new devices, fixes, known issues):
 - Add more brands
 
+## 0.1.4 (build 7)
+- Added support for Action LED candles (3 and 8 button) as reqested by Rene_de_Ronde. Added support for Lumiz lanterns.
+
+## 0.1.4 (build 6)
+- Added support for Action LED candles (10 buttons) as reqested by Rene_de_Ronde.
+
 ## 0.1.3 (build 5)
 - Fixed swapped on/off commands for Home Deluxe candles (requested by Anders Pedersen).
 
